@@ -3,3 +3,6 @@ z3:
 
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
+
+noodler:
+  cmd: ../bin/noodler-wrap.sh $1
