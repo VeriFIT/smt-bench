@@ -1,3 +1,4 @@
+(set-logic ALL)
 
 ( declare-fun  x () String )
  ( declare-fun  y () String )

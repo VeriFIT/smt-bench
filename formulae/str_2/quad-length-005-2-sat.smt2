@@ -1,4 +1,4 @@
-(set-logic QF_S)
+(set-logic ALL)
 
 ( declare-fun  x3 () String )
  ( declare-fun  x4 () String )
