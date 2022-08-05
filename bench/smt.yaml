@@ -1,8 +1,29 @@
 z3:
   cmd: ../bin/z3-wrap.sh $1
 
+z3strRE:
+  cmd: ../bin/z3strRE-wrap.sh $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
+cvc5:
+  cmd: ../bin/cvc5-wrap.sh $1
+
 noodler:
   cmd: ../bin/noodler-wrap.sh $1
+
+noodler-min:
+  cmd: ../bin/noodler-wrap.sh $1 --min
+
+noodler-light:
+  cmd: ../bin/noodler-wrap.sh $1 --light
+
+noodler-min-light:
+  cmd: ../bin/noodler-wrap.sh $1 --min --light
+
+retro:
+  cmd: ../bin/retro-wrap.sh $1
+
+sloth:
+  cmd: ../bin/sloth-wrap.sh $1
