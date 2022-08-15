@@ -1,0 +1,1200 @@
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-001-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-002-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-003-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-004-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-005-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-006-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-007-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-008-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-009-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-010-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-011-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-012-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-013-2-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-014-2-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-015-2-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-016-2-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-017-2-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-018-2-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-019-2-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-020-2-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-021-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-022-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-023-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-024-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-025-2-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-026-2-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-027-2-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-028-2-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-029-3-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-030-3-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-031-3-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-032-3-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-033-3-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-034-3-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-035-3-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-036-3-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-037-3-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-038-3-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-039-3-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-040-3-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-041-3-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-042-3-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-043-3-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-044-3-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-045-3-6-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-046-3-6-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-047-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-048-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-049-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-050-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-051-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-052-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-053-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-054-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-055-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-056-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-057-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-058-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-059-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-060-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-061-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-062-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-063-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-064-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-065-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-066-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-067-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-068-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-069-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-070-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-071-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-072-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-073-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-074-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-075-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-076-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-077-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-078-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-079-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-080-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-081-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-082-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-083-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-084-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-085-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-086-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-087-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-088-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-089-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-090-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-091-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-092-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-093-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-094-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-095-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-096-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-097-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-098-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-099-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-100-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-101-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-102-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-103-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-104-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-105-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-106-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-107-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-108-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-109-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-110-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-111-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-112-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-113-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-114-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-115-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-116-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-117-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-118-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-119-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-120-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-121-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-122-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-123-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-124-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-125-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-126-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-127-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-128-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-129-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-130-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-131-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-132-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-133-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-134-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-135-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-136-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-137-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-138-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-139-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-140-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-141-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-142-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-143-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-144-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-145-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-146-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-147-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-148-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-149-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-150-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-151-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-152-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-153-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-154-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-155-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-156-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-157-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-158-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-159-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-160-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-161-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-162-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-163-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-164-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-165-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-166-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-167-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-168-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-169-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-170-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-171-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-172-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-173-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-174-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-175-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-176-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-177-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-178-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-179-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-180-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-181-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-182-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-183-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-184-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-185-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-186-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-187-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-188-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-189-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-190-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-191-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-192-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-193-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-194-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-195-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-196-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-197-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-198-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-199-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-200-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-201-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-202-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-203-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-204-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-205-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-206-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-207-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-208-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-209-4-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-210-4-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-211-5-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-212-5-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-213-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-214-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-215-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-216-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-217-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-218-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-219-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-220-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-221-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-222-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-223-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-224-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-225-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-226-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-227-5-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-228-5-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-229-5-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-230-5-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-231-6-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-232-6-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-233-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-234-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-235-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-236-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-237-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-238-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-239-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-240-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-241-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-242-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-243-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-244-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-245-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-246-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-247-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-248-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-249-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-250-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-251-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-252-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-253-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-254-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-255-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-256-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-257-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-258-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-259-4-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-260-4-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-261-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-262-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-263-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-264-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-265-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-266-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-267-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-268-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-269-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-270-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-271-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-272-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-273-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-274-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-275-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-276-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-277-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-278-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-279-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-280-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-281-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-282-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-283-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-284-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-285-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-286-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-287-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-288-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-289-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-290-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-291-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-292-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-293-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-294-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-295-6-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-296-6-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-297-6-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-298-6-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-299-6-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-300-6-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-001-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-002-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-003-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-004-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-005-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-006-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-007-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-008-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-009-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-010-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-011-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-012-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-013-2-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-014-2-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-015-2-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-016-2-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-017-2-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-018-2-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-019-2-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-020-2-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-021-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-022-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-023-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-024-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-025-2-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-026-2-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-027-2-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-028-2-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-029-3-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-030-3-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-031-3-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-032-3-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-033-3-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-034-3-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-035-3-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-036-3-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-037-3-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-038-3-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-039-3-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-040-3-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-041-3-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-042-3-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-043-3-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-044-3-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-045-3-6-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-046-3-6-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-047-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-048-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-049-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-050-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-051-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-052-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-053-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-054-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-055-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-056-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-057-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-058-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-059-3-7-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-060-3-7-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-061-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-062-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-063-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-064-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-065-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-066-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-067-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-068-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-069-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-070-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-071-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-072-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-073-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-074-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-075-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-076-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-077-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-078-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-079-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-080-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-081-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-082-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-083-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-084-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-085-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-086-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-087-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-088-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-089-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-090-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-091-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-092-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-093-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-094-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-095-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-096-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-097-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-098-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-099-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-100-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-101-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-102-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-103-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-104-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-105-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-106-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-107-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-108-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-109-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-110-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-111-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-112-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-113-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-114-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-115-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-116-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-117-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-118-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-119-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-120-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-121-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-122-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-123-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-124-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-125-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-126-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-127-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-128-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-129-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-130-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-131-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-132-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-133-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-134-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-135-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-136-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-137-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-138-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-139-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-140-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-141-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-142-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-143-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-144-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-145-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-146-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-147-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-148-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-149-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-150-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-151-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-152-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-153-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-154-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-155-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-156-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-157-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-158-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-159-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-160-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-161-4-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-162-4-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-163-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-164-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-165-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-166-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-167-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-168-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-169-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-170-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-171-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-172-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-173-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-174-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-175-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-176-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-177-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-178-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-179-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-180-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-181-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-182-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-183-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-184-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-185-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-186-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-187-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-188-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-189-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-190-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-191-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-192-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-193-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-194-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-195-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-196-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-197-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-198-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-199-4-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-200-4-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-201-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-202-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-203-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-204-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-205-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-206-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-207-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-208-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-209-4-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-210-4-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-211-5-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-212-5-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-213-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-214-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-215-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-216-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-217-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-218-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-219-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-220-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-221-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-222-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-223-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-224-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-225-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-226-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-227-5-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-228-5-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-229-5-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-230-5-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-231-6-0-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-232-6-0-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-233-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-234-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-235-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-236-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-237-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-238-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-239-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-240-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-241-4-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-242-4-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-243-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-244-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-245-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-246-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-247-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-248-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-249-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-250-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-251-4-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-252-4-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-253-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-254-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-255-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-256-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-257-4-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-258-4-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-259-4-5-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-260-4-5-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-261-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-262-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-263-5-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-264-5-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-265-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-266-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-267-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-268-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-269-5-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-270-5-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-271-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-272-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-273-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-274-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-275-5-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-276-5-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-277-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-278-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-279-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-280-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-281-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-282-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-283-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-284-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-285-5-4-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-286-5-4-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-287-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-288-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-289-6-1-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-290-6-1-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-291-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-292-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-293-6-2-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-294-6-2-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-295-6-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-296-6-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-297-6-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-298-6-3-unsat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-299-6-3-sat.smt2
+execute;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-300-6-3-unsat.smt2
+error;noodler-a9ebdfb3-min;../formulae/str_2/quad-001-1-unsat.smt2;Error during reading the file: Z3 application expected###real 1.84###user 1.57###sys 0.25
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-002-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.04;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-003-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.05;;1.61
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-004-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-005-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.28;;1.82
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-006-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-007-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.34;;1.91
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-008-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-009-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.36;;1.95
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-010-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-011-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 5.17;;6.58
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-012-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-013-2-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 4.33;;5.78
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-014-2-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-015-2-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.28;;1.86
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-016-2-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-017-2-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.29;;1.84
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-018-2-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-019-2-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.86
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-020-2-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-021-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-022-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.03;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-023-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.39;;1.93
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-024-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-025-2-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.05;;1.6
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-026-2-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-027-2-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.06;;1.68
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-028-2-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-029-3-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.11;;1.7
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-030-3-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-031-3-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.06;;1.62
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-032-3-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-033-3-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.07;;1.64
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-034-3-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-035-3-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-036-3-2-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-037-3-2-sat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-038-3-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.05;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-039-3-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.57
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-040-3-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-041-3-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.9
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-042-3-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-043-3-5-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.84
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-044-3-5-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-045-3-6-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.87
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-046-3-6-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-047-3-7-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.88
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-048-3-7-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-049-3-7-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.3;;1.86
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-050-3-7-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-051-3-7-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.86
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-052-3-7-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-053-3-7-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.89
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-054-3-7-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-055-3-7-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.82
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-056-3-7-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-057-3-7-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.92
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-058-3-7-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-059-3-7-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.9
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-060-3-7-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-061-4-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-062-4-0-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-063-4-0-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.85
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-064-4-0-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-065-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.84
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-066-4-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-067-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.93
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-068-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-069-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.81
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-070-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-071-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.91
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-072-4-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-073-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.87
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-074-4-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-075-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.89
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-076-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-077-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 4.31;;5.78
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-078-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-079-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 55.51;;56.41
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-080-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-081-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 2.71;;4.17
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-082-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-083-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 15.45;;16.68
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-084-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.07;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-085-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.94
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-086-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-087-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.87
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-088-4-4-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-089-4-4-sat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-090-4-4-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.07;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-091-4-0-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.95
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-092-4-0-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.05;;1.67
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-093-4-1-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-094-4-1-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-095-4-1-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-096-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-097-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.84
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-098-4-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-099-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.84
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-100-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-101-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.34;;1.94
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-102-4-2-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-103-4-2-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-104-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-105-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-106-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.07;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-107-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 22.8;;24.03
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-108-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.07;;1.6
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-109-4-3-sat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-110-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.07;;1.61
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-111-4-3-sat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-112-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.07;;1.66
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-113-4-3-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-114-4-3-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-115-4-3-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-116-4-3-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-117-4-4-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-118-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-119-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.32;;1.84
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-120-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-121-4-0-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.89
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-122-4-0-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-123-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.34;;1.93
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-124-4-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.69
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-125-4-1-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-126-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-127-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 1.02;;2.56
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-128-4-1-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-129-4-1-sat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-130-4-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-131-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.35;;1.9
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-132-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-133-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.93;;2.41
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-134-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-135-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.33;;1.95
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-136-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.64
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-137-4-2-sat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-138-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-139-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-140-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-141-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.31;;1.84
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-142-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.68
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-143-4-3-sat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-144-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-145-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.33;;1.84
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-146-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-147-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.56;;2.13
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-148-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-149-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.5;;2.13
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-150-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-151-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.52;;2.11
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-152-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-153-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.57;;2.14
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-154-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-155-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.51;;2.06
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-156-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-157-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 1.14;;2.79
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-158-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-159-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.51;;2.09
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-160-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-161-4-0-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.41;;1.94
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-162-4-0-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-163-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.43;;2.01
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-164-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-165-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 2.52;;4.0
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-166-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-167-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 1.37;;2.87
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-168-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-169-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.45;;2.0
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-170-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-171-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 3.71;;5.19
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-172-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-173-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.43;;1.92
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-174-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-175-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.4;;1.91
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-176-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-177-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.35;;1.92
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-178-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-179-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 1.74;;3.24
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-180-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-181-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 1.39;;2.94
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-182-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-183-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.47;;2.03
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-184-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-185-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.49;;1.99
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-186-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-187-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.71;;2.23
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-188-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-189-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 48.67;;48.77
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-190-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-191-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.11;;1.68
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-192-4-1-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-193-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 1.44;;2.92
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-194-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.63
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-195-4-1-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-196-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-197-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.83;;2.38
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-198-4-2-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.05;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-199-4-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.26;;1.84
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-200-4-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-201-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.2;;1.7
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-202-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-203-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.3;;1.87
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-204-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-205-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.2;;1.79
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-206-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-207-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.21;;1.77
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-208-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-209-4-5-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-210-4-5-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-211-5-0-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-212-5-0-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.69
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-213-5-1-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-214-5-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-215-5-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.3;;1.81
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-216-5-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-217-5-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.12;;1.65
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-218-5-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-219-5-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.08;;1.69
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-220-5-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-221-5-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.68
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-222-5-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-223-5-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.7
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-224-5-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-225-5-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.7
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-226-5-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-227-5-5-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.67
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-228-5-5-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-229-5-5-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.23;;1.75
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-230-5-5-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-231-6-0-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.1;;1.7
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-232-6-0-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-233-6-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.11;;1.72
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-234-6-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-235-6-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.76;;2.24
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-236-6-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-237-6-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.14;;1.71
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-238-6-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-239-6-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 1.28;;2.79
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-240-6-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-241-4-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.69
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-242-4-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-243-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.08;;1.68
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-244-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-245-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.22;;1.79
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-246-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-247-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.21;;1.71
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-248-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-249-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.21;;1.77
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-250-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-251-4-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.65
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-252-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-253-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.1;;1.67
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-254-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-255-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.1;;1.63
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-256-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-257-4-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.81;;2.36
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-258-4-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-259-4-5-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.11;;1.73
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-260-4-5-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-261-5-1-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-262-5-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-263-5-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.3;;1.88
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-264-5-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-265-5-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.08;;1.62
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-266-5-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-267-5-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.64;;2.16
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-268-5-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-269-5-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.13;;1.74
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-270-5-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-271-5-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.23;;1.72
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-272-5-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-273-5-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.66
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-274-5-3-unsat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-275-5-3-sat.smt2
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-276-5-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-277-5-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.65
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-278-5-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-279-5-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.63
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-280-5-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-281-5-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.21;;1.82
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-282-5-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-283-5-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.08;;1.75
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-284-5-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-285-5-4-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.18;;1.66
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-286-5-4-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-287-6-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.11;;1.68
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-288-6-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-289-6-1-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.91;;2.42
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-290-6-1-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-291-6-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.15;;1.67
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-292-6-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-293-6-2-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.09;;1.66
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-294-6-2-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-295-6-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.2;;1.75
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-296-6-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-297-6-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.1;;1.63
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-298-6-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-299-6-3-sat.smt2;0;version: a9ebdfb3###result: sat###time: 0.21;;1.88
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-300-6-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-001-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-002-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-003-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-004-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-005-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-006-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.55
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-007-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-008-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-009-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-010-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-011-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-012-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-013-2-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-014-2-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-015-2-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.54
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-016-2-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-017-2-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-018-2-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-019-2-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-020-2-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-021-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-022-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-023-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-024-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-025-2-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-026-2-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-027-2-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-028-2-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-029-3-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-030-3-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-031-3-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-032-3-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-033-3-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-034-3-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-035-3-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-036-3-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-037-3-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-038-3-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-039-3-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-040-3-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-041-3-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-042-3-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-043-3-5-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-044-3-5-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-045-3-6-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-046-3-6-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-047-3-7-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-048-3-7-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-049-3-7-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-050-3-7-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-051-3-7-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-052-3-7-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-053-3-7-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-054-3-7-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-055-3-7-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-056-3-7-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-057-3-7-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-058-3-7-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-059-3-7-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-060-3-7-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-061-4-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-062-4-0-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-063-4-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-064-4-0-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-065-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-066-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-067-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-068-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-069-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-070-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-071-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-072-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-073-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-074-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.55
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-075-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-076-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-077-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-078-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-079-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-080-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-081-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-082-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-083-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-084-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-085-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-086-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-087-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.69
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-088-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-089-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-090-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-091-4-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-092-4-0-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-093-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-094-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-095-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-096-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-097-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-098-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-099-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-100-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-101-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-102-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-103-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-104-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-105-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-106-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-107-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-108-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-109-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-110-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-111-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-112-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-113-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.68
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-114-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-115-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-116-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-117-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-118-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-119-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-120-4-4-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.06;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-121-4-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-122-4-0-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-123-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-124-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-125-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-126-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-127-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-128-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-129-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-130-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-131-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-132-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-133-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-134-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.54
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-135-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-136-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-137-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-138-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.53
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-139-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-140-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-141-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-142-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-143-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-144-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-145-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-146-4-3-unsat.smt2;0;version: a9ebdfb3###result: unsat###time: 0.07;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-147-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-148-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-149-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-150-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-151-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-152-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-153-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-154-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-155-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-156-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.68
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-157-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.72
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-158-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-159-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-160-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-161-4-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-162-4-0-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-163-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-164-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-165-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-166-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-167-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-168-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-169-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-170-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-171-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-172-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-173-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-174-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-175-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-176-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-177-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-178-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-179-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-180-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-181-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-182-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-183-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-184-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-185-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-186-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-187-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-188-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-189-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-190-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-191-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-192-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-193-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-194-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-195-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-196-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-197-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-198-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-199-4-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-200-4-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-201-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-202-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-203-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-204-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-205-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-206-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-207-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-208-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-209-4-5-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-210-4-5-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-211-5-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-212-5-0-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-213-5-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-214-5-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-215-5-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-216-5-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.69
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-217-5-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-218-5-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-219-5-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-220-5-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-221-5-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-222-5-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-223-5-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-224-5-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-225-5-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-226-5-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-227-5-5-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-228-5-5-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-229-5-5-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-230-5-5-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-231-6-0-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-232-6-0-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-233-6-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-234-6-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-235-6-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-236-6-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-237-6-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-238-6-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-239-6-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-240-6-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-241-4-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-242-4-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-243-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-244-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-245-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-246-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-247-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-248-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-249-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+timeout;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-250-4-3-unsat.smt2
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-251-4-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-252-4-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-253-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-254-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-255-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-256-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-257-4-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-258-4-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-259-4-5-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.69
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-260-4-5-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-261-5-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-262-5-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.67
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-263-5-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-264-5-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.69
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-265-5-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-266-5-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-267-5-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-268-5-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-269-5-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-270-5-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-271-5-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-272-5-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-273-5-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-274-5-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.56
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-275-5-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-276-5-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-277-5-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.66
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-278-5-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-279-5-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-280-5-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-281-5-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.57
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-282-5-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-283-5-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-284-5-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.01;;1.54
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-285-5-4-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-286-5-4-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-287-6-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-288-6-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.59
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-289-6-1-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-290-6-1-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.62
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-291-6-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-292-6-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-293-6-2-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-294-6-2-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.64
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-295-6-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.6
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-296-6-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.63
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-297-6-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-298-6-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.61
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-299-6-3-sat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.58
+finished;noodler-a9ebdfb3-min;../formulae/str_2/quad-length-300-6-3-unsat.smt2;0;version: a9ebdfb3###result: unknown###time: 0.02;;1.65
