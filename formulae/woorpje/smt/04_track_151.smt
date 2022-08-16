@@ -9,4 +9,3 @@
 (assert (= (str.++  "abbacbcdbd" A A A A "cbbbdaacab" A "aadcca" A A "ddc" A "acddcddabdb")  (str.++  "abba" A "b" A "dbd" A "ccccbbbdaa" A "abcaadc" A "accddc" A "acddcddabdb") ))
 (assert (= (str.++  A "abadabbad" A A "aadaadbbb" A "adabcaa" A "bb" A "bbddaccdbcabbda")  (str.++  A "abadabbadccaadaadbbb" A "adabcaacbbcbbdda" A A "dbcabbda") ))
 (check-sat)
-(get-model)

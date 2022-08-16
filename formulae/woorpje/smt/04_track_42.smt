@@ -137,4 +137,3 @@
 (assert (= (str.++  "dad" I "faaca")  (str.++  "dad" I "faaca") ))
 (assert (= (str.++  "fddfeedcb" "")  (str.++  "fddf" I I "dcb") ))
 (check-sat)
-(get-model)

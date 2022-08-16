@@ -10,4 +10,3 @@
 (assert (= (str.++  "ababbccababaeeedcbdccddbcacddeebbdecacdbbbbbeebbdcaacaaeaeddcbeeddedbbbbde" D "dbee")  (str.++  "ababbccababaeeedcbdccddbcacddeebbdecacdbbbbbeebbdcaacaaeaeddcbeeddedbbbbdeeaadbee" "") ))
 (assert (= (str.++  "dcbbeccaaeeccedbedbdadccecaceeca" D "acaabbbcdeaeadceabddadbdcacbbcedaabecbacceddeb")  (str.++  "dcbbeccaaeeccedbedbdadccecaceecaeaaacaabbbcdeaeadceabddadbdcacbbcedaabecbacceddeb" "") ))
 (check-sat)
-(get-model)

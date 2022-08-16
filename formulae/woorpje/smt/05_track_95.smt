@@ -1,4 +1,4 @@
-(set-logic QF_S)
+(set-logic ALL)
 (declare-fun H () String)
 (declare-fun B () String)
 (declare-fun A () String)
@@ -12,4 +12,3 @@
 (assert (>=(* (str.len A) 6) 18))
 (assert (<=(* (str.len H) 7) 126))
 (check-sat)
-(get-model)

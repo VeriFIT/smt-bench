@@ -64,4 +64,3 @@
 (assert (= (str.++  "cafeccc" E "fffabccbeaaaedbcbaefdaafefdeaecbcedfddda" E "beeacf" E "fc" E "fedbaa" E "cfe" E "b")  (str.++  "cafecccdfffabccbeaaae" E "bcbaef" E "aafef" E "eaecbce" E "f" E "dda" E "beeacfdfc" E "fedbaadcfe" E "b") ))
 (assert (= (str.++  "cecdefaf" E "a" E "dbecff" E "dbb" E "ecbdfc" E E E "e" E "cefcdefdedaacbacfabfeeebeaabccefbe" E "bee")  (str.++  "cec" E "efaf" E "addbecff" E E "bb" E "ecb" E "fc" E E "de" E "cefcdefdedaacbacfabfeeebeaabccefbedbee") ))
 (check-sat)
-(get-model)

@@ -5,4 +5,3 @@
 (declare-fun J () String)
 (assert (= (str.++  "gjegbbbih" O "dgagchhihgbjbbacj" J "jejfacddficgcjgfc")  (str.++  B "iegg" M "jhfafeicfbghbbjejfacddficgcjgfc") ))
 (check-sat)
-(get-model)

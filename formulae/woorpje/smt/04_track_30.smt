@@ -149,4 +149,3 @@
 (assert (= (str.++  B B "a")  (str.++  D "a" "") ))
 (assert (= (str.++  B C)  (str.++  D "a" "") ))
 (check-sat)
-(get-model)

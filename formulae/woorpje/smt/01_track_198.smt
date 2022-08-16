@@ -6,4 +6,3 @@
 (declare-fun D () String)
 (assert (= (str.++  K "aaa" M "b" J "accbcbbb" N "accbaa")  (str.++  "a" N "bcaaaaaabaacbcaab" N "aba" D "abacaaccbcbbb" N "accbaa") ))
 (check-sat)
-(get-model)

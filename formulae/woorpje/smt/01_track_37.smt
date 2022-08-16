@@ -3,4 +3,3 @@
 (declare-fun G () String)
 (assert (= (str.++  "aeceebcddfccabfeebbefda" C "befefecddecdefc")  (str.++  "aeceebcddfccabfeebbefdadeddfbeebcfbbafabdcdbfdbcbbed" G "ceeecefaeabdffbfbeafecfbbefefecddecdefc") ))
 (check-sat)
-(get-model)

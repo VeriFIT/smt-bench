@@ -23,4 +23,3 @@
 (assert (= (str.++  "aa" F F F "a" F F F F "aa" F "aaaa" F F F "aaa" F "a" F F "a" F F F "a" F F F "a" F "aaaa" F "a" F "aaaa" F F "a" F "aa" F F F "a" F F F "a" F "aaaaaa" F "a")  (str.++  E "a" F F F F "a" F "aa" F "aaa" F F F F "aa" B F "a" F F "aaaaaaa") ))
 (assert (= (str.++  F "a" F F F F F F F "a" F F "aaa" F "a" F F "aaa" F "aa" F F F F F F F F F F F F "aaa" F F F F F F "a" F F F "aaa" F "aaa" F "a" F F F F "a" F "a" F F "aaa")  (str.++  B "aa" F "aa" F "aaaa" F "aa" F "aa" F "aa" F F "aa" F "a" F "aaaa" B F F "a" F F F "a" F F F "a") ))
 (check-sat)
-(get-model)

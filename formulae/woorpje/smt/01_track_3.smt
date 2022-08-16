@@ -3,4 +3,3 @@
 (declare-fun A () String)
 (assert (= (str.++  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" B B "aaaaaaaa")  (str.++  A B "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa") ))
 (check-sat)
-(get-model)

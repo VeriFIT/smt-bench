@@ -78,4 +78,3 @@
 (assert (= (str.++  A "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" "")  (str.++  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" A "aaaaa") ))
 (assert (= (str.++  A A "aaaaa")  (str.++  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" "") ))
 (check-sat)
-(get-model)

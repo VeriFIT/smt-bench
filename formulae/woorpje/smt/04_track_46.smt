@@ -167,4 +167,3 @@
 (assert (= (str.++  "cccabdabbdbdddadaabaddbdddabacaaadddcbaddabbbddadbbaca" H "acbcabbdbabcdbcbdcbdbaddc")  (str.++  "cccabdabbdbdddadaabaddbdddabacaaadddcbaddabbbddadbbaca" H "acbcabbdbabcdbcb" H "bdbad" H) ))
 (assert (= (str.++  "bbabdbabddccaacabdddaaaaabbdcadacbbdadcddbcbccdadbadabdbdbabaccdacbcdabbacdbcbcac" "")  (str.++  "bbabdbabd" H "caacabdddaaaaabb" H "adacbbdadcddbcbccdadbadabdbdbabaccdacbcdabbacdbcbcac") ))
 (check-sat)
-(get-model)

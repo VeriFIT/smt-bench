@@ -198,4 +198,3 @@
 (assert (= (str.++  "ffe" A)  (str.++  "ffe" A) ))
 (assert (= (str.++  "adfc" "")  (str.++  "adf" A) ))
 (check-sat)
-(get-model)

@@ -8,4 +8,3 @@
 (assert (= (str.++  A "dbdb" "")  (str.++  "ddcdbdb" "") ))
 (assert (= (str.++  "ecb" A "a")  (str.++  "ecb" A "a") ))
 (check-sat)
-(get-model)

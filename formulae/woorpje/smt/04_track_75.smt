@@ -34,4 +34,3 @@
 (assert (= (str.++  G G "c" C "b" C "ab" G "bbccbbb" C D "b" G "bcccb" G "caccb" G "ba" G D "bb" C G B)  (str.++  G G F C "abcbb" G "cbbbaaab" G "b" G G "cbc" G "a" G "cbcbac" C "abb" C "c" G C) ))
 (assert (= (str.++  C "bb" C G "ccbc" G G "cc" G "bb" C G G "b" G G B "bbc" G "c" B "a" C C "a" G "bb" G C "bb" G "b")  (str.++  C "bba" G G "cbc" G G G "ccbba" G "cb" G "c" F "bccc" G C C C C "a" G "bb" F "bcb") ))
 (check-sat)
-(get-model)

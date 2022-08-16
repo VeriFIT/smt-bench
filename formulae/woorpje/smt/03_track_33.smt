@@ -13,4 +13,3 @@
 (declare-fun W () String)
 (assert (= (str.++  J "iaaa" J "aa" J I "aaa" J "ab" L L "b" P S S "b" S W "b")  (str.++  "a" H J "aa" M N M "aaa" M N M "aab" R R R R "b" S T S T "b" X X "baa") ))
 (check-sat)
-(get-model)

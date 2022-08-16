@@ -9,4 +9,3 @@
 (declare-fun P () String)
 (assert (= (str.++  "aa" F I "a" F "aaa" F I "a" F "b" J "aab" L L "b" O)  (str.++  "a" H F "a" L L L L "b" M M M M "b" P P "baa") ))
 (check-sat)
-(get-model)

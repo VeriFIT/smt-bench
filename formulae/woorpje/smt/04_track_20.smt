@@ -120,4 +120,3 @@
 (assert (= (str.++  "c" B "babac")  (str.++  "c" B "babac") ))
 (assert (= (str.++  "dacdcdaa" "")  (str.++  "dac" B "daa") ))
 (check-sat)
-(get-model)

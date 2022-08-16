@@ -16,4 +16,3 @@
 (assert (= (str.++  "efcc" E "adeaccaaba" E "cfe")  (str.++  "efcc" E "a" E "eaccaaba" E "cfe") ))
 (assert (= (str.++  "eee" E "caacdeae" G "fef" G G "f")  (str.++  "eee" E "caacdeae" G "fef" G G "f") ))
 (check-sat)
-(get-model)

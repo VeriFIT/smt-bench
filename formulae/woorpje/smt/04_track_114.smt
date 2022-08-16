@@ -7,4 +7,3 @@
 (assert (= (str.++  "cbcbbacca" I "cacbbbaacabacbbbbcabcaaaaaaabbbcabcbbabaabcabcbc")  (str.++  "cbcbbacca" I "cacbbbaacabacbbbbcabcaaaaaaabbbcabcbbabaabcabcbc") ))
 (assert (= (str.++  "cbb" I "bcacccbaabccbacbbbbbacaccacaacacacbabcacccaacbbaacccaa")  (str.++  "cbbbcbabbcacccbaabccbacbbbbbacaccacaacacacbabcacccaacbbaacccaa" "") ))
 (check-sat)
-(get-model)

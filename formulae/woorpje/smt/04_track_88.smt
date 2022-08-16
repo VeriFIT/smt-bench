@@ -179,4 +179,3 @@
 (assert (= (str.++  "aa" B "cacadcaadcca" B "addadcbd" B "dad" B "accacdaadd" B "d" B "accdcaaadac")  (str.++  "aabcacadcaadcca" B "addadc" B "d" B "dad" B "accacdaadd" B "d" B "accdcaaadac") ))
 (assert (= (str.++  "dbaaccda" B "aadad" B "aa" B "a" B "cacc" B "cccdbaaadcd" B "bc" B "bcaaadcaa" B "ccd")  (str.++  "d" B "aaccda" B "aadad" B "aa" B "a" B "caccbcccd" B "aaadcdb" B "c" B "bcaaadcaa" B "ccd") ))
 (check-sat)
-(get-model)

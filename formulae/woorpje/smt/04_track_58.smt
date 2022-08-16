@@ -98,4 +98,3 @@
 (assert (= (str.++  "cbbadc" "")  (str.++  "cbbad" A) ))
 (assert (= (str.++  "daccb" A)  (str.++  "da" A A "b" A) ))
 (check-sat)
-(get-model)

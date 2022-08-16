@@ -53,4 +53,3 @@
 (assert (= (str.++  "bababaaabbabbaabaaabbbbb" B "abbaaabaaa")  (str.++  "bababaaabbabbaabaaabbbbb" B "abbaaabaaa") ))
 (assert (= (str.++  "abbabababbbabbababbbaabbbbaaaaababbbbbaababba" "")  (str.++  "abbabababbbabbababbbaabbbbaaaa" A "aababba") ))
 (check-sat)
-(get-model)

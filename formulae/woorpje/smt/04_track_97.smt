@@ -63,4 +63,3 @@
 (assert (= (str.++  D "dacbb" "")  (str.++  D "d" D "cbb") ))
 (assert (= (str.++  "dd" D "cd" D)  (str.++  "ddacd" D) ))
 (check-sat)
-(get-model)

@@ -20,4 +20,3 @@
 (assert (= (str.++  "aabbbb" B "b" A B "b" B "b" A "b" B "bb" B)  (str.++  A "abbbb" A "b" B B "b" B "b" A "b" B "bb" B) ))
 (assert (= (str.++  "a" B "b" B B "aa" B B "bb" B B B "bbbb" A)  (str.++  B B "b" B B A A B B "bb" B A B "bbbb" B) ))
 (check-sat)
-(get-model)

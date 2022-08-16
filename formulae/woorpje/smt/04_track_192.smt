@@ -59,4 +59,3 @@
 (assert (= (str.++  C C "aaaa" E E E "aaaaaaa")  (str.++  F "aaa" B C) ))
 (assert (= (str.++  G C "aaaaaaaaa")  (str.++  B B E "aaaaaaaaaaaa" E E E "aaa") ))
 (check-sat)
-(get-model)

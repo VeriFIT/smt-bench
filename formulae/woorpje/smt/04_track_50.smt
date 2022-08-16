@@ -143,4 +143,3 @@
 (assert (= (str.++  "bebbeded" A "adaeebcab")  (str.++  "bebbeded" A "adaeeb" A "ab") ))
 (assert (= (str.++  "daebbcac" A "edcbdbaeb")  (str.++  "daebb" A "a" A A "ed" A "bdbaeb") ))
 (check-sat)
-(get-model)

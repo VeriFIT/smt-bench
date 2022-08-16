@@ -7,4 +7,3 @@
 (declare-fun Q () String)
 (assert (= (str.++  E "a" E "b" L L "b" M)  (str.++  "a" F H M M M M "b" Q Q "baa") ))
 (check-sat)
-(get-model)

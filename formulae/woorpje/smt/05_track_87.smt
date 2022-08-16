@@ -1,4 +1,4 @@
-(set-logic QF_S)
+(set-logic ALL)
 (declare-fun I () String)
 (declare-fun C () String)
 (declare-fun G () String)
@@ -7,4 +7,3 @@
 (assert (= (str.++  "deceabcffafeeb" I "afecabdafcd" I "dcdd" I "ccadbfaa")  (str.++  "deceabcffafeebbafecabdafcd" I "dcdd" I "ccad" I "faa") ))
 (assert (<=(* (str.len C) 5) 220))
 (check-sat)
-(get-model)

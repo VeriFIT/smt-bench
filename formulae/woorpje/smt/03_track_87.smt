@@ -6,4 +6,3 @@
 (declare-fun E () String)
 (assert (= (str.++  "aa" E E "aaa" E E "b" H "ab" K)  (str.++  "aa" G G G "a" H "a" H "b" I I "baa") ))
 (check-sat)
-(get-model)

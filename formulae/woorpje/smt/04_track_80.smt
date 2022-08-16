@@ -39,4 +39,3 @@
 (assert (= (str.++  "bbcbcdacdaaddccbcdcbabddcbacccdcbbcaabcaaaadcbbcadacccabbaddbdbbbdadaabccacbcaacdcbbabbd" D "addbaca")  (str.++  "bbcbcdacdaaddccbcdcbabddcbacccdcbbcaabcaaaadcbbcadacccabbaddbdbbbdadaabccacbcaacdcbbabbd" D "addbaca") ))
 (assert (= (str.++  D "badddbdbccdabaaacaaddcbdadacdcabcaacccacaabcbcaaccacacdbadacbaaaadabbaaaadbcdcbdbaccbcbdaaccdca" "")  (str.++  D "badddbdbccdabaaacaaddcbdadacdcabcaacccacaabcbcaaccacacdbadacbaaaadabbaaaadbcdcbdbaccbcbdaaccdca" "") ))
 (check-sat)
-(get-model)

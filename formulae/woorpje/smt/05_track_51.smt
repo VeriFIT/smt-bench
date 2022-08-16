@@ -1,4 +1,4 @@
-(set-logic QF_S)
+(set-logic ALL)
 (declare-fun F () String)
 (declare-fun E () String)
 (declare-fun A () String)
@@ -8,4 +8,3 @@
 (assert (= (str.++  A "cacddb" E E "cdeda" E A "be" A "cadaeaecfbedddeecbfcb")  (str.++  "cca" A "ddbffcdeda" E A "beccadaeae" A "fbedddee" A "b" E "cb") ))
 (assert (>=(* (str.len A) 7) 7))
 (check-sat)
-(get-model)

@@ -139,4 +139,3 @@
 (assert (= (str.++  "baab" E "a" E E "ab" E "abb" E "ba" E E E "a" E "aaba" E)  (str.++  E "aa" E "bab" E "abbab" E "b" E "ab" E E "abaa" E "a" E) ))
 (assert (= (str.++  "a" E "baba" E E "aaaa" E E E "b" E "bba" E E E "ba" E "a")  (str.++  "a" E E "abab" E "aaaabb" E E E E E "ab" E "b" E "aba") ))
 (check-sat)
-(get-model)

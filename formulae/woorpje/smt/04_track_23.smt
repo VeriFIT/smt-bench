@@ -22,4 +22,3 @@
 (assert (= (str.++  "cdbeddeceeaaaeeabcaaaabaaedaeccbdaaecbaebec" "")  (str.++  "cdbeddeceeaaaee" A "aaabaaedaeccbdaaecbaebec") ))
 (assert (= (str.++  A "edddedcddeecddbdecdebdaebeaaacaaadaeeab" "")  (str.++  A "edddedcddeecddbdecdebdaebeaaacaaadaeeab" "") ))
 (check-sat)
-(get-model)

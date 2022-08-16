@@ -35,4 +35,3 @@
 (assert (= (str.++  G "")  (str.++  E "") ))
 (assert (= (str.++  G "")  (str.++  C "") ))
 (check-sat)
-(get-model)

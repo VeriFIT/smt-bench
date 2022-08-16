@@ -30,4 +30,3 @@
 (assert (= (str.++  "acbadddfdcfeafbdeeedfdffafdaeeeefa" I "eebcfdecabdeaffeabfcfdbdabfdfbabedbdfbefeedfaadbbeeecadbfd")  (str.++  "acbadddfdcfeafbdeeedfdffafdaeeeefaacaeebcfdecabdeaffeabfcfdbdabfdfbabedbdfbefeedfaadbbeeecadbfd" "") ))
 (assert (= (str.++  "debbdfcadececbbcdcdddeecdcdcbeffabcadcddbeb" I "ceacedbebdfefcbafeeaefedbeddadcdafcfbdfbbccccbceb")  (str.++  "debbdfcadececbbcdcdddeecdcdcbeffabcadcddbebacaceacedbebdfefcbafeeaefedbeddadcdafcfbdfbbccccbceb" "") ))
 (check-sat)
-(get-model)

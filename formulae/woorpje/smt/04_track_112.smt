@@ -39,4 +39,3 @@
 (assert (= (str.++  "aa" C C C "aa" C "aa" C C "a" C "aa" C "a")  (str.++  H C "aa") ))
 (assert (= (str.++  "aa" C "a" C "a" C C C C "aa" C "a" C C "aa")  (str.++  H "aa" C) ))
 (check-sat)
-(get-model)

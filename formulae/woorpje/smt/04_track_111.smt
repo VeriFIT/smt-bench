@@ -42,4 +42,3 @@
 (assert (= (str.++  "aaabaabbaabb" H "b" H "bb" H "babbabab" H "bbabb" H "bbbbbaabbbaabbb" H "baa" H "b" H "bba" H "bb" H "bab" H H "aaa" H "b" H "bbb")  (str.++  "aaabaabba" H "babbabbb" H "b" H "b" H "ababbb" H "b" H "bbbbba" H "bbaabbb" H "baa" H "babbba" H "bbabb" H H "abaaaabb" H "bbb") ))
 (assert (= (str.++  H "bba" H "aababb" H "b" H "aabb" H "baaaaab" H "aaaaaa" H "baaaab" H "aaaaaabbbbbabbbbaaaa" H "a" H "aaa" H H "aaa" H "baab")  (str.++  H "bbaaba" H "abbabbabaabbabbaaaa" H H "aaaaaa" H "baaaababaaaaaabbbbbabbbbaaaaaba" H "aaaab" H "aaa" H "ba" H) ))
 (check-sat)
-(get-model)

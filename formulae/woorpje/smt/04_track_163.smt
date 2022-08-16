@@ -101,4 +101,3 @@
 (assert (= (str.++  "daeb" F F "cdaddddb" F "bdebdedeb" F "cbee" F F "ccad" F "aaccc" F "e" F "ed" F "eec" F "dacaca" F "c" F "bebcdcaccbb" F "cee")  (str.++  "daebb" F "cdaddddb" F "bde" F "dede" F "bcbeebbccad" F "aacccbe" F "ed" F "eecbdacacabc" F "be" F "cdcacc" F F F "cee") ))
 (assert (= (str.++  "adaaceaaad" F "a" F "decb" F "abdeeda" F "eceedaacadbacecacec" F "acd" F F "acdcdddbaececce" F "cccecdad")  (str.++  "adaaceaaadba" F "decb" F "abdeedabeceedaacad" F "acecacecbacd" F F "acdcdddbaececce" F "cccecdad") ))
 (check-sat)
-(get-model)

@@ -54,4 +54,3 @@
 (assert (= (str.++  "aabaac" G "dbdcaaaacddcdd" I "ddcbad" G "daca" G "a" G "ac" I "bccddccdadbb" G "ddaadcccaaac" G "abb" G "cc" G "dbacb" G G "caddcbb")  (str.++  "aa" G "aacbd" G "dcaaaacddcddccdddc" G "adbdacababac" I "b" I "d" I "ad" G "b" G "ddaadcccaaac" G "abbbcc" G "d" G "acbb" G "caddcb" G) ))
 (assert (= (str.++  "c" I "cdaddbabaacad" G G "cdcadaa" G G "bccabcabdad" I "b" G I "cdddacbccddbcacb" G "cbcadcac" G G "acadcadacdaaddcd")  (str.++  "c" I "cdadd" G "abaacadbbcdcadaa" G "bbcca" G "ca" G "dad" I "b" G "ccdcdddacb" I "dbcacbbcbcadcac" G G "acadcadacdaaddcd") ))
 (check-sat)
-(get-model)

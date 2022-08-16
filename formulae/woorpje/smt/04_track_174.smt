@@ -130,4 +130,3 @@
 (assert (= (str.++  C E C E "aaaaaaaa" E E C "a")  (str.++  I I E C "a") ))
 (assert (= (str.++  E E E E E H "aaaaa")  (str.++  I I C E "a") ))
 (check-sat)
-(get-model)

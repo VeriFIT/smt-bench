@@ -8,4 +8,3 @@
 (declare-fun M () String)
 (assert (= (str.++  H "a" F H "a" H "a" F H "b" I K "b" K)  (str.++  "a" G E H K H K "b" M M "baa") ))
 (check-sat)
-(get-model)

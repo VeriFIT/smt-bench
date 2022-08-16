@@ -70,4 +70,3 @@
 (assert (= (str.++  "aebebcdabcdaccccbedebebaecbbbabebbaadccdbabdadabbeeabacabab" H "ebabececb")  (str.++  "aebebcdabcdaccccbedebebaecbbbabebbaadccdbabdadabbeeabacabab" H "ebabececb") ))
 (assert (= (str.++  "cadebcaacaecdcacdbbabbcebadbeeebadadeaaeccaecbccbaeddbeecdcdcaa" H "dcdee")  (str.++  "cadebcaacaecdcacdbbabbcebadbeeebadadeaaeccaecbccbaeddbeecdcdcaa" H "dcdee") ))
 (check-sat)
-(get-model)

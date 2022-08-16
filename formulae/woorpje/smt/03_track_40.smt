@@ -10,4 +10,3 @@
 (declare-fun Q () String)
 (assert (= (str.++  G G "aaaaa" G G "aaaab" L "a" L "a" L M M "ab" P P "b" R R "ba")  (str.++  "aaaaa" J H J L M M J L M M "b" M "a" M "ab" R Q R Q "b" T T "baa") ))
 (check-sat)
-(get-model)

@@ -151,4 +151,3 @@
 (assert (= (str.++  E F D "aaaaaaaa")  (str.++  A A D D F "a") ))
 (assert (= (str.++  E F "aaaaaaaa" D)  (str.++  D "aaaaaaaa" D "aa" A A "aaa") ))
 (check-sat)
-(get-model)
