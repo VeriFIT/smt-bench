@@ -10,7 +10,12 @@ INPUT=$1
 shift
 PARAMS="$*"
 
-out=$(cvc4 --lang smt2 --strings-exp ${INPUT} $PARAMS)
+ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
+SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
+
+CVC_PROG="${SCRIPT_DIR}/cvc5/build/bin/cvc5"
+
+out=$(${CVC_PROG} --lang smt2 --strings-exp ${INPUT} $PARAMS)
 ret=$?
 echo "result: ${out}"
 
