@@ -1,0 +1,810 @@
+name;cvc4-runtime;cvc4-result;cvc5-runtime;cvc5-result;retro-runtime;retro-result;noodler-1c71b61d-min-runtime;noodler-1c71b61d-min-version;noodler-1c71b61d-min-result;noodler-1c71b61d-min-time;z3-runtime;z3-result;z3strRE-runtime;z3strRE-result;sloth-runtime;sloth-result;ostrich-runtime;ostrich-result;woorpje-runtime;woorpje-result;noodler-c69385be-min-runtime;noodler-c69385be-min-version;noodler-c69385be-min-result;noodler-c69385be-min-time
+../formulae/woorpje/smt/01_track_1.smt;0.01; sat;0.0; sat;0.19; sat;1.53; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;1.8; sat;1.83; sat;0.0; sat;1.57; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_10.smt;0.02; sat;0.04; sat;0.2; sat;1.6; 1c71b61d; sat; 0.06;0.01; sat;0.02; sat;22.83; sat;7.12; sat;0.01; sat;1.58; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_100.smt;TO;TO;TO;TO;0.22; sat;TO;TO;TO;TO;0.47; sat;0.83; sat;50.41; sat;17.49; sat;0.1; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_101.smt;0.03; sat;0.04; sat;0.42; sat;1.62; 1c71b61d; sat; 0.12;0.03; sat;0.04; sat;TO;TO;8.74; sat;0.02; sat;1.7; c69385be; sat; 0.12
+../formulae/woorpje/smt/01_track_102.smt;0.02; sat;0.01; sat;0.21; sat;3.03; 1c71b61d; sat; 1.55;0.01; sat;0.01; sat;9.31; sat;2.21; sat;0.01; sat;3.06; c69385be; sat; 1.59
+../formulae/woorpje/smt/01_track_103.smt;0.01; sat;0.01; sat;0.23; sat;1.54; 1c71b61d; sat; 0.06;0.03; sat;0.01; sat;21.71; sat;5.08; sat;0.02; sat;1.62; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_104.smt;0.02; sat;0.02; sat;0.21; sat;1.59; 1c71b61d; sat; 0.06;0.01; sat;0.08; sat;18.49; sat;7.27; sat;0.01; sat;1.56; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_105.smt;0.02; sat;0.0; sat;0.18; sat;17.65; 1c71b61d; sat; 16.36;0.01; sat;0.01; sat;TO;TO;5.71; sat;0.01; sat;18.11; c69385be; sat; 16.72
+../formulae/woorpje/smt/01_track_106.smt;0.03; sat;0.03; sat;0.2; sat;1.53; 1c71b61d; sat; 0.06;0.01; sat;0.01; sat;TO;TO;3.35; sat;0.02; sat;12.49; c69385be; sat; 10.99
+../formulae/woorpje/smt/01_track_107.smt;0.01; sat;0.01; sat;0.23; sat;1.52; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;36.97; sat;7.15; sat;0.01; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_108.smt;0.01; sat;0.01; sat;8.93; sat;1.57; 1c71b61d; sat; 0.05;0.0; sat;0.01; sat;TO;TO;2.11; sat;0.0; sat;1.55; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_109.smt;0.04; sat;0.14; sat;0.19; sat;TO;TO;TO;TO;34.25; sat;2.11; sat;TO;TO;11.05; sat;0.83; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_11.smt;0.01; sat;0.02; sat;0.34; sat;1.55; 1c71b61d; sat; 0.04;0.08; sat;0.63; sat;6.48; sat;3.21; sat;0.03; sat;1.55; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_110.smt;0.03; sat;0.03; sat;0.18; sat;1.54; 1c71b61d; sat; 0.06;0.05; sat;0.03; sat;TO;TO;7.14; sat;0.06; sat;1.62; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_111.smt;TO;TO;TO;TO;0.21; unsat;TO;TO;TO;TO;TO;TO;43.43; sat;TO;TO;21.7; sat;0.78; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_112.smt;0.01; sat;0.0; sat;0.2; sat;1.55; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;2.09; sat;2.76; sat;0.0; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_113.smt;0.03; sat;0.03; sat;0.25; sat;1.6; 1c71b61d; sat; 0.08;0.03; sat;0.66; sat;TO;TO;9.7; sat;0.03; sat;1.63; c69385be; sat; 0.08
+../formulae/woorpje/smt/01_track_114.smt;0.01; sat;0.01; sat;0.17; sat;1.5; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;3.67; sat;4.51; sat;0.01; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_115.smt;0.02; sat;0.02; sat;0.19; sat;1.54; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;2.43; sat;4.18; sat;0.0; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_116.smt;0.02; sat;0.01; sat;0.3; sat;1.55; 1c71b61d; sat; 0.05;0.13; sat;0.11; sat;22.07; sat;4.82; sat;0.02; sat;1.58; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_117.smt;0.02; sat;0.03; sat;0.25; sat;1.53; 1c71b61d; sat; 0.09;0.04; sat;0.04; sat;TO;TO;17.94; sat;0.03; sat;1.6; c69385be; sat; 0.09
+../formulae/woorpje/smt/01_track_118.smt;0.01; sat;0.01; sat;0.22; sat;1.55; 1c71b61d; sat; 0.07;0.01; sat;0.01; sat;TO;TO;10.84; sat;0.02; sat;1.55; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_119.smt;0.01; sat;0.0; sat;0.2; sat;1.56; 1c71b61d; sat; 0.04;0.01; sat;0.0; sat;2.07; sat;3.2; sat;0.0; sat;1.56; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_12.smt;0.02; sat;0.01; sat;0.2; sat;1.59; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;20.78; sat;0.01; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_120.smt;0.03; sat;0.03; sat;0.19; sat;1.64; 1c71b61d; sat; 0.1;0.03; sat;15.81; sat;TO;TO;8.01; sat;0.3; sat;1.65; c69385be; sat; 0.1
+../formulae/woorpje/smt/01_track_121.smt;0.01; sat;0.01; sat;1.25; sat;1.56; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;25.46; sat;2.08; sat;0.01; sat;1.62; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_122.smt;0.02; sat;0.04; sat;0.19; sat;1.62; 1c71b61d; sat; 0.08;0.02; sat;0.01; sat;3.52; sat;5.62; sat;0.03; sat;7.23; c69385be; sat; 5.78
+../formulae/woorpje/smt/01_track_123.smt;0.06; sat;0.05; sat;0.19; unsat;TO;TO;TO;TO;0.02; sat;0.35; sat;TO;TO;5.58; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_124.smt;0.01; sat;0.01; sat;0.44; sat;1.62; 1c71b61d; sat; 0.11;0.01; sat;0.01; sat;TO;TO;19.36; sat;0.03; sat;1.61; c69385be; sat; 0.11
+../formulae/woorpje/smt/01_track_125.smt;0.02; sat;0.02; sat;8.22; sat;1.6; 1c71b61d; sat; 0.09;0.03; sat;4.22; sat;TO;TO;3.94; sat;0.07; sat;1.67; c69385be; sat; 0.09
+../formulae/woorpje/smt/01_track_126.smt;0.02; sat;0.02; sat;0.36; sat;1.54; 1c71b61d; sat; 0.05;0.03; sat;0.02; sat;18.56; sat;5.67; sat;0.01; sat;1.64; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_127.smt;0.02; sat;0.01; sat;0.19; sat;1.53; 1c71b61d; sat; 0.05;0.0; sat;0.01; sat;TO;TO;11.83; sat;0.01; sat;1.58; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_128.smt;0.01; sat;0.0; sat;0.19; sat;1.55; 1c71b61d; sat; 0.03;0.01; sat;0.01; sat;1.71; sat;1.8; sat;0.01; sat;1.51; c69385be; sat; 0.03
+../formulae/woorpje/smt/01_track_129.smt;0.01; sat;0.0; sat;0.18; sat;1.54; 1c71b61d; sat; 0.03;0.0; sat;0.01; sat;1.72; sat;1.78; sat;0.0; sat;1.51; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_13.smt;0.01; sat;0.0; sat;0.2; sat;1.59; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;3.19; sat;4.15; sat;0.01; sat;1.53; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_130.smt;0.01; sat;0.01; sat;0.25; sat;1.58; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;3.37; sat;2.08; sat;0.0; sat;1.58; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_131.smt;0.02; sat;0.02; sat;2.49; sat;1.61; 1c71b61d; sat; 0.1;1.53; sat;0.1; sat;TO;TO;7.54; sat;0.31; sat;1.65; c69385be; sat; 0.1
+../formulae/woorpje/smt/01_track_132.smt;0.02; sat;0.02; sat;0.78; sat;1.54; 1c71b61d; sat; 0.05;0.01; sat;0.32; sat;18.59; sat;3.07; sat;0.05; sat;1.54; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_133.smt;0.03; sat;0.03; sat;0.2; sat;1.61; 1c71b61d; sat; 0.1;0.05; sat;0.02; sat;TO;TO;5.74; sat;0.46; sat;1.66; c69385be; sat; 0.1
+../formulae/woorpje/smt/01_track_134.smt;0.02; sat;0.01; sat;0.21; sat;1.66; 1c71b61d; sat; 0.2;0.01; sat;0.01; sat;3.61; sat;4.23; sat;0.03; sat;1.71; c69385be; sat; 0.18
+../formulae/woorpje/smt/01_track_135.smt;TO;TO;TO;TO;0.32; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;10.88; sat;0.1; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_136.smt;0.02; sat;0.01; sat;0.18; sat;1.52; 1c71b61d; sat; 0.04;0.02; sat;0.01; sat;TO;TO;6.28; sat;0.0; sat;1.57; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_137.smt;0.02; sat;0.02; sat;0.16; sat;1.59; 1c71b61d; sat; 0.08;0.02; sat;0.02; sat;TO;TO;6.51; sat;0.02; sat;1.6; c69385be; sat; 0.08
+../formulae/woorpje/smt/01_track_138.smt;0.02; sat;0.02; sat;0.25; sat;1.6; 1c71b61d; sat; 0.04;0.05; sat;0.07; sat;4.2; sat;4.65; sat;0.01; sat;1.62; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_139.smt;0.02; sat;0.02; sat;0.22; sat;1.59; 1c71b61d; sat; 0.07;0.11; sat;2.42; sat;TO;TO;7.23; sat;0.05; sat;1.53; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_14.smt;0.01; sat;0.01; sat;0.21; sat;TO;TO;TO;TO;0.01; sat;0.02; sat;1.9; sat;2.18; sat;0.0; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_140.smt;0.03; sat;0.11; sat;0.2; sat;TO;TO;TO;TO;0.02; sat;0.03; sat;14.5; sat;3.07; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_141.smt;0.05; sat;0.05; sat;0.2; sat;14.21; 1c71b61d; sat; 12.96;0.03; sat;3.29; sat;14.81; sat;2.76; sat;0.01; sat;13.02; c69385be; sat; 11.65
+../formulae/woorpje/smt/01_track_142.smt;0.02; sat;0.0; sat;0.52; sat;5.49; 1c71b61d; sat; 4.18;0.01; sat;0.01; sat;TO;TO;5.37; sat;0.01; sat;5.41; c69385be; sat; 4.16
+../formulae/woorpje/smt/01_track_143.smt;0.03; sat;0.02; sat;1.01; sat;1.53; 1c71b61d; sat; 0.06;0.02; sat;0.11; sat;22.02; sat;9.81; sat;0.05; sat;1.55; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_144.smt;0.02; sat;0.01; sat;0.17; sat;1.58; 1c71b61d; sat; 0.05;0.0; sat;0.01; sat;6.41; sat;6.74; sat;0.01; sat;1.59; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_145.smt;0.02; sat;0.04; sat;0.2; sat;1.62; 1c71b61d; sat; 0.14;0.02; sat;0.03; sat;2.1; sat;2.62; sat;0.01; sat;1.64; c69385be; sat; 0.14
+../formulae/woorpje/smt/01_track_146.smt;0.02; sat;0.01; sat;0.23; sat;1.48; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;2.74; sat;2.04; sat;0.01; sat;1.64; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_147.smt;0.02; sat;0.02; sat;0.35; sat;1.55; 1c71b61d; sat; 0.04;0.1; sat;0.07; sat;3.39; sat;3.64; sat;0.02; sat;1.6; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_148.smt;0.03; sat;0.03; sat;0.21; sat;6.21; 1c71b61d; sat; 4.7;0.49; sat;0.71; sat;33.17; sat;4.99; sat;0.02; sat;6.18; c69385be; sat; 4.7
+../formulae/woorpje/smt/01_track_149.smt;0.02; sat;0.02; sat;0.2; sat;1.51; 1c71b61d; sat; 0.04;0.02; sat;0.02; sat;2.23; sat;3.51; sat;0.01; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_15.smt;0.02; sat;0.02; sat;0.18; sat;1.61; 1c71b61d; sat; 0.05;0.01; sat;0.03; sat;TO;TO;8.16; sat;0.0; sat;1.56; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_150.smt;0.02; sat;0.03; sat;0.23; sat;1.62; 1c71b61d; sat; 0.06;0.04; sat;0.01; sat;21.84; sat;2.83; sat;0.01; sat;1.62; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_151.smt;0.02; sat;0.02; sat;0.28; sat;1.59; 1c71b61d; sat; 0.08;0.05; sat;0.47; sat;TO;TO;16.48; sat;0.02; sat;1.56; c69385be; sat; 0.08
+../formulae/woorpje/smt/01_track_152.smt;0.01; sat;0.01; sat;5.43; sat;1.52; 1c71b61d; sat; 0.05;0.0; sat;0.01; sat;TO;TO;2.17; sat;0.03; sat;1.61; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_153.smt;0.03; sat;0.01; sat;0.22; sat;1.5; 1c71b61d; sat; 0.06;0.04; sat;0.1; sat;TO;TO;10.26; sat;0.0; sat;1.6; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_154.smt;0.01; sat;0.01; sat;0.2; sat;1.55; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;1.86; sat;2.48; sat;0.0; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_155.smt;0.01; sat;0.01; sat;0.17; sat;1.56; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;3.0; sat;3.35; sat;0.0; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_156.smt;0.03; sat;0.02; sat;0.76; sat;1.63; 1c71b61d; sat; 0.08;0.01; sat;11.6; sat;TO;TO;6.23; sat;0.07; sat;1.62; c69385be; sat; 0.08
+../formulae/woorpje/smt/01_track_157.smt;0.01; sat;0.01; sat;0.22; sat;1.55; 1c71b61d; sat; 0.06;0.02; sat;0.01; sat;25.63; sat;3.82; sat;0.02; sat;1.55; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_158.smt;0.02; sat;0.03; sat;0.94; unsat;TO;TO;TO;TO;0.01; sat;0.02; sat;TO;TO;3.11; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_159.smt;0.02; sat;0.07; sat;0.24; unsat;TO;TO;TO;TO;0.02; sat;0.06; sat;TO;TO;11.49; sat;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_16.smt;0.02; sat;0.06; sat;0.23; unsat;TO;TO;TO;TO;0.03; sat;0.14; sat;TO;TO;7.71; sat;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_160.smt;0.01; sat;0.01; sat;0.44; sat;1.51; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;4.49; sat;2.13; sat;0.01; sat;1.53; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_161.smt;0.02; sat;0.02; sat;0.23; sat;1.52; 1c71b61d; sat; 0.09;0.05; sat;0.03; sat;TO;TO;6.9; sat;0.03; sat;1.66; c69385be; sat; 0.09
+../formulae/woorpje/smt/01_track_162.smt;0.02; sat;0.05; sat;0.28; unsat;TO;TO;TO;TO;0.02; sat;0.13; sat;TO;TO;6.95; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_163.smt;0.01; sat;0.03; sat;0.17; unsat;2.26; 1c71b61d; sat; 0.75;0.01; sat;0.01; sat;3.07; sat;3.41; sat;0.01; sat;2.2; c69385be; sat; 0.77
+../formulae/woorpje/smt/01_track_164.smt;0.02; sat;0.01; sat;0.19; sat;1.52; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;4.26; sat;4.88; sat;0.0; sat;1.55; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_165.smt;0.02; sat;0.01; sat;0.97; sat;1.54; 1c71b61d; sat; 0.06;0.02; sat;0.47; sat;TO;TO;5.69; sat;0.04; sat;1.63; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_166.smt;0.02; sat;0.02; sat;0.2; sat;1.58; 1c71b61d; sat; 0.09;0.02; sat;0.02; sat;TO;TO;4.25; sat;0.06; sat;1.61; c69385be; sat; 0.09
+../formulae/woorpje/smt/01_track_167.smt;0.03; sat;0.03; sat;0.41; sat;1.52; 1c71b61d; sat; 0.04;0.01; sat;0.04; sat;4.61; sat;2.92; sat;0.01; sat;1.57; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_168.smt;0.02; sat;0.01; sat;0.21; sat;6.15; 1c71b61d; sat; 4.71;0.01; sat;0.01; sat;33.33; sat;4.63; sat;0.01; sat;6.23; c69385be; sat; 4.73
+../formulae/woorpje/smt/01_track_169.smt;0.03; sat;0.02; sat;0.23; sat;1.53; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;3.27; sat;4.48; sat;0.0; sat;1.52; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_17.smt;TO;TO;TO;TO;0.22; sat;TO;TO;TO;TO;0.07; sat;1.09; sat;TO;TO;13.23; sat;0.06; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_170.smt;0.02; sat;0.01; sat;6.23; sat;1.51; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;2.18; sat;0.01; sat;1.53; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_171.smt;0.01; sat;0.01; sat;0.2; sat;1.56; 1c71b61d; sat; 0.07;0.01; sat;0.01; sat;TO;TO;9.6; sat;0.02; sat;1.61; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_172.smt;0.02; sat;0.02; sat;0.19; sat;1.78; 1c71b61d; sat; 0.28;0.02; sat;0.06; sat;3.86; sat;3.75; sat;0.01; sat;1.8; c69385be; sat; 0.29
+../formulae/woorpje/smt/01_track_173.smt;0.02; sat;0.02; sat;1.8; sat;1.62; 1c71b61d; sat; 0.08;0.01; sat;1.1; sat;TO;TO;5.62; sat;0.05; sat;1.58; c69385be; sat; 0.08
+../formulae/woorpje/smt/01_track_174.smt;0.08; sat;TO;TO;0.67; unsat;TO;TO;TO;TO;5.71; sat;5.5; sat;TO;TO;7.93; sat;0.16; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_175.smt;0.01; sat;0.01; sat;4.88; sat;1.55; 1c71b61d; sat; 0.06;0.01; sat;0.0; sat;TO;TO;2.13; sat;0.05; sat;1.59; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_176.smt;0.01; sat;0.0; sat;0.18; sat;1.53; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;1.77; sat;2.35; sat;0.0; sat;1.56; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_177.smt;0.02; sat;0.03; sat;0.24; sat;1.59; 1c71b61d; sat; 0.07;0.1; sat;0.51; sat;35.86; sat;5.22; sat;0.05; sat;1.59; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_178.smt;0.02; sat;0.05; sat;0.21; sat;1.59; 1c71b61d; sat; 0.08;0.47; sat;9.55; sat;8.9; sat;15.09; sat;0.39; sat;8.46; c69385be; sat; 7.09
+../formulae/woorpje/smt/01_track_179.smt;0.02; sat;0.01; sat;0.18; sat;1.59; 1c71b61d; sat; 0.04;0.01; sat;0.02; sat;8.02; sat;3.89; sat;0.0; sat;1.54; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_18.smt;0.02; sat;0.02; sat;0.2; sat;1.56; 1c71b61d; sat; 0.07;0.01; sat;0.01; sat;3.14; sat;4.69; sat;0.02; sat;1.58; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_180.smt;0.02; sat;0.01; sat;3.85; sat;1.53; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;TO;TO;2.15; sat;0.02; sat;1.56; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_181.smt;0.02; sat;0.01; sat;0.23; sat;1.48; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;16.18; sat;7.11; sat;0.0; sat;1.6; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_182.smt;0.03; sat;0.03; sat;0.22; sat;1.57; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;2.61; sat;3.9; sat;0.01; sat;1.55; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_183.smt;0.02; sat;0.01; sat;0.22; sat;1.63; 1c71b61d; sat; 0.07;0.01; sat;0.01; sat;23.05; sat;8.96; sat;0.01; sat;1.58; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_184.smt;0.02; sat;0.02; sat;0.28; sat;1.62; 1c71b61d; sat; 0.06;0.01; sat;0.13; sat;TO;TO;10.59; sat;0.03; sat;1.59; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_185.smt;0.02; sat;0.01; sat;0.46; sat;1.52; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;9.32; sat;2.1; sat;0.01; sat;1.54; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_186.smt;0.02; sat;0.02; sat;0.2; sat;1.62; 1c71b61d; sat; 0.05;0.03; sat;0.02; sat;12.88; sat;7.6; sat;0.01; sat;1.57; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_187.smt;0.04; sat;0.03; sat;0.18; sat;TO;TO;TO;TO;0.01; sat;0.07; sat;5.45; sat;4.4; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_188.smt;0.03; sat;0.06; sat;0.26; sat;TO;TO;TO;TO;0.02; sat;0.04; sat;5.41; sat;6.47; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_189.smt;0.08; sat;0.08; sat;0.2; unsat;TO;TO;TO;TO;0.02; sat;0.01; sat;52.59; sat;4.63; sat;0.0; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_19.smt;0.01; sat;0.01; sat;0.2; sat;1.53; 1c71b61d; sat; 0.04;0.02; sat;0.01; sat;8.81; sat;4.93; sat;0.01; sat;1.52; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_190.smt;0.01; sat;0.01; sat;0.21; sat;1.6; 1c71b61d; sat; 0.05;0.0; sat;0.01; sat;2.22; sat;3.67; sat;0.01; sat;1.54; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_191.smt;0.03; sat;0.03; sat;0.31; unsat;1.83; 1c71b61d; sat; 0.33;0.01; sat;0.05; sat;TO;TO;8.62; sat;0.03; sat;1.84; c69385be; sat; 0.33
+../formulae/woorpje/smt/01_track_192.smt;0.01; sat;0.01; sat;0.23; sat;2.04; 1c71b61d; sat; 0.52;0.01; sat;0.01; sat;2.99; sat;2.7; sat;0.0; sat;2.03; c69385be; sat; 0.51
+../formulae/woorpje/smt/01_track_193.smt;0.01; sat;0.01; sat;0.19; sat;1.55; 1c71b61d; sat; 0.03;0.02; sat;0.0; sat;1.79; sat;1.78; sat;0.01; sat;1.54; c69385be; sat; 0.03
+../formulae/woorpje/smt/01_track_194.smt;0.03; sat;0.15; sat;0.23; sat;TO;TO;TO;TO;0.1; sat;0.09; sat;21.85; sat;3.44; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_195.smt;0.02; sat;0.01; sat;0.19; sat;1.55; 1c71b61d; sat; 0.04;0.01; sat;0.04; sat;2.74; sat;3.15; sat;0.01; sat;1.61; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_196.smt;0.02; sat;0.01; sat;0.27; sat;1.5; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;10.34; sat;6.05; sat;0.01; sat;1.6; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_197.smt;0.02; sat;0.01; sat;0.24; sat;1.56; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;16.76; sat;8.91; sat;0.01; sat;1.59; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_198.smt;0.03; sat;0.04; sat;0.2; sat;TO;TO;TO;TO;0.03; sat;0.07; sat;TO;TO;5.69; sat;0.0; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_199.smt;0.02; sat;0.07; sat;0.21; sat;2.96; 1c71b61d; sat; 1.54;0.02; sat;0.34; sat;9.74; sat;4.02; sat;0.01; sat;12.93; c69385be; sat; 11.45
+../formulae/woorpje/smt/01_track_2.smt;0.02; sat;0.02; sat;0.36; sat;3.22; 1c71b61d; sat; 1.78;0.02; sat;0.01; sat;TO;TO;2.65; sat;0.01; sat;3.26; c69385be; sat; 1.79
+../formulae/woorpje/smt/01_track_20.smt;0.02; sat;0.02; sat;0.19; unsat;1.7; 1c71b61d; sat; 0.18;0.02; sat;0.01; sat;28.56; sat;4.7; sat;0.01; sat;1.72; c69385be; sat; 0.19
+../formulae/woorpje/smt/01_track_200.smt;0.01; sat;0.01; sat;0.21; sat;1.59; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;1.8; sat;2.27; sat;0.01; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_21.smt;0.02; sat;0.01; sat;0.18; sat;1.53; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;9.66; sat;5.98; sat;0.01; sat;1.54; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_22.smt;0.02; sat;0.03; sat;0.2; sat;1.55; 1c71b61d; sat; 0.04;0.02; sat;0.03; sat;4.1; sat;3.99; sat;0.01; sat;1.55; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_23.smt;0.03; sat;0.02; sat;0.18; sat;42.85; 1c71b61d; sat; 42.0;0.01; sat;0.01; sat;TO;TO;9.23; sat;0.01; sat;42.79; c69385be; sat; 41.84
+../formulae/woorpje/smt/01_track_24.smt;0.02; sat;0.01; sat;0.46; sat;1.62; 1c71b61d; sat; 0.06;0.01; sat;1.02; sat;TO;TO;4.14; sat;0.03; sat;1.56; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_25.smt;0.03; sat;0.06; sat;0.24; unsat;TO;TO;TO;TO;0.01; sat;0.34; sat;TO;TO;4.41; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_26.smt;0.03; sat;0.04; sat;0.19; sat;2.39; 1c71b61d; sat; 0.99;0.04; sat;0.01; sat;2.77; sat;3.75; sat;0.01; sat;2.14; c69385be; sat; 0.61
+../formulae/woorpje/smt/01_track_27.smt;0.02; sat;0.01; sat;0.19; sat;1.53; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;2.34; sat;3.06; sat;0.01; sat;1.56; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_28.smt;0.02; sat;0.04; sat;0.22; sat;1.58; 1c71b61d; sat; 0.08;0.01; sat;0.0; sat;5.56; sat;5.18; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_29.smt;0.02; sat;0.01; sat;0.79; sat;1.55; 1c71b61d; sat; 0.07;0.01; sat;0.71; sat;TO;TO;7.74; sat;0.03; sat;1.61; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_3.smt;0.03; sat;0.02; sat;12.56; sat;TO;TO;TO;TO;0.02; sat;0.48; sat;TO;TO;4.86; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_30.smt;0.02; sat;0.02; sat;0.17; unsat;1.58; 1c71b61d; sat; 0.09;0.02; sat;0.01; sat;2.58; sat;3.28; sat;0.0; sat;1.65; c69385be; sat; 0.09
+../formulae/woorpje/smt/01_track_31.smt;0.01; sat;0.01; sat;0.17; sat;1.52; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;3.03; sat;3.04; sat;0.01; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_32.smt;0.02; sat;0.02; sat;0.2; sat;1.53; 1c71b61d; sat; 0.05;0.02; sat;0.07; sat;16.78; sat;4.38; sat;0.01; sat;1.59; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_33.smt;0.03; sat;0.03; sat;0.19; sat;1.54; 1c71b61d; sat; 0.06;0.02; sat;2.76; sat;TO;TO;9.88; sat;0.15; sat;1.57; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_34.smt;0.02; sat;0.02; sat;0.23; sat;1.52; 1c71b61d; sat; 0.05;0.04; sat;0.03; sat;10.88; sat;4.56; sat;0.01; sat;1.6; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_35.smt;0.03; sat;0.07; sat;0.2; sat;1.55; 1c71b61d; sat; 0.04;0.01; sat;0.03; sat;3.04; sat;3.86; sat;0.02; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_36.smt;0.02; sat;0.04; sat;0.19; sat;TO;TO;TO;TO;0.15; sat;0.19; sat;TO;TO;TO;TO;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_37.smt;0.01; sat;0.01; sat;0.58; sat;1.57; 1c71b61d; sat; 0.07;0.01; sat;0.01; sat;TO;TO;9.48; sat;0.04; sat;1.58; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_38.smt;0.02; sat;0.02; sat;0.21; sat;1.56; 1c71b61d; sat; 0.06;0.04; sat;4.04; sat;TO;TO;4.83; sat;0.17; sat;1.54; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_39.smt;0.02; sat;0.02; sat;0.22; sat;1.61; 1c71b61d; sat; 0.05;0.01; sat;0.25; sat;31.92; sat;10.49; sat;0.01; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_4.smt;0.02; sat;0.01; sat;0.2; sat;1.55; 1c71b61d; sat; 0.04;0.01; sat;0.02; sat;2.88; sat;2.87; sat;0.0; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_40.smt;0.02; sat;0.02; sat;0.2; sat;1.6; 1c71b61d; sat; 0.06;0.05; sat;0.03; sat;TO;TO;7.09; sat;0.0; sat;1.54; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_41.smt;0.01; sat;0.01; sat;0.35; sat;17.42; 1c71b61d; sat; 16.11;0.01; sat;0.02; sat;TO;TO;9.89; sat;0.0; sat;17.26; c69385be; sat; 15.92
+../formulae/woorpje/smt/01_track_42.smt;TO;TO;TO;TO;0.18; sat;TO;TO;TO;TO;0.01; sat;0.4; sat;TO;TO;7.81; sat;0.13; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_43.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;0.05; sat;16.06; sat;TO;TO;16.52; sat;0.08; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_44.smt;0.01; sat;0.0; sat;0.18; sat;1.53; 1c71b61d; sat; 0.03;0.01; sat;0.01; sat;1.76; sat;1.74; sat;0.01; sat;1.56; c69385be; sat; 0.03
+../formulae/woorpje/smt/01_track_45.smt;0.01; sat;0.01; sat;0.9; sat;1.62; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;6.72; sat;0.01; sat;1.52; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_46.smt;0.02; sat;0.06; sat;0.21; sat;TO;TO;TO;TO;0.01; sat;0.09; sat;9.71; sat;4.21; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_47.smt;0.02; sat;0.03; sat;0.2; sat;1.54; 1c71b61d; sat; 0.06;0.02; sat;0.02; sat;3.53; sat;4.86; sat;0.01; sat;14.9; c69385be; sat; 13.66
+../formulae/woorpje/smt/01_track_48.smt;0.01; sat;0.01; sat;0.18; sat;1.55; 1c71b61d; sat; 0.04;0.02; sat;0.01; sat;2.14; sat;3.1; sat;0.01; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_49.smt;0.01; sat;0.0; sat;0.51; sat;1.55; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;6.42; sat;2.09; sat;0.0; sat;1.51; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_5.smt;0.01; sat;0.01; sat;0.27; sat;1.51; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;11.38; sat;4.34; sat;0.01; sat;1.54; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_50.smt;TO;TO;TO;TO;0.29; unsat;TO;TO;TO;TO;4.49; sat;7.79; sat;TO;TO;TO;TO;0.13; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_51.smt;0.01; sat;0.01; sat;0.9; sat;1.57; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;7.39; sat;0.02; sat;1.5; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_52.smt;0.01; sat;0.01; sat;2.79; sat;1.54; 1c71b61d; sat; 0.05;0.02; sat;0.01; sat;TO;TO;2.06; sat;0.01; sat;1.55; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_53.smt;0.06; sat;0.13; sat;0.2; unsat;TO;TO;TO;TO;0.03; sat;0.02; sat;TO;TO;6.66; sat;0.17; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_54.smt;0.03; sat;0.02; sat;0.18; sat;1.55; 1c71b61d; sat; 0.05;0.02; sat;0.01; sat;TO;TO;4.1; sat;0.02; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_55.smt;0.02; sat;0.05; sat;0.28; sat;TO;TO;TO;TO;0.03; sat;0.96; sat;ERR;ERR;38.35; sat;0.07; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_56.smt;0.02; sat;0.02; sat;0.23; sat;1.52; 1c71b61d; sat; 0.06;0.06; sat;0.07; sat;TO;TO;7.32; sat;0.01; sat;1.59; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_57.smt;0.02; sat;0.01; sat;0.18; sat;1.55; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;4.11; sat;4.69; sat;0.01; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_58.smt;0.02; sat;0.02; sat;0.37; sat;1.59; 1c71b61d; sat; 0.06;0.1; sat;3.69; sat;TO;TO;5.86; sat;0.07; sat;1.65; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_59.smt;0.02; sat;0.03; sat;0.19; sat;1.57; 1c71b61d; sat; 0.05;0.02; sat;0.01; sat;31.3; sat;7.93; sat;0.02; sat;1.6; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_6.smt;0.05; sat;0.1; sat;0.33; unsat;TO;TO;TO;TO;0.01; sat;0.6; sat;ERR;ERR;7.62; sat;1.36; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_60.smt;0.02; sat;0.06; sat;0.19; unsat;TO;TO;TO;TO;0.01; sat;0.05; sat;21.3; sat;3.88; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_61.smt;0.02; sat;0.01; sat;0.26; sat;3.55; 1c71b61d; sat; 2.11;0.01; sat;0.01; sat;TO;TO;3.99; sat;0.01; sat;3.6; c69385be; sat; 2.19
+../formulae/woorpje/smt/01_track_62.smt;0.01; sat;0.01; sat;1.35; sat;1.51; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;8.95; sat;2.06; sat;0.01; sat;1.52; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_63.smt;0.02; sat;0.02; sat;0.44; sat;1.53; 1c71b61d; sat; 0.06;0.06; sat;10.21; sat;TO;TO;4.7; sat;0.08; sat;1.59; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_64.smt;0.02; sat;0.06; sat;0.17; sat;TO;TO;TO;TO;1.21; sat;0.2; sat;3.72; sat;5.83; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_65.smt;0.02; sat;0.02; sat;0.25; sat;1.54; 1c71b61d; sat; 0.05;0.18; sat;0.23; sat;TO;TO;5.47; sat;0.01; sat;1.59; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_66.smt;0.01; sat;0.02; sat;0.19; sat;1.51; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;12.19; sat;6.8; sat;0.0; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_67.smt;0.02; sat;0.02; sat;0.57; sat;1.57; 1c71b61d; sat; 0.07;0.11; sat;0.09; sat;TO;TO;7.57; sat;0.04; sat;1.58; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_68.smt;0.02; sat;0.01; sat;0.18; sat;1.52; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;5.69; sat;5.3; sat;0.01; sat;1.56; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_69.smt;0.03; sat;0.1; sat;0.31; unsat;TO;TO;TO;TO;0.03; sat;0.36; sat;7.06; OOM;11.9; sat;0.11; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_7.smt;0.02; sat;0.02; sat;0.84; sat;1.54; 1c71b61d; sat; 0.05;0.01; sat;8.64; sat;TO;TO;4.05; sat;0.09; sat;1.58; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_70.smt;0.03; sat;0.01; sat;0.21; sat;4.2; 1c71b61d; sat; 2.74;0.02; sat;0.05; sat;TO;TO;8.75; sat;0.01; sat;4.22; c69385be; sat; 2.74
+../formulae/woorpje/smt/01_track_71.smt;0.04; sat;0.11; sat;0.18; sat;19.79; 1c71b61d; sat; 18.55;0.07; sat;0.19; sat;2.58; sat;3.26; sat;0.01; sat;21.37; c69385be; sat; 20.21
+../formulae/woorpje/smt/01_track_72.smt;0.02; sat;0.02; sat;0.21; sat;1.52; 1c71b61d; sat; 0.06;0.07; sat;0.02; sat;7.31; sat;3.84; sat;0.01; sat;3.11; c69385be; sat; 1.63
+../formulae/woorpje/smt/01_track_73.smt;0.01; sat;0.01; sat;0.18; sat;1.52; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;5.35; sat;0.01; sat;1.54; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_74.smt;0.02; sat;0.02; sat;0.49; sat;1.59; 1c71b61d; sat; 0.09;0.01; sat;TO;TO;TO;TO;11.49; sat;0.08; sat;1.59; c69385be; sat; 0.08
+../formulae/woorpje/smt/01_track_75.smt;0.02; sat;0.0; sat;0.36; sat;7.28; 1c71b61d; sat; 5.76;0.01; sat;0.01; sat;TO;TO;5.57; sat;0.0; sat;7.38; c69385be; sat; 5.94
+../formulae/woorpje/smt/01_track_76.smt;0.02; sat;0.01; sat;0.2; sat;1.54; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;2.14; sat;2.97; sat;0.0; sat;1.52; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_77.smt;0.03; sat;0.09; sat;0.25; sat;TO;TO;TO;TO;0.01; sat;0.96; sat;TO;TO;6.28; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_78.smt;0.01; sat;0.0; sat;0.53; sat;1.55; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;4.91; sat;2.09; sat;0.01; sat;1.59; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_79.smt;0.02; sat;0.01; sat;0.2; sat;1.59; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;10.47; sat;0.01; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_8.smt;0.02; sat;0.03; sat;0.2; sat;31.75; 1c71b61d; sat; 30.75;0.07; sat;0.01; sat;TO;TO;4.15; sat;0.03; sat;33.14; c69385be; sat; 32.13
+../formulae/woorpje/smt/01_track_80.smt;0.02; sat;0.03; sat;ERR;ERR;2.09; 1c71b61d; sat; 0.57;0.02; sat;0.01; sat;2.41; sat;3.22; sat;0.0; sat;2.04; c69385be; sat; 0.56
+../formulae/woorpje/smt/01_track_81.smt;0.02; sat;0.02; sat;0.21; sat;1.52; 1c71b61d; sat; 0.04;0.02; sat;0.0; sat;6.49; sat;4.17; sat;0.01; sat;1.58; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_82.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;0.04; sat;0.8; sat;TO;TO;7.94; sat;0.25; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_83.smt;0.02; sat;0.01; sat;0.19; sat;1.55; 1c71b61d; sat; 0.03;0.0; sat;0.01; sat;1.91; sat;2.0; sat;0.0; sat;1.58; c69385be; sat; 0.03
+../formulae/woorpje/smt/01_track_84.smt;0.02; sat;0.02; sat;0.22; sat;1.51; 1c71b61d; sat; 0.04;0.03; sat;0.13; sat;10.35; sat;5.16; sat;0.01; sat;1.56; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_85.smt;0.02; sat;0.01; sat;0.19; sat;TO;TO;TO;TO;0.01; sat;0.01; sat;3.73; sat;3.63; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_86.smt;0.02; sat;0.01; sat;0.23; sat;1.48; 1c71b61d; sat; 0.04;0.0; sat;0.01; sat;4.52; sat;3.79; sat;0.01; sat;1.54; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_87.smt;0.03; sat;0.03; sat;0.28; sat;1.58; 1c71b61d; sat; 0.05;0.01; sat;0.54; sat;TO;TO;6.35; sat;0.01; sat;1.51; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_88.smt;0.02; sat;0.02; sat;0.35; sat;1.5; 1c71b61d; sat; 0.05;0.06; sat;0.03; sat;12.17; sat;4.08; sat;0.01; sat;1.57; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_89.smt;0.02; sat;0.01; sat;0.24; sat;1.53; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;2.75; sat;2.13; sat;0.01; sat;1.57; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_9.smt;0.02; sat;0.02; sat;0.64; sat;1.55; 1c71b61d; sat; 0.05;0.01; sat;0.28; sat;31.4; sat;5.42; sat;0.02; sat;1.58; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_90.smt;0.02; sat;0.01; sat;0.38; sat;1.59; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;6.16; sat;0.01; sat;1.57; c69385be; sat; 0.06
+../formulae/woorpje/smt/01_track_91.smt;0.01; sat;0.01; sat;0.17; sat;1.53; 1c71b61d; sat; 0.05;0.01; sat;0.0; sat;TO;TO;8.78; sat;0.01; sat;1.56; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_92.smt;0.02; sat;0.0; sat;0.2; sat;1.57; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;TO;TO;6.83; sat;0.0; sat;1.61; c69385be; sat; 0.05
+../formulae/woorpje/smt/01_track_93.smt;0.02; sat;0.01; sat;0.32; sat;TO;TO;TO;TO;0.01; sat;0.0; sat;TO;TO;9.22; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/01_track_94.smt;0.02; sat;0.01; sat;3.56; sat;1.56; 1c71b61d; sat; 0.08;0.02; sat;0.01; sat;TO;TO;2.25; sat;0.01; sat;1.59; c69385be; sat; 0.08
+../formulae/woorpje/smt/01_track_95.smt;0.02; sat;0.02; sat;0.21; sat;1.66; 1c71b61d; sat; 0.17;0.02; sat;0.05; sat;TO;TO;12.11; sat;0.01; sat;1.68; c69385be; sat; 0.17
+../formulae/woorpje/smt/01_track_96.smt;0.03; sat;0.02; sat;0.21; sat;1.55; 1c71b61d; sat; 0.06;0.02; sat;0.01; sat;4.61; sat;5.42; sat;0.02; sat;1.61; c69385be; sat; 0.1
+../formulae/woorpje/smt/01_track_97.smt;0.02; sat;0.01; sat;0.22; sat;1.54; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;4.74; sat;3.16; sat;0.01; sat;1.51; c69385be; sat; 0.04
+../formulae/woorpje/smt/01_track_98.smt;0.02; sat;0.01; sat;0.23; sat;1.56; 1c71b61d; sat; 0.07;0.02; sat;0.01; sat;TO;TO;20.84; sat;0.03; sat;1.59; c69385be; sat; 0.07
+../formulae/woorpje/smt/01_track_99.smt;0.02; sat;0.01; sat;0.3; sat;1.57; 1c71b61d; sat; 0.05;0.01; sat;0.02; sat;10.43; sat;5.26; sat;0.01; sat;1.54; c69385be; sat; 0.05
+../formulae/woorpje/smt/02_track_1.smt;TO;TO;TO;TO;0.16; sat;TO;TO;TO;TO;0.6; sat;0.46; sat;4.86; sat;8.39; sat;0.06; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/02_track_2.smt;TO;TO;TO;TO;0.17; sat;TO;TO;TO;TO;TO;TO;TO;TO;14.61; sat;TO;TO;4.72; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/02_track_3.smt;TO;TO;TO;TO;0.18; sat;TO;TO;TO;TO;TO;TO;TO;TO;25.4; sat;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/02_track_4.smt;TO;TO;TO;TO;0.18; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/02_track_5.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;0.11; sat;0.04; sat;3.34; sat;5.36; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/02_track_6.smt;TO;TO;TO;TO;0.21; sat;TO;TO;TO;TO;TO;TO;23.49; sat;9.6; sat;28.83; sat;0.78; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/02_track_7.smt;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO;TO;TO;TO;TO;42.73; sat;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/02_track_8.smt;0.03; sat;0.04; sat;0.19; sat;1.65; 1c71b61d; sat; 0.12;0.02; sat;0.02; sat;2.67; sat;2.74; sat;0.01; sat;1.74; c69385be; sat; 0.25
+../formulae/woorpje/smt/02_track_9.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_1.smt;0.01; unsat;0.01; unsat;0.19; unsat;1.58; 1c71b61d; unsat; 0.08;0.01; unsat;0.01; unsat;TO;TO;3.0; unsat;TO;TO;1.61; c69385be; unsat; 0.08
+../formulae/woorpje/smt/03_track_10.smt;0.02; unsat;0.01; unsat;0.2; sat;1.55; 1c71b61d; unsat; 0.06;0.01; unsat;0.01; unsat;5.13; sat;2.66; unsat;TO;TO;1.53; c69385be; unsat; 0.06
+../formulae/woorpje/smt/03_track_100.smt;0.02; sat;0.04; sat;0.21; sat;1.57; 1c71b61d; sat; 0.08;0.03; sat;0.03; sat;2.6; sat;3.22; sat;0.0; sat;1.6; c69385be; sat; 0.08
+../formulae/woorpje/smt/03_track_101.smt;0.02; sat;0.04; sat;0.2; sat;TO;TO;TO;TO;0.02; sat;0.01; sat;2.63; sat;3.48; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_102.smt;0.01; sat;0.04; sat;0.2; sat;1.56; 1c71b61d; sat; 0.1;0.03; sat;0.02; sat;2.75; sat;3.1; sat;0.01; sat;2.13; c69385be; sat; 0.66
+../formulae/woorpje/smt/03_track_103.smt;0.02; sat;0.02; sat;0.18; unsat;1.62; 1c71b61d; sat; 0.13;0.01; sat;0.01; sat;2.74; sat;2.3; sat;0.0; sat;1.68; c69385be; sat; 0.13
+../formulae/woorpje/smt/03_track_104.smt;0.02; sat;0.02; sat;0.18; sat;1.55; 1c71b61d; sat; 0.05;0.01; sat;0.02; sat;2.11; sat;2.17; sat;0.0; sat;1.64; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_105.smt;0.01; sat;0.02; sat;0.2; sat;1.54; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;2.09; sat;2.14; sat;0.0; sat;1.56; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_106.smt;0.01; sat;0.02; sat;0.2; sat;1.59; 1c71b61d; sat; 0.04;0.02; sat;0.02; sat;2.06; sat;2.16; sat;0.0; sat;1.6; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_107.smt;0.02; sat;0.03; sat;0.2; sat;1.58; 1c71b61d; sat; 0.08;0.1; sat;0.01; sat;2.58; sat;3.32; sat;0.01; sat;1.57; c69385be; sat; 0.08
+../formulae/woorpje/smt/03_track_108.smt;0.02; sat;0.03; sat;0.22; sat;1.63; 1c71b61d; sat; 0.08;0.03; sat;0.01; sat;2.56; sat;2.77; sat;0.01; sat;1.59; c69385be; sat; 0.08
+../formulae/woorpje/smt/03_track_109.smt;0.03; sat;0.1; sat;0.19; sat;TO;TO;TO;TO;0.02; sat;0.19; sat;3.79; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_11.smt;0.0; unsat;0.01; unsat;0.2; sat;1.52; 1c71b61d; unsat; 0.03;0.01; unsat;0.01; unsat;2.17; sat;1.85; unsat;ERR;ERR;1.59; c69385be; unsat; 0.03
+../formulae/woorpje/smt/03_track_110.smt;0.05; sat;TO;TO;0.17; sat;6.18; 1c71b61d; sat; 4.64;0.01; sat;0.01; sat;2.68; sat;3.09; sat;0.01; sat;2.94; c69385be; sat; 1.5
+../formulae/woorpje/smt/03_track_111.smt;0.01; sat;0.04; sat;0.19; sat;1.58; 1c71b61d; sat; 0.09;0.05; sat;0.06; sat;2.57; sat;3.38; sat;0.01; sat;1.62; c69385be; sat; 0.09
+../formulae/woorpje/smt/03_track_112.smt;0.01; sat;0.11; sat;ERR;ERR;4.25; 1c71b61d; sat; 2.84;0.03; sat;0.02; sat;6.67; sat;3.02; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_113.smt;0.03; sat;0.11; sat;0.22; sat;TO;TO;TO;TO;0.02; sat;0.02; sat;4.37; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_114.smt;0.01; sat;0.04; sat;0.19; sat;2.16; 1c71b61d; sat; 0.66;0.02; sat;0.02; sat;2.73; sat;2.88; sat;0.01; sat;2.15; c69385be; sat; 0.63
+../formulae/woorpje/smt/03_track_115.smt;0.02; sat;0.1; sat;0.21; sat;36.59; 1c71b61d; sat; 35.42;0.05; sat;0.02; sat;4.4; sat;3.88; sat;0.01; sat;37.21; c69385be; sat; 36.0
+../formulae/woorpje/smt/03_track_116.smt;0.02; sat;0.09; sat;0.21; sat;39.1; 1c71b61d; sat; 38.11;0.03; sat;1.79; sat;4.82; sat;3.8; sat;0.01; sat;37.43; c69385be; sat; 36.29
+../formulae/woorpje/smt/03_track_117.smt;0.02; sat;0.13; sat;0.18; sat;TO;TO;TO;TO;0.14; sat;0.05; sat;8.54; sat;4.01; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_118.smt;0.02; sat;0.14; sat;0.19; sat;TO;TO;TO;TO;0.85; sat;0.01; sat;5.49; sat;3.28; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_119.smt;0.03; sat;0.11; sat;0.19; sat;TO;TO;TO;TO;0.03; sat;0.01; sat;5.36; sat;4.85; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_12.smt;0.01; unsat;0.0; unsat;0.19; unsat;1.51; 1c71b61d; unsat; 0.03;0.01; unsat;0.0; unsat;2.77; unsat;2.02; unsat;ERR;ERR;1.54; c69385be; unsat; 0.04
+../formulae/woorpje/smt/03_track_120.smt;0.02; sat;0.04; sat;0.2; sat;2.48; 1c71b61d; sat; 1.04;0.02; sat;0.03; sat;2.56; sat;2.85; sat;0.01; sat;2.55; c69385be; sat; 1.04
+../formulae/woorpje/smt/03_track_121.smt;0.29; sat;0.35; sat;0.21; sat;TO;TO;TO;TO;0.02; sat;0.04; sat;6.39; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_122.smt;0.03; sat;0.16; sat;0.19; sat;TO;TO;TO;TO;0.03; sat;0.09; sat;16.44; sat;14.27; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_123.smt;0.03; sat;0.25; sat;0.2; sat;TO;TO;TO;TO;0.02; sat;0.02; sat;12.03; sat;5.54; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_124.smt;0.02; sat;0.06; sat;0.21; sat;TO;TO;TO;TO;0.02; sat;0.02; sat;3.53; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_125.smt;0.03; sat;0.15; sat;0.23; sat;TO;TO;TO;TO;0.02; sat;0.22; sat;8.23; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_126.smt;0.02; sat;0.02; sat;0.2; sat;1.57; 1c71b61d; sat; 0.05;0.02; sat;0.02; sat;2.04; sat;2.11; sat;0.01; sat;1.55; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_127.smt;0.02; sat;0.02; sat;0.19; sat;1.59; 1c71b61d; sat; 0.04;0.02; sat;0.02; sat;2.09; sat;2.19; sat;0.01; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_128.smt;0.02; sat;0.03; sat;0.19; sat;1.61; 1c71b61d; sat; 0.13;0.03; sat;0.04; sat;2.53; sat;3.66; sat;0.01; sat;1.65; c69385be; sat; 0.13
+../formulae/woorpje/smt/03_track_129.smt;0.02; sat;0.06; sat;0.2; sat;2.78; 1c71b61d; sat; 1.33;TO;TO;0.02; sat;3.82; sat;3.55; sat;0.01; sat;2.8; c69385be; sat; 1.31
+../formulae/woorpje/smt/03_track_13.smt;0.0; unsat;0.01; unsat;0.2; sat;1.53; 1c71b61d; unsat; 0.05;0.01; unsat;0.01; unsat;2.78; unsat;2.09; unsat;TO;TO;1.53; c69385be; unsat; 0.05
+../formulae/woorpje/smt/03_track_130.smt;0.02; sat;0.12; sat;0.2; sat;TO;TO;TO;TO;0.01; sat;3.53; sat;7.25; sat;3.78; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_131.smt;0.02; sat;0.31; sat;0.2; sat;TO;TO;TO;TO;0.12; sat;3.76; sat;26.4; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_132.smt;0.03; sat;0.19; sat;0.21; sat;TO;TO;TO;TO;0.51; sat;0.2; sat;TO;TO;4.15; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_133.smt;0.04; sat;0.06; sat;0.19; sat;TO;TO;TO;TO;0.03; sat;0.02; sat;4.34; sat;10.15; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_134.smt;0.03; sat;0.13; sat;0.2; sat;4.9; 1c71b61d; sat; 3.48;0.01; sat;0.01; sat;5.04; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_135.smt;0.03; sat;0.11; sat;0.2; sat;TO;TO;TO;TO;0.02; sat;0.02; sat;4.84; sat;4.68; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_136.smt;0.05; sat;0.25; sat;0.19; sat;TO;TO;TO;TO;0.25; sat;0.07; sat;TO;TO;7.23; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_137.smt;0.02; sat;0.19; sat;0.18; sat;TO;TO;TO;TO;0.04; sat;1.5; sat;10.7; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_138.smt;0.06; sat;0.44; sat;0.19; sat;TO;TO;TO;TO;0.14; sat;0.03; sat;23.57; sat;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_139.smt;0.03; sat;0.93; sat;0.23; sat;TO;TO;TO;TO;0.43; sat;0.11; sat;TO;TO;TO;TO;0.11; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_14.smt;0.01; unsat;0.01; unsat;0.19; sat;1.54; 1c71b61d; unsat; 0.03;0.02; unsat;0.01; unsat;2.05; sat;1.84; unsat;ERR;ERR;1.58; c69385be; unsat; 0.03
+../formulae/woorpje/smt/03_track_140.smt;0.05; sat;0.37; sat;0.2; sat;TO;TO;TO;TO;0.04; sat;24.46; sat;19.98; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_141.smt;0.02; sat;0.04; sat;0.18; sat;1.7; 1c71b61d; sat; 0.19;0.04; sat;0.12; sat;2.68; sat;4.19; sat;0.01; sat;1.69; c69385be; sat; 0.2
+../formulae/woorpje/smt/03_track_142.smt;0.08; sat;0.84; sat;0.19; sat;TO;TO;TO;TO;0.14; sat;18.54; sat;TO;TO;7.43; sat;0.08; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_143.smt;0.03; sat;0.85; sat;0.21; sat;TO;TO;TO;TO;0.03; sat;3.23; sat;TO;TO;TO;TO;0.09; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_144.smt;0.01; sat;0.02; sat;0.2; sat;1.54; 1c71b61d; sat; 0.04;0.02; sat;0.02; sat;2.06; sat;2.18; sat;0.01; sat;1.6; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_145.smt;0.04; sat;1.31; sat;0.19; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;0.3; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_146.smt;0.02; sat;0.34; sat;0.2; sat;TO;TO;TO;TO;0.07; sat;51.42; sat;30.63; sat;4.95; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_147.smt;0.02; sat;0.03; sat;0.2; sat;1.62; 1c71b61d; sat; 0.11;0.02; sat;0.01; sat;2.64; sat;3.11; sat;0.01; sat;2.22; c69385be; sat; 0.73
+../formulae/woorpje/smt/03_track_148.smt;0.03; sat;0.05; sat;0.17; sat;4.61; 1c71b61d; sat; 3.19;0.07; sat;0.04; sat;2.63; sat;2.51; sat;0.0; sat;4.57; c69385be; sat; 3.12
+../formulae/woorpje/smt/03_track_149.smt;0.04; sat;0.12; sat;0.2; sat;TO;TO;TO;TO;0.02; sat;0.02; sat;14.02; sat;4.49; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_15.smt;0.01; unsat;0.0; unsat;0.19; sat;1.53; 1c71b61d; unsat; 0.05;0.0; unsat;0.01; unsat;2.75; sat;2.14; unsat;TO;TO;1.55; c69385be; unsat; 0.05
+../formulae/woorpje/smt/03_track_150.smt;0.03; sat;0.32; sat;0.2; sat;TO;TO;TO;TO;0.06; sat;2.43; sat;12.07; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_151.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;3.65; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_152.smt;0.05; sat;0.91; sat;0.19; sat;TO;TO;TO;TO;0.05; sat;TO;TO;TO;TO;TO;TO;1.81; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_153.smt;0.05; sat;0.83; sat;0.22; sat;TO;TO;TO;TO;0.03; sat;0.03; sat;TO;TO;25.84; sat;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_154.smt;0.05; sat;TO;TO;0.18; sat;TO;TO;TO;TO;1.68; sat;0.46; sat;28.48; sat;5.63; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_155.smt;0.02; sat;0.65; sat;0.2; sat;TO;TO;TO;TO;0.23; sat;3.19; sat;TO;TO;TO;TO;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_156.smt;0.01; sat;0.8; sat;0.2; sat;TO;TO;TO;TO;1.56; sat;1.69; sat;TO;TO;TO;TO;0.14; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_157.smt;0.04; sat;0.4; sat;0.21; unsat;TO;TO;TO;TO;0.04; sat;0.03; sat;TO;TO;TO;TO;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_158.smt;0.02; sat;0.13; sat;0.21; sat;TO;TO;TO;TO;0.41; sat;0.07; sat;10.53; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_159.smt;0.02; sat;0.06; sat;0.21; sat;TO;TO;TO;TO;0.05; sat;0.03; sat;3.58; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_16.smt;0.0; unsat;0.0; unsat;0.21; sat;1.52; 1c71b61d; unsat; 0.04;0.01; unsat;0.02; unsat;2.55; sat;2.05; unsat;TO;TO;1.56; c69385be; unsat; 0.04
+../formulae/woorpje/smt/03_track_160.smt;0.03; sat;0.08; sat;0.21; sat;26.6; 1c71b61d; sat; 25.15;0.18; sat;0.05; sat;4.12; sat;5.1; sat;0.01; sat;26.16; c69385be; sat; 24.73
+../formulae/woorpje/smt/03_track_161.smt;0.02; sat;0.1; sat;0.19; sat;TO;TO;TO;TO;0.03; sat;0.03; sat;4.52; sat;3.99; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_162.smt;0.03; sat;0.13; sat;0.22; sat;TO;TO;TO;TO;0.39; sat;0.82; sat;5.02; sat;4.63; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_163.smt;0.04; sat;0.32; sat;0.2; sat;TO;TO;TO;TO;2.44; sat;0.03; sat;12.1; sat;5.35; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_164.smt;0.04; sat;0.16; sat;0.2; sat;TO;TO;TO;TO;0.27; sat;0.03; sat;8.37; sat;9.03; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_165.smt;0.03; sat;0.18; sat;0.22; sat;TO;TO;TO;TO;0.07; sat;5.31; sat;12.57; sat;12.59; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_166.smt;0.02; sat;0.41; sat;0.23; sat;TO;TO;TO;TO;0.09; sat;0.03; sat;TO;TO;50.33; sat;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_167.smt;0.03; sat;0.43; sat;0.2; sat;TO;TO;TO;TO;0.17; sat;0.26; sat;TO;TO;TO;TO;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_168.smt;0.04; sat;0.28; sat;0.19; sat;TO;TO;TO;TO;0.22; sat;0.38; sat;16.67; sat;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_169.smt;0.05; sat;0.48; sat;0.31; sat;TO;TO;TO;TO;0.86; sat;1.92; sat;TO;TO;13.45; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_17.smt;0.01; unsat;0.0; unsat;0.19; sat;1.56; 1c71b61d; unsat; 0.03;0.02; unsat;0.01; unsat;2.11; sat;1.88; unsat;ERR;ERR;1.58; c69385be; unsat; 0.03
+../formulae/woorpje/smt/03_track_170.smt;0.02; sat;0.49; sat;0.21; sat;TO;TO;TO;TO;1.55; sat;0.07; sat;47.98; sat;TO;TO;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_171.smt;0.02; sat;0.31; sat;0.19; sat;TO;TO;TO;TO;TO;TO;2.99; sat;15.01; sat;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_172.smt;0.08; sat;0.33; sat;0.2; sat;TO;TO;TO;TO;0.09; sat;0.03; sat;13.3; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_173.smt;0.07; sat;0.27; sat;0.2; unsat;TO;TO;TO;TO;0.09; sat;0.64; sat;20.94; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_174.smt;0.03; sat;1.58; sat;0.21; sat;TO;TO;TO;TO;0.78; sat;2.24; sat;TO;TO;TO;TO;0.23; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_175.smt;0.04; sat;0.43; sat;0.18; sat;TO;TO;TO;TO;4.08; sat;0.4; sat;21.66; sat;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_176.smt;0.04; sat;0.31; sat;0.18; sat;TO;TO;TO;TO;0.37; sat;0.02; sat;11.8; sat;5.69; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_177.smt;0.03; sat;0.31; sat;0.2; sat;TO;TO;TO;TO;0.06; sat;9.32; sat;14.05; sat;TO;TO;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_178.smt;0.04; sat;0.37; sat;0.21; sat;TO;TO;TO;TO;0.02; sat;0.5; sat;32.35; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_179.smt;0.03; sat;0.2; sat;0.2; sat;TO;TO;TO;TO;TO;TO;0.03; sat;9.09; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_18.smt;0.01; unsat;0.01; unsat;ERR;ERR;1.56; 1c71b61d; unsat; 0.04;0.01; unsat;0.01; unsat;2.6; sat;2.2; unsat;ERR;ERR;1.52; c69385be; unsat; 0.04
+../formulae/woorpje/smt/03_track_180.smt;0.02; sat;0.12; sat;ERR;ERR;TO;TO;TO;TO;0.03; sat;0.02; sat;5.32; sat;6.72; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_181.smt;0.03; sat;0.11; sat;0.22; sat;3.69; 1c71b61d; sat; 2.23;0.39; sat;0.03; sat;5.72; sat;TO;TO;0.01; sat;3.74; c69385be; sat; 2.29
+../formulae/woorpje/smt/03_track_182.smt;TO;TO;TO;TO;0.18; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;0.06; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_183.smt;0.02; sat;0.17; sat;0.2; sat;TO;TO;TO;TO;0.35; sat;0.02; sat;14.21; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_184.smt;0.03; sat;0.07; sat;0.18; unsat;TO;TO;TO;TO;0.02; sat;0.01; sat;5.63; sat;4.2; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_185.smt;0.02; sat;0.04; sat;0.2; sat;1.6; 1c71b61d; sat; 0.11;0.02; sat;0.01; sat;2.76; sat;2.83; sat;0.01; sat;1.66; c69385be; sat; 0.18
+../formulae/woorpje/smt/03_track_186.smt;0.03; sat;0.25; sat;0.2; sat;TO;TO;TO;TO;0.05; sat;TO;TO;11.89; sat;6.17; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_187.smt;0.03; sat;1.58; sat;0.2; sat;TO;TO;TO;TO;TO;TO;0.4; sat;TO;TO;8.93; sat;0.18; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_188.smt;0.02; sat;0.04; sat;0.21; sat;2.09; 1c71b61d; sat; 0.61;0.01; sat;0.02; sat;2.74; sat;2.83; sat;0.01; sat;2.2; c69385be; sat; 0.67
+../formulae/woorpje/smt/03_track_189.smt;0.03; sat;0.8; sat;0.19; sat;TO;TO;TO;TO;0.52; sat;0.04; sat;TO;TO;TO;TO;0.09; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_19.smt;0.0; unsat;0.0; unsat;0.22; sat;1.53; 1c71b61d; unsat; 0.06;0.0; unsat;0.01; unsat;30.68; unsat;2.5; unsat;TO;TO;1.58; c69385be; unsat; 0.06
+../formulae/woorpje/smt/03_track_190.smt;0.06; sat;0.36; sat;0.18; sat;TO;TO;TO;TO;0.1; sat;0.04; sat;22.62; sat;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_191.smt;0.07; sat;0.5; sat;0.17; sat;TO;TO;TO;TO;10.56; sat;TO;TO;TO;TO;TO;TO;0.24; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_192.smt;0.03; sat;0.49; sat;0.18; sat;TO;TO;TO;TO;0.1; sat;16.23; sat;TO;TO;TO;TO;0.09; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_193.smt;0.04; sat;0.25; sat;0.21; sat;TO;TO;TO;TO;0.05; sat;0.02; sat;26.22; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_194.smt;0.02; sat;0.04; sat;0.21; sat;1.61; 1c71b61d; sat; 0.08;0.01; sat;0.01; sat;2.67; sat;3.47; sat;0.0; sat;1.55; c69385be; sat; 0.08
+../formulae/woorpje/smt/03_track_195.smt;0.16; sat;0.54; sat;0.25; sat;TO;TO;TO;TO;0.17; sat;0.07; sat;TO;TO;48.29; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_196.smt;0.08; sat;0.97; sat;0.19; sat;TO;TO;TO;TO;0.57; sat;18.2; sat;TO;TO;11.86; sat;0.07; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_197.smt;0.02; sat;0.02; sat;0.19; sat;TO;TO;TO;TO;0.02; sat;0.02; sat;2.63; sat;3.68; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_198.smt;0.02; sat;0.03; sat;0.19; sat;1.58; 1c71b61d; sat; 0.08;0.02; sat;0.01; sat;2.47; sat;3.3; sat;0.01; sat;1.58; c69385be; sat; 0.08
+../formulae/woorpje/smt/03_track_199.smt;0.03; sat;0.7; sat;0.19; sat;TO;TO;TO;TO;0.21; sat;0.02; sat;TO;TO;TO;TO;0.21; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_2.smt;0.01; unsat;0.01; unsat;0.21; unsat;1.6; 1c71b61d; unsat; 0.08;0.02; unsat;0.01; unsat;TO;TO;3.06; unsat;TO;TO;1.59; c69385be; unsat; 0.08
+../formulae/woorpje/smt/03_track_20.smt;0.0; unsat;0.01; unsat;0.21; sat;1.53; 1c71b61d; unsat; 0.06;0.01; unsat;0.01; unsat;TO;TO;2.52; unsat;TO;TO;1.57; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_200.smt;0.03; sat;2.13; sat;0.21; sat;TO;TO;TO;TO;TO;TO;TO;TO;11.28; OOM;TO;TO;0.2; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_21.smt;0.01; unsat;0.01; unsat;0.22; sat;1.55; 1c71b61d; unsat; 0.07;0.01; unsat;0.01; unsat;12.04; sat;2.71; unsat;TO;TO;1.55; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_22.smt;0.01; unsat;0.01; unsat;0.2; sat;1.53; 1c71b61d; unsat; 0.06;0.01; unsat;0.01; unsat;12.7; unsat;2.36; unsat;TO;TO;1.54; c69385be; unsat; 0.06
+../formulae/woorpje/smt/03_track_23.smt;0.01; unsat;0.01; unsat;0.22; sat;1.51; 1c71b61d; unsat; 0.06;0.0; unsat;0.01; unsat;7.89; sat;2.51; unsat;TO;TO;1.55; c69385be; unsat; 0.06
+../formulae/woorpje/smt/03_track_24.smt;0.01; unsat;0.01; unsat;ERR;ERR;1.52; 1c71b61d; unsat; 0.04;0.01; unsat;0.01; unsat;6.54; sat;2.23; unsat;TO;TO;1.52; c69385be; unsat; 0.04
+../formulae/woorpje/smt/03_track_25.smt;0.0; unsat;0.01; unsat;0.19; sat;1.65; 1c71b61d; unsat; 0.08;0.01; unsat;0.01; unsat;TO;TO;2.72; unsat;TO;TO;1.6; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_26.smt;0.01; unsat;0.01; unsat;0.25; sat;1.6; 1c71b61d; unsat; 0.09;0.02; unsat;0.01; unsat;TO;TO;2.93; unsat;TO;TO;1.63; c69385be; unsat; 0.09
+../formulae/woorpje/smt/03_track_27.smt;0.0; unsat;0.02; unsat;0.18; sat;1.6; 1c71b61d; unsat; 0.11;0.01; unsat;0.01; unsat;7.7; OOM;3.21; unsat;TO;TO;1.62; c69385be; unsat; 0.11
+../formulae/woorpje/smt/03_track_28.smt;0.01; unsat;0.01; unsat;0.2; unsat;1.59; 1c71b61d; unsat; 0.1;0.01; unsat;0.01; unsat;TO;TO;4.48; unsat;TO;TO;1.62; c69385be; unsat; 0.1
+../formulae/woorpje/smt/03_track_29.smt;0.01; unsat;0.01; unsat;0.19; sat;1.59; 1c71b61d; unsat; 0.07;0.01; unsat;0.0; unsat;TO;TO;2.67; unsat;TO;TO;1.65; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_3.smt;0.01; unsat;0.0; unsat;0.22; sat;1.6; 1c71b61d; unsat; 0.09;0.02; unsat;0.01; unsat;TO;TO;3.4; unsat;TO;TO;1.57; c69385be; unsat; 0.09
+../formulae/woorpje/smt/03_track_30.smt;0.01; unsat;0.01; unsat;0.19; sat;1.63; 1c71b61d; unsat; 0.08;0.01; unsat;0.0; unsat;TO;TO;3.04; unsat;TO;TO;1.63; c69385be; unsat; 0.08
+../formulae/woorpje/smt/03_track_31.smt;0.01; unsat;0.01; unsat;0.19; sat;1.58; 1c71b61d; unsat; 0.07;0.01; unsat;0.01; unsat;42.08; sat;2.57; unsat;TO;TO;1.57; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_32.smt;0.01; unsat;0.01; unsat;0.2; sat;1.65; 1c71b61d; unsat; 0.11;0.01; unsat;0.01; unsat;TO;TO;3.18; unsat;TO;TO;1.63; c69385be; unsat; 0.11
+../formulae/woorpje/smt/03_track_33.smt;0.01; unsat;0.01; unsat;0.2; sat;1.61; 1c71b61d; unsat; 0.09;0.02; unsat;0.01; unsat;TO;TO;2.81; unsat;TO;TO;1.61; c69385be; unsat; 0.09
+../formulae/woorpje/smt/03_track_34.smt;0.01; unsat;0.0; unsat;0.23; sat;1.62; 1c71b61d; unsat; 0.08;0.01; unsat;0.01; unsat;TO;TO;2.8; unsat;TO;TO;1.63; c69385be; unsat; 0.09
+../formulae/woorpje/smt/03_track_35.smt;0.01; unsat;0.01; unsat;0.2; sat;1.58; 1c71b61d; unsat; 0.09;0.01; unsat;0.01; unsat;TO;TO;2.91; unsat;TO;TO;1.62; c69385be; unsat; 0.09
+../formulae/woorpje/smt/03_track_36.smt;0.01; unsat;0.02; unsat;0.21; sat;1.62; 1c71b61d; unsat; 0.1;0.01; unsat;0.01; unsat;TO;TO;3.17; unsat;TO;TO;1.63; c69385be; unsat; 0.1
+../formulae/woorpje/smt/03_track_37.smt;0.01; unsat;0.01; unsat;0.2; unsat;1.61; 1c71b61d; unsat; 0.07;0.01; unsat;0.01; unsat;TO;TO;2.69; unsat;TO;TO;1.59; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_38.smt;0.01; unsat;0.01; unsat;0.23; sat;1.56; 1c71b61d; unsat; 0.06;0.01; unsat;0.0; unsat;TO;TO;2.65; unsat;TO;TO;1.61; c69385be; unsat; 0.06
+../formulae/woorpje/smt/03_track_39.smt;0.01; unsat;0.01; unsat;0.22; unsat;1.57; 1c71b61d; unsat; 0.08;0.01; unsat;0.01; unsat;TO;TO;3.33; unsat;TO;TO;1.57; c69385be; unsat; 0.08
+../formulae/woorpje/smt/03_track_4.smt;0.01; unsat;0.01; unsat;0.19; sat;1.58; 1c71b61d; unsat; 0.09;0.01; unsat;0.01; unsat;39.24; sat;3.49; unsat;TO;TO;1.59; c69385be; unsat; 0.09
+../formulae/woorpje/smt/03_track_40.smt;0.01; unsat;0.01; unsat;0.23; sat;1.58; 1c71b61d; unsat; 0.08;0.01; unsat;0.01; unsat;TO;TO;2.95; unsat;TO;TO;1.65; c69385be; unsat; 0.08
+../formulae/woorpje/smt/03_track_41.smt;0.02; unsat;0.01; unsat;0.21; sat;1.57; 1c71b61d; unsat; 0.06;0.01; unsat;0.01; unsat;25.21; unsat;2.48; unsat;TO;TO;1.63; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_42.smt;0.01; unsat;0.01; unsat;0.2; sat;1.53; 1c71b61d; unsat; 0.07;0.01; unsat;0.01; unsat;TO;TO;2.65; unsat;TO;TO;1.6; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_43.smt;0.01; unsat;0.0; unsat;0.2; sat;1.54; 1c71b61d; unsat; 0.07;0.0; unsat;0.01; unsat;2.53; sat;2.11; unsat;TO;TO;1.57; c69385be; unsat; 0.05
+../formulae/woorpje/smt/03_track_44.smt;0.01; unsat;0.01; unsat;0.23; sat;1.59; 1c71b61d; unsat; 0.1;0.02; unsat;0.0; unsat;TO;TO;3.25; unsat;TO;TO;1.58; c69385be; unsat; 0.1
+../formulae/woorpje/smt/03_track_45.smt;TO;TO;TO;TO;0.42; unsat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;4.07; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_46.smt;TO;TO;TO;TO;0.19; unsat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_47.smt;TO;TO;TO;TO;0.18; sat;TO;TO;TO;TO;0.11; sat;0.05; sat;TO;TO;9.55; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_48.smt;TO;TO;TO;TO;0.21; sat;TO;TO;TO;TO;TO;TO;TO;TO;29.29; sat;TO;TO;0.17; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_49.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;0.07; sat;0.04; sat;TO;TO;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_5.smt;0.01; unsat;0.01; unsat;0.2; sat;1.59; 1c71b61d; unsat; 0.08;0.0; unsat;0.0; unsat;TO;TO;3.08; unsat;TO;TO;1.6; c69385be; unsat; 0.07
+../formulae/woorpje/smt/03_track_50.smt;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;3.11; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_51.smt;TO;TO;TO;TO;0.18; sat;TO;TO;TO;TO;2.65; sat;TO;TO;20.36; sat;5.37; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_52.smt;TO;TO;TO;TO;0.21; sat;TO;TO;TO;TO;0.05; sat;2.1; sat;3.92; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_53.smt;0.03; sat;0.1; sat;0.18; sat;TO;TO;TO;TO;0.41; sat;47.5; sat;3.67; sat;4.68; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_54.smt;TO;TO;TO;TO;ERR;ERR;TO;TO;TO;TO;TO;TO;TO;TO;5.82; sat;16.37; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_55.smt;TO;TO;TO;TO;0.2; sat;29.17; 1c71b61d; sat; 27.97;0.06; sat;0.04; sat;4.25; sat;6.32; sat;0.01; sat;30.03; c69385be; sat; 28.92
+../formulae/woorpje/smt/03_track_56.smt;0.02; sat;0.14; sat;0.2; sat;TO;TO;TO;TO;0.1; sat;0.12; sat;6.08; sat;4.44; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_57.smt;TO;TO;TO;TO;0.19; unsat;TO;TO;TO;TO;0.09; sat;0.06; sat;17.36; sat;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_58.smt;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO;TO;TO;TO;TO;10.1; sat;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_59.smt;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO;0.42; sat;1.3; sat;13.44; sat;TO;TO;0.07; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_6.smt;0.0; unsat;0.01; unsat;0.19; sat;1.64; 1c71b61d; unsat; 0.08;0.01; unsat;0.01; unsat;TO;TO;3.41; unsat;TO;TO;1.56; c69385be; unsat; 0.08
+../formulae/woorpje/smt/03_track_60.smt;TO;TO;TO;TO;0.22; sat;TO;TO;TO;TO;TO;TO;TO;TO;26.2; sat;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_61.smt;TO;TO;TO;TO;0.32; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_62.smt;TO;TO;TO;TO;0.17; unsat;TO;TO;TO;TO;0.1; sat;0.1; sat;17.37; sat;6.73; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_63.smt;TO;TO;TO;TO;0.18; sat;TO;TO;TO;TO;3.46; sat;1.11; sat;13.48; sat;TO;TO;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_64.smt;TO;TO;TO;TO;0.21; sat;28.55; 1c71b61d; sat; 27.74;0.09; sat;0.06; sat;4.61; sat;10.72; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_65.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;TO;TO;TO;TO;45.42; sat;TO;TO;1.57; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_66.smt;TO;TO;TO;TO;0.34; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_67.smt;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;0.97; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_68.smt;TO;TO;TO;TO;0.19; unsat;TO;TO;TO;TO;0.09; sat;0.06; sat;TO;TO;TO;TO;0.14; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_69.smt;TO;TO;TO;TO;0.19; unsat;TO;TO;TO;TO;10.14; sat;2.69; sat;TO;TO;TO;TO;0.06; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_7.smt;0.0; unsat;0.01; unsat;0.18; sat;1.51; 1c71b61d; unsat; 0.05;0.01; unsat;0.01; unsat;2.98; unsat;2.38; unsat;TO;TO;1.55; c69385be; unsat; 0.05
+../formulae/woorpje/smt/03_track_70.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;0.59; sat;0.44; sat;5.48; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_71.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;0.03; sat;0.03; sat;7.7; sat;5.36; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_72.smt;TO;TO;TO;TO;0.21; sat;TO;TO;TO;TO;0.31; sat;0.13; sat;TO;TO;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_73.smt;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO;1.48; sat;0.03; sat;TO;TO;TO;TO;0.07; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_74.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;0.75; sat;0.45; sat;17.52; sat;TO;TO;0.12; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_75.smt;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO;TO;TO;TO;TO;13.88; sat;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_76.smt;0.21; sat;TO;TO;0.19; sat;TO;TO;TO;TO;TO;TO;TO;TO;47.91; sat;TO;TO;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_77.smt;0.07; sat;0.28; sat;0.21; sat;TO;TO;TO;TO;0.05; sat;0.02; sat;22.09; sat;11.67; sat;0.2; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_78.smt;TO;TO;TO;TO;0.19; sat;TO;TO;TO;TO;TO;TO;TO;TO;8.51; OOM;TO;TO;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_79.smt;0.06; sat;0.25; sat;0.17; sat;TO;TO;TO;TO;0.09; sat;0.02; sat;23.86; sat;TO;TO;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_8.smt;0.02; unsat;0.01; unsat;0.2; sat;1.54; 1c71b61d; unsat; 0.03;0.0; unsat;0.01; unsat;3.01; unsat;1.99; unsat;ERR;ERR;1.55; c69385be; unsat; 0.03
+../formulae/woorpje/smt/03_track_80.smt;0.01; sat;0.01; sat;0.22; sat;1.52; 1c71b61d; sat; 0.03;0.01; sat;0.01; sat;2.15; sat;1.98; sat;0.01; sat;1.55; c69385be; sat; 0.04
+../formulae/woorpje/smt/03_track_81.smt;TO;TO;TO;TO;0.52; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;20.69; sat;7.8; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_82.smt;0.12; sat;0.49; sat;0.21; sat;TO;TO;TO;TO;0.06; sat;0.21; sat;TO;TO;TO;TO;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_83.smt;0.03; sat;0.76; sat;0.21; sat;TO;TO;TO;TO;0.45; sat;0.04; sat;TO;TO;TO;TO;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_84.smt;0.02; sat;0.83; sat;0.21; sat;TO;TO;TO;TO;0.56; sat;0.02; sat;TO;TO;TO;TO;0.2; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_85.smt;0.02; sat;0.15; sat;0.2; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;16.01; sat;8.52; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_86.smt;0.04; sat;0.1; sat;0.19; sat;TO;TO;TO;TO;0.04; sat;0.09; sat;4.56; sat;6.17; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_87.smt;0.04; sat;0.11; sat;0.16; sat;TO;TO;TO;TO;0.04; sat;TO;TO;5.58; sat;TO;TO;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_88.smt;0.02; sat;0.26; sat;0.2; sat;TO;TO;TO;TO;0.02; sat;0.02; sat;13.74; sat;5.65; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/03_track_89.smt;0.03; sat;0.03; sat;0.19; sat;2.44; 1c71b61d; sat; 0.96;0.02; sat;0.02; sat;2.65; sat;2.87; sat;0.0; sat;2.51; c69385be; sat; 1.0
+../formulae/woorpje/smt/03_track_9.smt;0.01; unsat;0.01; unsat;0.21; unsat;1.56; 1c71b61d; unsat; 0.06;0.01; unsat;0.01; unsat;13.79; unsat;2.49; unsat;TO;TO;1.53; c69385be; unsat; 0.06
+../formulae/woorpje/smt/03_track_90.smt;0.02; sat;0.04; sat;0.2; sat;1.58; 1c71b61d; sat; 0.1;0.03; sat;0.01; sat;2.54; sat;3.67; sat;0.01; sat;1.67; c69385be; sat; 0.11
+../formulae/woorpje/smt/03_track_91.smt;0.01; sat;0.01; sat;0.19; sat;1.53; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;2.08; sat;2.12; sat;0.0; sat;1.58; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_92.smt;0.02; sat;0.03; sat;0.18; sat;1.56; 1c71b61d; sat; 0.05;0.01; sat;0.02; sat;2.56; sat;3.6; sat;0.01; sat;1.73; c69385be; sat; 0.2
+../formulae/woorpje/smt/03_track_93.smt;0.01; sat;0.03; sat;0.2; sat;1.57; 1c71b61d; sat; 0.05;0.02; sat;0.02; sat;2.39; sat;3.74; sat;0.0; sat;1.62; c69385be; sat; 0.13
+../formulae/woorpje/smt/03_track_94.smt;0.02; sat;0.01; sat;0.2; sat;1.51; 1c71b61d; sat; 0.04;0.02; sat;0.02; sat;2.1; sat;2.21; sat;0.0; sat;1.52; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_95.smt;0.0; sat;0.02; sat;0.18; sat;1.53; 1c71b61d; sat; 0.04;0.01; sat;0.02; sat;2.07; sat;2.12; sat;0.0; sat;1.55; c69385be; sat; 0.05
+../formulae/woorpje/smt/03_track_96.smt;0.02; sat;0.04; sat;0.2; sat;1.57; 1c71b61d; sat; 0.08;0.02; sat;0.01; sat;2.59; sat;3.32; sat;0.01; sat;1.58; c69385be; sat; 0.09
+../formulae/woorpje/smt/03_track_97.smt;0.02; sat;0.03; sat;0.21; sat;1.58; 1c71b61d; sat; 0.08;0.03; sat;0.08; sat;2.55; sat;2.89; sat;0.01; sat;1.61; c69385be; sat; 0.08
+../formulae/woorpje/smt/03_track_98.smt;0.01; sat;0.04; sat;0.21; sat;1.66; 1c71b61d; sat; 0.1;0.04; sat;0.02; sat;2.78; sat;2.64; sat;0.01; sat;2.11; c69385be; sat; 0.6
+../formulae/woorpje/smt/03_track_99.smt;0.02; sat;0.04; sat;0.19; sat;7.89; 1c71b61d; sat; 6.46;0.02; sat;0.01; sat;2.72; sat;3.73; sat;0.01; sat;7.7; c69385be; sat; 6.31
+../formulae/woorpje/smt/04_track_1.smt;0.01; sat;0.0; sat;0.16; sat;1.59; 1c71b61d; sat; 0.04;0.01; sat;0.0; sat;1.7; sat;1.71; sat;0.0; sat;1.6; c69385be; sat; 0.03
+../formulae/woorpje/smt/04_track_10.smt;0.62; unsat;0.49; unsat;TO;TO;2.79; 1c71b61d; unsat; 1.23;0.08; unsat;0.07; unsat;TO;TO;8.94; unsat;ERR;ERR;2.77; c69385be; unsat; 1.23
+../formulae/woorpje/smt/04_track_100.smt;0.06; sat;0.09; sat;TO;TO;54.34; 1c71b61d; sat; 52.85;0.01; sat;0.02; sat;TO;TO;4.38; sat;1.78; sat;7.25; c69385be; sat; 5.85
+../formulae/woorpje/smt/04_track_101.smt;0.41; unsat;0.37; unsat;TO;TO;2.41; 1c71b61d; unsat; 0.86;0.05; unsat;0.05; unsat;TO;TO;7.99; unsat;TO;TO;2.38; c69385be; unsat; 0.82
+../formulae/woorpje/smt/04_track_102.smt;0.12; unsat;0.08; unsat;21.5; unsat;1.86; 1c71b61d; unsat; 0.29;0.02; unsat;0.02; unsat;TO;TO;4.66; unsat;TO;TO;1.85; c69385be; unsat; 0.29
+../formulae/woorpje/smt/04_track_103.smt;0.12; unsat;0.11; unsat;50.92; unsat;1.85; 1c71b61d; unsat; 0.3;0.02; unsat;0.02; unsat;TO;TO;4.87; unsat;TO;TO;1.85; c69385be; unsat; 0.31
+../formulae/woorpje/smt/04_track_104.smt;0.05; unsat;0.04; unsat;39.07; unsat;1.77; 1c71b61d; sat; 0.24;0.17; unsat;0.1; unsat;TO;TO;11.11; unsat;ERR;ERR;1.77; c69385be; unsat; 0.28
+../formulae/woorpje/smt/04_track_105.smt;0.12; unsat;0.11; unsat;12.57; unsat;1.76; 1c71b61d; unsat; 0.2;0.02; unsat;0.01; unsat;TO;TO;3.96; unsat;ERR;ERR;1.7; c69385be; unsat; 0.2
+../formulae/woorpje/smt/04_track_106.smt;1.2; sat;6.45; sat;2.13; unsat;TO;TO;TO;TO;0.2; sat;0.37; sat;TO;TO;32.21; sat;1.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_107.smt;0.06; sat;0.31; sat;10.58; unsat;TO;TO;TO;TO;0.01; sat;0.02; sat;TO;TO;5.07; sat;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_108.smt;0.59; unsat;0.26; unsat;TO;TO;2.67; 1c71b61d; unsat; 1.14;0.06; unsat;0.06; unsat;TO;TO;8.5; unsat;ERR;ERR;2.66; c69385be; unsat; 1.15
+../formulae/woorpje/smt/04_track_109.smt;0.27; unsat;0.15; unsat;TO;TO;2.05; 1c71b61d; unsat; 0.59;0.03; unsat;0.03; unsat;TO;TO;5.84; unsat;ERR;ERR;2.16; c69385be; unsat; 0.63
+../formulae/woorpje/smt/04_track_11.smt;0.82; unsat;4.29; unsat;TO;TO;3.03; 1c71b61d; unsat; 1.5;0.05; unsat;0.06; unsat;TO;TO;12.31; unsat;ERR;ERR;3.08; c69385be; unsat; 1.5
+../formulae/woorpje/smt/04_track_110.smt;0.58; sat;34.29; sat;3.22; unsat;TO;TO;TO;TO;0.23; sat;0.38; sat;TO;TO;51.39; sat;0.89; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_111.smt;0.54; sat;4.9; sat;1.45; unsat;TO;TO;TO;TO;0.28; sat;0.73; sat;TO;TO;22.93; sat;1.48; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_112.smt;0.22; sat;1.09; sat;4.7; unsat;TO;TO;TO;TO;0.03; sat;0.06; sat;TO;TO;8.11; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_113.smt;0.1; unsat;0.07; unsat;18.4; unsat;1.7; 1c71b61d; unsat; 0.26;0.02; unsat;0.02; unsat;TO;TO;4.31; unsat;ERR;ERR;1.79; c69385be; unsat; 0.24
+../formulae/woorpje/smt/04_track_114.smt;0.03; sat;0.02; sat;2.32; sat;1.53; 1c71b61d; sat; 0.06;0.01; sat;0.01; sat;TO;TO;7.33; sat;0.01; sat;1.57; c69385be; sat; 0.06
+../formulae/woorpje/smt/04_track_115.smt;0.63; sat;3.95; sat;4.04; unsat;TO;TO;TO;TO;0.25; sat;1.37; sat;TO;TO;22.69; sat;0.42; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_116.smt;0.3; unsat;0.15; unsat;TO;TO;2.04; 1c71b61d; unsat; 0.58;0.04; unsat;0.03; unsat;TO;TO;6.01; unsat;ERR;ERR;2.07; c69385be; unsat; 0.6
+../formulae/woorpje/smt/04_track_117.smt;0.4; sat;1.16; sat;6.2; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;TO;TO;13.75; sat;0.15; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_118.smt;0.55; sat;0.8; sat;26.52; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;TO;TO;9.83; sat;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_119.smt;0.07; sat;1.09; sat;TO;TO;TO;TO;TO;TO;0.32; sat;32.38; sat;19.62; OOM;4.77; sat;3.08; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_12.smt;0.81; sat;3.57; sat;37.13; unsat;TO;TO;TO;TO;0.04; sat;0.04; sat;TO;TO;20.41; sat;0.76; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_120.smt;0.69; unsat;4.69; unsat;18.34; unsat;2.88; 1c71b61d; unsat; 1.37;0.05; unsat;0.04; unsat;TO;TO;11.81; unsat;ERR;ERR;2.88; c69385be; unsat; 1.36
+../formulae/woorpje/smt/04_track_121.smt;0.35; unsat;5.24; unsat;24.43; unsat;TO;TO;TO;TO;0.09; unsat;0.05; unsat;TO;TO;14.68; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_122.smt;0.03; sat;0.03; sat;0.7; unsat;1.62; 1c71b61d; sat; 0.18;0.0; sat;0.01; sat;2.82; sat;2.66; sat;0.01; sat;1.67; c69385be; sat; 0.17
+../formulae/woorpje/smt/04_track_123.smt;0.25; unsat;0.21; unsat;TO;TO;2.06; 1c71b61d; unsat; 0.58;0.03; unsat;0.03; unsat;TO;TO;6.47; unsat;ERR;ERR;2.12; c69385be; unsat; 0.58
+../formulae/woorpje/smt/04_track_124.smt;0.28; sat;2.27; sat;2.07; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;TO;TO;11.24; sat;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_125.smt;0.02; sat;0.02; sat;0.25; sat;1.53; 1c71b61d; sat; 0.05;0.01; sat;0.01; sat;6.13; sat;3.22; sat;0.02; sat;1.61; c69385be; sat; 0.05
+../formulae/woorpje/smt/04_track_126.smt;0.65; unsat;2.16; unsat;TO;TO;2.69; 1c71b61d; unsat; 1.2;0.04; unsat;0.05; unsat;TO;TO;9.65; unsat;ERR;ERR;2.8; c69385be; unsat; 1.23
+../formulae/woorpje/smt/04_track_127.smt;0.85; sat;9.76; sat;11.26; unsat;TO;TO;TO;TO;0.35; sat;0.15; sat;TO;TO;29.45; sat;0.46; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_128.smt;1.1; unsat;5.41; unsat;TO;TO;3.44; 1c71b61d; unsat; 1.89;0.07; unsat;0.05; unsat;TO;TO;14.46; unsat;ERR;ERR;3.39; c69385be; unsat; 1.87
+../formulae/woorpje/smt/04_track_129.smt;0.09; unsat;0.06; unsat;18.9; unsat;1.73; 1c71b61d; unsat; 0.25;0.02; unsat;0.01; unsat;TO;TO;4.28; unsat;ERR;ERR;1.75; c69385be; unsat; 0.26
+../formulae/woorpje/smt/04_track_13.smt;0.06; sat;0.58; sat;0.26; unsat;TO;TO;TO;TO;0.04; sat;0.04; sat;TO;TO;6.83; sat;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_130.smt;0.32; sat;0.43; sat;11.79; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;TO;TO;6.94; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_131.smt;0.07; unsat;0.05; unsat;10.61; unsat;1.66; 1c71b61d; unsat; 0.19;0.01; unsat;0.02; unsat;TO;TO;3.92; unsat;ERR;ERR;1.7; c69385be; unsat; 0.19
+../formulae/woorpje/smt/04_track_132.smt;0.08; sat;0.15; sat;3.94; sat;TO;TO;TO;TO;0.4; sat;0.07; sat;TO;TO;4.88; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_133.smt;0.03; sat;0.02; sat;5.88; unsat;1.65; 1c71b61d; sat; 0.18;0.02; sat;0.05; sat;TO;TO;5.8; sat;0.0; sat;1.76; c69385be; sat; 0.2
+../formulae/woorpje/smt/04_track_134.smt;0.09; sat;1.04; sat;0.31; unsat;TO;TO;TO;TO;0.16; sat;1.98; sat;TO;TO;11.43; sat;0.38; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_135.smt;0.3; sat;0.95; sat;12.65; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;TO;TO;10.73; sat;0.09; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_136.smt;0.86; sat;3.07; sat;49.06; unsat;TO;TO;TO;TO;0.1; sat;0.1; sat;TO;TO;11.44; sat;3.3; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_137.smt;0.56; sat;2.64; sat;6.17; unsat;TO;TO;TO;TO;0.18; sat;0.14; sat;TO;TO;13.5; sat;0.83; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_138.smt;0.78; unsat;0.67; unsat;TO;TO;2.94; 1c71b61d; unsat; 1.44;0.08; unsat;0.07; unsat;TO;TO;9.8; unsat;ERR;ERR;2.99; c69385be; unsat; 1.44
+../formulae/woorpje/smt/04_track_139.smt;0.87; unsat;4.69; unsat;TO;TO;3.05; 1c71b61d; unsat; 1.54;0.05; unsat;0.06; unsat;TO;TO;12.22; unsat;TO;TO;3.04; c69385be; unsat; 1.54
+../formulae/woorpje/smt/04_track_14.smt;17.57; sat;34.87; sat;29.49; unsat;TO;TO;TO;TO;TO;TO;TO;TO;TO;TO;32.31; sat;4.3; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_140.smt;0.31; unsat;0.26; unsat;TO;TO;2.14; 1c71b61d; unsat; 0.62;0.04; unsat;0.03; unsat;TO;TO;6.7; unsat;ERR;ERR;2.17; c69385be; unsat; 0.62
+../formulae/woorpje/smt/04_track_141.smt;0.1; sat;0.06; sat;27.74; unsat;5.08; 1c71b61d; sat; 3.65;0.02; sat;0.02; sat;TO;TO;4.97; sat;0.02; sat;3.0; c69385be; sat; 1.41
+../formulae/woorpje/smt/04_track_142.smt;0.07; sat;0.29; sat;27.82; unsat;TO;TO;TO;TO;0.02; sat;0.01; sat;TO;TO;5.34; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_143.smt;0.06; sat;0.06; sat;TO;TO;57.7; 1c71b61d; sat; 56.7;0.02; sat;0.02; sat;TO;TO;4.55; sat;1.36; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_144.smt;0.04; unsat;0.04; unsat;TO;TO;TO;TO;TO;TO;0.02; unsat;0.01; unsat;TO;TO;3.18; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_145.smt;0.36; sat;2.51; sat;2.52; unsat;TO;TO;TO;TO;0.03; sat;0.02; sat;TO;TO;12.79; sat;0.18; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_146.smt;0.37; unsat;0.53; unsat;TO;TO;2.22; 1c71b61d; unsat; 0.69;0.03; unsat;0.03; unsat;TO;TO;7.46; unsat;TO;TO;2.25; c69385be; unsat; 0.69
+../formulae/woorpje/smt/04_track_147.smt;0.06; unsat;0.04; unsat;TO;TO;1.64; 1c71b61d; unsat; 0.16;0.01; unsat;0.02; unsat;TO;TO;3.7; unsat;TO;TO;1.66; c69385be; unsat; 0.16
+../formulae/woorpje/smt/04_track_148.smt;0.09; sat;0.2; sat;0.6; unsat;TO;TO;TO;TO;0.01; sat;0.02; sat;TO;TO;6.98; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_149.smt;0.08; sat;0.08; sat;2.66; unsat;1.86; 1c71b61d; sat; 0.39;0.01; sat;0.01; sat;TO;TO;3.94; sat;0.01; sat;1.92; c69385be; sat; 0.39
+../formulae/woorpje/smt/04_track_15.smt;1.28; sat;5.15; sat;34.73; unsat;TO;TO;TO;TO;0.08; sat;0.06; sat;TO;TO;15.71; sat;1.07; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_150.smt;0.34; unsat;0.38; unsat;TO;TO;TO;TO;TO;TO;0.04; unsat;0.04; unsat;TO;TO;9.33; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_151.smt;0.07; sat;0.34; sat;0.32; unsat;TO;TO;TO;TO;0.03; sat;0.01; sat;TO;TO;5.83; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_152.smt;0.26; unsat;0.67; unsat;19.92; unsat;3.9; 1c71b61d; unsat; 2.41;0.01; unsat;0.02; unsat;TO;TO;7.19; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_153.smt;0.06; sat;0.03; sat;0.56; unsat;1.83; 1c71b61d; sat; 0.31;0.01; sat;0.01; sat;TO;TO;3.34; sat;0.01; sat;1.82; c69385be; sat; 0.29
+../formulae/woorpje/smt/04_track_154.smt;0.15; unsat;0.07; unsat;TO;TO;1.95; 1c71b61d; unsat; 0.41;0.03; unsat;0.02; unsat;TO;TO;5.13; unsat;ERR;ERR;1.94; c69385be; unsat; 0.39
+../formulae/woorpje/smt/04_track_155.smt;1.21; sat;4.54; sat;46.22; unsat;TO;TO;TO;TO;0.06; sat;0.06; sat;TO;TO;16.73; sat;0.78; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_156.smt;0.07; sat;0.05; sat;0.61; unsat;1.97; 1c71b61d; sat; 0.45;0.01; sat;0.01; sat;TO;TO;4.13; sat;0.01; sat;1.98; c69385be; sat; 0.38
+../formulae/woorpje/smt/04_track_157.smt;0.15; unsat;0.09; unsat;27.19; unsat;1.93; 1c71b61d; unsat; 0.34;0.02; unsat;0.02; unsat;TO;TO;4.71; unsat;ERR;ERR;1.84; c69385be; unsat; 0.33
+../formulae/woorpje/smt/04_track_158.smt;0.01; sat;0.23; sat;0.2; sat;TO;TO;TO;TO;0.03; sat;0.47; sat;TO;TO;4.69; sat;0.03; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_159.smt;0.25; unsat;0.39; unsat;11.13; unsat;1.9; 1c71b61d; unsat; 0.41;0.02; unsat;0.02; unsat;TO;TO;5.62; unsat;ERR;ERR;1.93; c69385be; unsat; 0.42
+../formulae/woorpje/smt/04_track_16.smt;1.22; unsat;12.54; unsat;TO;TO;4.56; 1c71b61d; unsat; 3.03;0.08; unsat;0.08; unsat;TO;TO;20.6; unsat;ERR;ERR;4.59; c69385be; unsat; 3.03
+../formulae/woorpje/smt/04_track_160.smt;0.17; unsat;0.1; unsat;TO;TO;1.99; 1c71b61d; unsat; 0.46;0.03; unsat;0.03; unsat;TO;TO;5.67; unsat;TO;TO;1.97; c69385be; unsat; 0.44
+../formulae/woorpje/smt/04_track_161.smt;0.06; unsat;0.06; unsat;50.65; unsat;TO;TO;TO;TO;0.02; unsat;0.02; unsat;53.86; OOM;5.11; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_162.smt;0.33; sat;0.06; sat;10.46; unsat;2.8; 1c71b61d; sat; 1.32;1.11; sat;8.61; sat;TO;TO;9.16; sat;0.25; sat;3.03; c69385be; sat; 1.56
+../formulae/woorpje/smt/04_track_163.smt;1.19; sat;6.21; sat;13.16; unsat;TO;TO;TO;TO;0.06; sat;0.06; sat;TO;TO;33.28; sat;1.33; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_164.smt;0.29; sat;0.77; sat;4.63; unsat;TO;TO;TO;TO;0.04; sat;0.05; sat;TO;TO;10.25; sat;0.26; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_165.smt;0.15; sat;1.31; sat;17.81; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;TO;TO;7.62; sat;1.6; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_166.smt;0.7; unsat;1.85; unsat;50.59; unsat;2.63; 1c71b61d; unsat; 1.11;0.03; unsat;0.03; unsat;TO;TO;9.61; unsat;ERR;ERR;2.66; c69385be; unsat; 1.13
+../formulae/woorpje/smt/04_track_167.smt;0.57; unsat;1.23; unsat;TO;TO;2.45; 1c71b61d; unsat; 0.94;0.01; unsat;0.03; unsat;TO;TO;7.84; unsat;ERR;ERR;2.49; c69385be; unsat; 0.95
+../formulae/woorpje/smt/04_track_168.smt;0.69; sat;1.8; sat;26.32; unsat;TO;TO;TO;TO;0.04; sat;0.03; sat;TO;TO;10.5; sat;0.46; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_169.smt;2.15; sat;10.26; sat;TO;TO;TO;TO;TO;TO;0.53; sat;0.54; sat;TO;TO;18.74; sat;0.39; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_17.smt;0.13; unsat;0.17; unsat;20.94; unsat;1.85; 1c71b61d; unsat; 0.35;0.02; unsat;0.02; unsat;TO;TO;5.18; unsat;ERR;ERR;1.82; c69385be; unsat; 0.35
+../formulae/woorpje/smt/04_track_170.smt;2.62; sat;6.4; sat;25.39; unsat;TO;TO;TO;TO;TO;TO;33.85; sat;TO;TO;14.98; sat;0.94; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_171.smt;0.25; sat;2.17; sat;0.68; unsat;TO;TO;TO;TO;0.18; sat;0.16; sat;TO;TO;25.87; sat;1.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_172.smt;0.01; sat;0.01; sat;0.24; unsat;1.6; 1c71b61d; sat; 0.08;0.01; sat;0.01; sat;4.78; sat;2.32; sat;0.01; sat;1.65; c69385be; sat; 0.09
+../formulae/woorpje/smt/04_track_173.smt;0.11; unsat;0.22; unsat;4.17; unsat;1.72; 1c71b61d; unsat; 0.2;0.02; unsat;0.02; unsat;TO;TO;4.33; unsat;TO;TO;1.82; c69385be; unsat; 0.21
+../formulae/woorpje/smt/04_track_174.smt;0.8; sat;3.62; sat;13.25; unsat;TO;TO;TO;TO;0.68; sat;3.9; sat;TO;TO;13.29; sat;1.37; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_175.smt;0.05; sat;0.13; sat;1.76; unsat;TO;TO;TO;TO;0.02; sat;0.01; sat;TO;TO;4.05; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_176.smt;0.88; unsat;5.02; unsat;14.68; unsat;TO;TO;TO;TO;0.38; unsat;0.21; unsat;TO;TO;23.55; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_177.smt;0.66; sat;1.33; sat;TO;TO;TO;TO;TO;TO;0.03; sat;0.03; sat;TO;TO;9.92; sat;0.11; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_178.smt;0.04; unsat;0.03; unsat;0.53; unsat;1.65; 1c71b61d; unsat; 0.08;0.01; unsat;0.01; unsat;TO;TO;2.8; unsat;ERR;ERR;1.67; c69385be; unsat; 0.08
+../formulae/woorpje/smt/04_track_179.smt;1.44; sat;8.0; sat;5.53; unsat;TO;TO;TO;TO;TO;TO;0.05; sat;TO;TO;19.85; sat;0.16; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_18.smt;0.03; sat;0.05; sat;0.21; sat;TO;TO;TO;TO;0.02; sat;0.03; sat;TO;TO;3.66; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_180.smt;0.39; unsat;0.42; unsat;TO;TO;2.26; 1c71b61d; unsat; 0.71;0.03; unsat;0.03; unsat;TO;TO;6.86; unsat;ERR;ERR;2.23; c69385be; unsat; 0.69
+../formulae/woorpje/smt/04_track_181.smt;0.65; unsat;2.46; unsat;22.49; unsat;2.67; 1c71b61d; unsat; 1.14;0.04; unsat;0.03; unsat;TO;TO;9.84; unsat;ERR;ERR;2.62; c69385be; unsat; 1.12
+../formulae/woorpje/smt/04_track_182.smt;0.15; sat;0.79; sat;6.35; unsat;TO;TO;TO;TO;0.14; sat;0.7; sat;TO;TO;5.83; sat;0.78; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_183.smt;0.59; unsat;2.03; unsat;30.06; unsat;2.52; 1c71b61d; unsat; 1.0;0.04; unsat;0.04; unsat;TO;TO;9.49; unsat;ERR;ERR;2.53; c69385be; unsat; 1.0
+../formulae/woorpje/smt/04_track_184.smt;0.09; sat;0.2; sat;2.6; unsat;1.87; 1c71b61d; sat; 0.36;0.01; sat;0.01; sat;TO;TO;3.83; sat;0.01; sat;1.86; c69385be; sat; 0.36
+../formulae/woorpje/smt/04_track_185.smt;0.64; sat;3.72; sat;5.08; unsat;TO;TO;TO;TO;0.03; sat;0.04; sat;TO;TO;15.1; sat;0.32; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_186.smt;1.08; sat;7.7; sat;19.55; unsat;TO;TO;TO;TO;0.51; sat;2.37; sat;TO;TO;30.85; sat;1.34; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_187.smt;0.24; unsat;0.22; unsat;TO;TO;2.06; 1c71b61d; unsat; 0.49;0.03; unsat;0.03; unsat;TO;TO;6.32; unsat;TO;TO;2.0; c69385be; unsat; 0.49
+../formulae/woorpje/smt/04_track_188.smt;0.14; unsat;0.06; unsat;TO;TO;2.44; 1c71b61d; unsat; 0.93;0.01; unsat;0.02; unsat;TO;TO;5.59; unsat;TO;TO;2.48; c69385be; unsat; 0.93
+../formulae/woorpje/smt/04_track_189.smt;0.92; sat;4.96; sat;11.08; unsat;TO;TO;TO;TO;0.28; sat;0.32; sat;TO;TO;31.5; sat;1.65; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_19.smt;0.09; unsat;0.08; unsat;8.27; unsat;1.74; 1c71b61d; unsat; 0.21;0.02; unsat;0.02; unsat;TO;TO;4.02; unsat;ERR;ERR;1.76; c69385be; unsat; 0.21
+../formulae/woorpje/smt/04_track_190.smt;0.31; unsat;0.33; unsat;TO;TO;2.18; 1c71b61d; unsat; 0.63;0.04; unsat;0.03; unsat;TO;TO;6.81; unsat;ERR;ERR;2.14; c69385be; unsat; 0.62
+../formulae/woorpje/smt/04_track_191.smt;0.06; unsat;0.08; unsat;4.86; unsat;1.69; 1c71b61d; unsat; 0.16;0.01; unsat;0.02; unsat;TO;TO;3.73; unsat;TO;TO;1.7; c69385be; unsat; 0.16
+../formulae/woorpje/smt/04_track_192.smt;0.54; sat;3.11; sat;30.87; unsat;TO;TO;TO;TO;0.04; sat;0.03; sat;TO;TO;7.75; sat;8.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_193.smt;0.35; sat;2.69; sat;TO;TO;32.34; 1c71b61d; sat; 31.45;0.02; sat;0.02; sat;TO;TO;11.29; sat;0.23; sat;9.49; c69385be; sat; 8.17
+../formulae/woorpje/smt/04_track_194.smt;0.39; unsat;3.87; unsat;5.28; unsat;2.38; 1c71b61d; unsat; 0.84;0.03; unsat;0.04; unsat;TO;TO;9.14; unsat;ERR;ERR;2.4; c69385be; unsat; 0.86
+../formulae/woorpje/smt/04_track_195.smt;0.01; sat;0.01; sat;4.99; sat;1.59; 1c71b61d; sat; 0.09;0.01; sat;0.01; sat;1.98; sat;1.99; sat;0.01; sat;1.61; c69385be; sat; 0.09
+../formulae/woorpje/smt/04_track_196.smt;0.01; sat;0.04; sat;0.23; sat;TO;TO;TO;TO;0.03; sat;0.01; sat;19.72; sat;4.1; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_197.smt;0.19; sat;0.67; sat;23.07; unsat;TO;TO;TO;TO;0.01; sat;0.01; sat;TO;TO;5.87; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_198.smt;0.12; sat;0.67; sat;TO;TO;TO;TO;TO;TO;0.01; sat;0.02; sat;TO;TO;6.21; sat;2.59; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_199.smt;0.77; sat;14.67; sat;9.56; unsat;TO;TO;TO;TO;0.39; sat;0.3; sat;TO;TO;43.72; sat;0.57; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_2.smt;0.05; sat;0.04; sat;6.97; unsat;2.1; 1c71b61d; sat; 0.52;0.02; sat;0.01; sat;4.01; sat;3.23; sat;0.01; sat;2.06; c69385be; sat; 0.53
+../formulae/woorpje/smt/04_track_20.smt;0.22; sat;0.12; sat;9.45; unsat;2.97; 1c71b61d; sat; 1.44;0.02; sat;0.01; sat;TO;TO;5.27; sat;0.01; sat;2.87; c69385be; sat; 1.33
+../formulae/woorpje/smt/04_track_200.smt;0.15; sat;0.58; sat;TO;TO;TO;TO;TO;TO;1.26; sat;1.61; sat;TO;TO;5.2; sat;1.27; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_21.smt;0.15; unsat;0.1; unsat;46.18; unsat;1.94; 1c71b61d; unsat; 0.39;0.02; unsat;0.02; unsat;TO;TO;5.28; unsat;ERR;ERR;1.89; c69385be; unsat; 0.39
+../formulae/woorpje/smt/04_track_22.smt;1.34; unsat;11.92; unsat;TO;TO;4.29; 1c71b61d; unsat; 2.75;0.08; unsat;0.08; unsat;TO;TO;20.29; unsat;ERR;ERR;4.17; c69385be; unsat; 2.66
+../formulae/woorpje/smt/04_track_23.smt;0.05; unsat;0.04; unsat;TO;TO;1.59; 1c71b61d; unsat; 0.11;0.01; unsat;0.01; unsat;TO;TO;3.09; unsat;TO;TO;1.66; c69385be; unsat; 0.11
+../formulae/woorpje/smt/04_track_24.smt;0.36; unsat;0.58; unsat;48.6; unsat;2.13; 1c71b61d; unsat; 0.6;0.03; unsat;0.03; unsat;TO;TO;6.93; unsat;ERR;ERR;2.1; c69385be; unsat; 0.6
+../formulae/woorpje/smt/04_track_25.smt;0.26; unsat;0.17; unsat;TO;TO;2.08; 1c71b61d; unsat; 0.54;0.03; unsat;0.03; unsat;TO;TO;6.26; unsat;ERR;ERR;2.06; c69385be; unsat; 0.54
+../formulae/woorpje/smt/04_track_26.smt;0.33; sat;11.74; sat;1.99; unsat;TO;TO;TO;TO;1.32; sat;0.04; sat;TO;TO;17.0; sat;0.26; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_27.smt;0.21; unsat;0.12; unsat;TO;TO;TO;TO;TO;TO;0.04; unsat;0.03; unsat;TO;TO;8.87; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_28.smt;0.56; sat;7.62; sat;15.05; unsat;TO;TO;TO;TO;0.03; sat;0.03; sat;TO;TO;20.15; sat;0.2; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_29.smt;0.02; sat;0.03; sat;4.41; unsat;1.99; 1c71b61d; sat; 0.48;0.02; sat;0.01; sat;5.51; sat;2.97; sat;0.04; sat;1.94; c69385be; sat; 0.42
+../formulae/woorpje/smt/04_track_3.smt;0.03; sat;0.06; sat;6.16; unsat;1.77; 1c71b61d; sat; 0.21;0.02; sat;0.01; sat;3.08; sat;2.8; sat;0.01; sat;1.77; c69385be; sat; 0.21
+../formulae/woorpje/smt/04_track_30.smt;0.04; sat;0.04; sat;7.33; unsat;1.96; 1c71b61d; sat; 0.47;0.01; sat;0.01; sat;4.83; sat;3.27; sat;0.01; sat;1.93; c69385be; sat; 0.46
+../formulae/woorpje/smt/04_track_31.smt;0.31; unsat;0.55; unsat;TO;TO;2.1; 1c71b61d; unsat; 0.56;0.02; unsat;0.04; unsat;TO;TO;6.79; unsat;ERR;ERR;2.08; c69385be; unsat; 0.56
+../formulae/woorpje/smt/04_track_32.smt;0.13; sat;0.08; sat;TO;TO;8.94; 1c71b61d; sat; 7.44;0.06; sat;0.05; sat;TO;TO;15.59; sat;0.04; sat;5.16; c69385be; sat; 3.69
+../formulae/woorpje/smt/04_track_33.smt;0.27; unsat;0.16; unsat;TO;TO;2.2; 1c71b61d; unsat; 0.63;0.02; unsat;0.02; unsat;TO;TO;5.62; unsat;ERR;ERR;2.18; c69385be; unsat; 0.63
+../formulae/woorpje/smt/04_track_34.smt;0.09; sat;0.88; sat;0.32; unsat;TO;TO;TO;TO;0.03; sat;0.03; sat;TO;TO;7.25; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_35.smt;0.1; sat;0.05; sat;14.79; unsat;2.48; 1c71b61d; sat; 0.94;0.02; sat;0.02; sat;TO;TO;4.64; sat;0.01; sat;2.57; c69385be; sat; 1.06
+../formulae/woorpje/smt/04_track_36.smt;0.22; sat;0.32; sat;4.91; unsat;TO;TO;TO;TO;0.01; sat;0.01; sat;TO;TO;5.82; sat;0.01; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_37.smt;0.69; unsat;3.69; unsat;18.41; unsat;2.89; 1c71b61d; unsat; 1.36;0.05; unsat;0.03; unsat;TO;TO;11.39; unsat;ERR;ERR;2.89; c69385be; unsat; 1.33
+../formulae/woorpje/smt/04_track_38.smt;1.35; sat;19.79; sat;30.75; unsat;TO;TO;TO;TO;1.35; sat;3.4; sat;TO;TO;44.13; sat;3.31; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_39.smt;0.05; sat;0.06; sat;2.51; unsat;2.08; 1c71b61d; sat; 0.54;0.01; sat;0.01; sat;36.75; sat;3.71; sat;0.01; sat;2.06; c69385be; sat; 0.54
+../formulae/woorpje/smt/04_track_4.smt;0.09; unsat;0.86; unsat;12.75; unsat;1.73; 1c71b61d; unsat; 0.24;0.01; unsat;0.01; unsat;TO;TO;5.15; unsat;ERR;ERR;1.76; c69385be; unsat; 0.24
+../formulae/woorpje/smt/04_track_40.smt;1.74; sat;4.11; sat;31.09; unsat;TO;TO;TO;TO;1.15; sat;10.97; sat;TO;TO;TO;TO;2.13; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_41.smt;0.86; sat;2.26; sat;24.94; unsat;TO;TO;TO;TO;0.04; sat;0.03; sat;TO;TO;12.05; sat;0.21; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_42.smt;0.29; sat;0.27; sat;TO;TO;4.98; 1c71b61d; sat; 3.44;0.01; sat;0.02; sat;TO;TO;6.1; sat;0.02; sat;3.87; c69385be; sat; 2.43
+../formulae/woorpje/smt/04_track_43.smt;0.11; sat;0.06; sat;13.33; unsat;2.24; 1c71b61d; sat; 0.73;0.01; sat;0.01; sat;TO;TO;5.99; sat;0.01; sat;2.42; c69385be; sat; 0.86
+../formulae/woorpje/smt/04_track_44.smt;0.04; unsat;0.03; unsat;9.18; unsat;1.65; 1c71b61d; unsat; 0.12;0.01; unsat;0.02; unsat;48.18; OOM;3.4; unsat;ERR;ERR;1.63; c69385be; unsat; 0.13
+../formulae/woorpje/smt/04_track_45.smt;0.09; unsat;0.15; unsat;6.53; unsat;1.77; 1c71b61d; unsat; 0.22;0.01; unsat;0.02; unsat;TO;TO;4.44; unsat;ERR;ERR;1.74; c69385be; unsat; 0.22
+../formulae/woorpje/smt/04_track_46.smt;0.8; unsat;1.84; unsat;TO;TO;2.81; 1c71b61d; unsat; 1.29;0.06; unsat;0.07; unsat;TO;TO;10.56; unsat;TO;TO;2.88; c69385be; unsat; 1.27
+../formulae/woorpje/smt/04_track_47.smt;0.35; unsat;0.72; unsat;53.49; unsat;2.08; 1c71b61d; unsat; 0.55;0.02; unsat;0.02; unsat;TO;TO;6.77; unsat;ERR;ERR;2.14; c69385be; unsat; 0.55
+../formulae/woorpje/smt/04_track_48.smt;0.88; sat;4.45; sat;12.72; unsat;TO;TO;TO;TO;0.24; sat;0.15; sat;TO;TO;29.8; sat;0.23; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_49.smt;0.07; sat;0.39; sat;0.28; unsat;TO;TO;TO;TO;0.03; sat;0.03; sat;TO;TO;10.52; sat;0.09; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_5.smt;0.02; sat;0.02; sat;TO;TO;2.65; 1c71b61d; sat; 1.07;0.02; sat;0.01; sat;TO;TO;3.68; sat;0.43; sat;7.54; c69385be; sat; 6.03
+../formulae/woorpje/smt/04_track_50.smt;0.41; unsat;0.68; unsat;28.76; unsat;2.31; 1c71b61d; unsat; 0.73;0.03; unsat;0.02; unsat;TO;TO;6.86; unsat;ERR;ERR;2.34; c69385be; unsat; 0.73
+../formulae/woorpje/smt/04_track_51.smt;0.06; unsat;0.05; unsat;4.27; unsat;1.72; 1c71b61d; unsat; 0.17;0.02; unsat;0.02; unsat;TO;TO;3.66; unsat;ERR;ERR;1.71; c69385be; unsat; 0.17
+../formulae/woorpje/smt/04_track_52.smt;0.22; unsat;0.17; unsat;TO;TO;2.01; 1c71b61d; unsat; 0.48;0.03; unsat;0.04; unsat;TO;TO;5.84; unsat;ERR;ERR;2.0; c69385be; unsat; 0.48
+../formulae/woorpje/smt/04_track_53.smt;1.95; unsat;18.87; unsat;TO;TO;5.69; 1c71b61d; unsat; 4.08;0.11; unsat;0.13; unsat;TO;TO;27.1; unsat;TO;TO;5.51; c69385be; unsat; 3.95
+../formulae/woorpje/smt/04_track_54.smt;0.18; sat;0.45; sat;3.57; unsat;TO;TO;TO;TO;0.02; sat;0.02; sat;TO;TO;6.18; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_55.smt;3.09; sat;5.68; sat;TO;TO;TO;TO;TO;TO;0.13; sat;1.41; sat;TO;TO;13.43; sat;8.79; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_56.smt;0.17; unsat;0.09; unsat;TO;TO;1.97; 1c71b61d; unsat; 0.48;0.03; unsat;0.04; unsat;TO;TO;5.64; unsat;TO;TO;1.99; c69385be; unsat; 0.48
+../formulae/woorpje/smt/04_track_57.smt;0.45; unsat;0.29; unsat;TO;TO;6.55; 1c71b61d; unsat; 5.09;0.01; unsat;0.02; unsat;TO;TO;6.78; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_58.smt;0.17; sat;0.16; sat;7.09; unsat;2.49; 1c71b61d; sat; 0.94;0.02; sat;0.01; sat;TO;TO;5.17; sat;0.01; sat;2.46; c69385be; sat; 1.0
+../formulae/woorpje/smt/04_track_59.smt;0.06; unsat;0.04; unsat;32.3; unsat;1.95; 1c71b61d; sat; 0.43;0.01; unsat;0.02; unsat;TO;TO;3.95; unsat;TO;TO;2.0; c69385be; unsat; 0.48
+../formulae/woorpje/smt/04_track_6.smt;0.05; sat;0.13; sat;2.32; unsat;TO;TO;TO;TO;0.01; sat;0.01; sat;TO;TO;4.13; sat;0.04; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_60.smt;0.03; unsat;0.02; unsat;5.02; unsat;1.84; 1c71b61d; sat; 0.32;0.01; unsat;0.01; unsat;TO;TO;2.83; unsat;TO;TO;1.9; c69385be; unsat; 0.35
+../formulae/woorpje/smt/04_track_61.smt;0.32; unsat;0.44; unsat;TO;TO;2.2; 1c71b61d; unsat; 0.64;0.04; unsat;0.03; unsat;TO;TO;6.95; unsat;ERR;ERR;2.15; c69385be; unsat; 0.63
+../formulae/woorpje/smt/04_track_62.smt;0.13; sat;0.77; sat;TO;TO;TO;TO;TO;TO;0.03; sat;0.01; sat;TO;TO;6.55; sat;0.05; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_63.smt;1.16; sat;5.45; sat;TO;TO;TO;TO;TO;TO;0.93; sat;3.78; sat;TO;TO;37.57; sat;3.67; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_64.smt;0.28; unsat;0.17; unsat;TO;TO;2.22; 1c71b61d; unsat; 0.62;0.04; unsat;0.04; unsat;TO;TO;6.64; unsat;TO;TO;2.13; c69385be; unsat; 0.62
+../formulae/woorpje/smt/04_track_65.smt;0.03; sat;0.03; sat;2.28; unsat;1.8; 1c71b61d; sat; 0.29;0.01; sat;0.01; sat;3.0; sat;2.8; sat;0.01; sat;1.81; c69385be; sat; 0.29
+../formulae/woorpje/smt/04_track_66.smt;0.12; sat;0.86; sat;0.86; unsat;TO;TO;TO;TO;0.07; sat;0.07; sat;TO;TO;7.18; sat;0.1; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_67.smt;0.2; sat;0.11; sat;TO;TO;21.72; 1c71b61d; sat; 20.25;0.03; sat;0.02; sat;TO;TO;6.14; sat;0.04; sat;5.35; c69385be; sat; 3.81
+../formulae/woorpje/smt/04_track_68.smt;0.15; unsat;4.72; unsat;2.79; unsat;2.31; 1c71b61d; unsat; 0.75;0.03; unsat;0.02; unsat;TO;TO;8.99; unsat;ERR;ERR;2.29; c69385be; unsat; 0.75
+../formulae/woorpje/smt/04_track_69.smt;0.48; unsat;0.94; unsat;TO;TO;8.36; 1c71b61d; unsat; 6.92;0.04; unsat;0.03; unsat;TO;TO;9.54; unsat;ERR;ERR;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_7.smt;0.01; sat;0.01; sat;8.16; unsat;1.79; 1c71b61d; sat; 0.23;0.0; sat;0.01; sat;3.91; sat;2.74; sat;0.32; sat;1.71; c69385be; sat; 0.23
+../formulae/woorpje/smt/04_track_70.smt;0.21; unsat;0.19; unsat;48.78; unsat;1.93; 1c71b61d; unsat; 0.41;0.03; unsat;0.02; unsat;TO;TO;5.64; unsat;ERR;ERR;1.93; c69385be; unsat; 0.41
+../formulae/woorpje/smt/04_track_71.smt;0.64; unsat;1.2; unsat;TO;TO;2.67; 1c71b61d; unsat; 1.12;0.04; unsat;0.04; unsat;TO;TO;9.11; unsat;ERR;ERR;2.68; c69385be; unsat; 1.12
+../formulae/woorpje/smt/04_track_72.smt;0.14; unsat;0.11; unsat;9.55; unsat;1.81; 1c71b61d; unsat; 0.27;0.02; unsat;0.02; unsat;TO;TO;4.76; unsat;ERR;ERR;1.81; c69385be; unsat; 0.27
+../formulae/woorpje/smt/04_track_73.smt;0.04; sat;0.03; sat;8.41; unsat;1.81; 1c71b61d; sat; 0.25;0.04; sat;0.4; sat;TO;TO;6.76; sat;0.01; sat;1.79; c69385be; sat; 0.28
+../formulae/woorpje/smt/04_track_74.smt;0.38; unsat;0.62; unsat;42.95; unsat;2.13; 1c71b61d; unsat; 0.63;0.03; unsat;0.02; unsat;TO;TO;6.95; unsat;ERR;ERR;2.2; c69385be; unsat; 0.64
+../formulae/woorpje/smt/04_track_75.smt;0.26; sat;10.33; sat;0.48; unsat;TO;TO;TO;TO;0.33; sat;0.11; sat;TO;TO;19.94; sat;0.19; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_76.smt;0.4; unsat;1.99; unsat;TO;TO;2.25; 1c71b61d; unsat; 0.76;0.03; unsat;0.03; unsat;TO;TO;8.22; unsat;TO;TO;2.28; c69385be; unsat; 0.76
+../formulae/woorpje/smt/04_track_77.smt;0.38; unsat;0.22; unsat;TO;TO;2.31; 1c71b61d; unsat; 0.75;0.03; unsat;0.02; unsat;TO;TO;6.32; unsat;ERR;ERR;2.23; c69385be; unsat; 0.73
+../formulae/woorpje/smt/04_track_78.smt;0.3; unsat;0.15; unsat;TO;TO;TO;TO;TO;TO;0.02; unsat;0.04; unsat;TO;TO;7.43; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_79.smt;0.8; unsat;1.76; unsat;TO;TO;TO;TO;TO;TO;0.06; unsat;0.07; unsat;TO;TO;13.3; unsat;TO;TO;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_8.smt;0.01; sat;0.0; sat;0.18; sat;1.61; 1c71b61d; sat; 0.04;0.01; sat;0.01; sat;1.87; sat;2.5; sat;0.01; sat;1.58; c69385be; sat; 0.04
+../formulae/woorpje/smt/04_track_80.smt;0.07; unsat;0.07; unsat;14.36; unsat;1.78; 1c71b61d; unsat; 0.22;0.02; unsat;0.02; unsat;TO;TO;4.22; unsat;ERR;ERR;1.7; c69385be; unsat; 0.22
+../formulae/woorpje/smt/04_track_81.smt;0.3; unsat;0.16; unsat;TO;TO;2.25; 1c71b61d; unsat; 0.71;0.05; unsat;0.04; unsat;TO;TO;6.4; unsat;ERR;ERR;2.18; c69385be; unsat; 0.71
+../formulae/woorpje/smt/04_track_82.smt;0.33; unsat;0.25; unsat;TO;TO;2.15; 1c71b61d; unsat; 0.64;0.03; unsat;0.03; unsat;TO;TO;6.62; unsat;ERR;ERR;2.15; c69385be; unsat; 0.63
+../formulae/woorpje/smt/04_track_83.smt;0.3; unsat;0.13; unsat;TO;TO;22.82; 1c71b61d; unsat; 21.38;0.04; unsat;0.04; unsat;TO;TO;7.4; unsat;TO;TO;7.76; c69385be; unsat; 6.28
+../formulae/woorpje/smt/04_track_84.smt;0.62; unsat;2.36; unsat;TO;TO;2.8; 1c71b61d; unsat; 1.29;0.04; unsat;0.04; unsat;TO;TO;10.36; unsat;ERR;ERR;2.82; c69385be; unsat; 1.26
+../formulae/woorpje/smt/04_track_85.smt;0.41; unsat;2.08; unsat;8.81; unsat;2.36; 1c71b61d; unsat; 0.77;0.03; unsat;0.03; unsat;TO;TO;8.06; unsat;ERR;ERR;2.28; c69385be; unsat; 0.78
+../formulae/woorpje/smt/04_track_86.smt;1.12; unsat;13.45; unsat;32.89; unsat;4.56; 1c71b61d; unsat; 3.0;0.07; unsat;0.07; unsat;TO;TO;22.25; unsat;ERR;ERR;4.54; c69385be; unsat; 2.98
+../formulae/woorpje/smt/04_track_87.smt;0.06; sat;0.03; sat;3.48; unsat;2.17; 1c71b61d; sat; 0.58;0.02; sat;0.01; sat;TO;TO;3.73; sat;0.02; sat;2.15; c69385be; sat; 0.65
+../formulae/woorpje/smt/04_track_88.smt;0.95; unsat;5.04; unsat;TO;TO;3.4; 1c71b61d; unsat; 1.85;0.06; unsat;0.06; unsat;TO;TO;13.7; unsat;ERR;ERR;3.4; c69385be; unsat; 1.84
+../formulae/woorpje/smt/04_track_89.smt;0.45; unsat;0.84; unsat;TO;TO;2.42; 1c71b61d; unsat; 0.82;0.05; unsat;0.04; unsat;TO;TO;8.07; unsat;ERR;ERR;2.39; c69385be; unsat; 0.81
+../formulae/woorpje/smt/04_track_9.smt;0.1; sat;0.75; sat;0.27; unsat;TO;TO;TO;TO;0.15; sat;0.09; sat;TO;TO;13.33; sat;0.26; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/04_track_90.smt;0.85; unsat;0.64; unsat;TO;TO;3.03; 1c71b61d; unsat; 1.45;0.05; unsat;0.06; unsat;TO;TO;9.1; unsat;ERR;ERR;3.01; c69385be; unsat; 1.42
+../formulae/woorpje/smt/04_track_91.smt;0.06; unsat;0.09; unsat;53.88; unsat;1.72; 1c71b61d; unsat; 0.16;0.02; unsat;0.02; unsat;TO;TO;3.95; unsat;TO;TO;1.68; c69385be; unsat; 0.16
+../formulae/woorpje/smt/04_track_92.smt;0.07; unsat;0.04; unsat;TO;TO;1.65; 1c71b61d; unsat; 0.15;0.01; unsat;0.01; unsat;TO;TO;3.44; unsat;ERR;ERR;1.74; c69385be; unsat; 0.15
+../formulae/woorpje/smt/04_track_93.smt;0.01; sat;0.0; sat;TO;TO;2.43; 1c71b61d; sat; 0.89;0.01; sat;0.01; sat;27.39; sat;2.57; sat;0.0; sat;1.72; c69385be; sat; 0.12
+../formulae/woorpje/smt/04_track_94.smt;0.11; sat;0.06; sat;TO;TO;3.62; 1c71b61d; sat; 2.13;0.1; sat;0.12; sat;TO;TO;8.42; sat;0.01; sat;3.72; c69385be; sat; 2.17
+../formulae/woorpje/smt/04_track_95.smt;0.4; unsat;0.45; unsat;TO;TO;2.32; 1c71b61d; unsat; 0.76;0.05; unsat;0.05; unsat;TO;TO;7.2; unsat;TO;TO;2.3; c69385be; unsat; 0.78
+../formulae/woorpje/smt/04_track_96.smt;0.1; unsat;0.08; unsat;11.72; unsat;1.78; 1c71b61d; unsat; 0.24;0.02; unsat;0.01; unsat;TO;TO;4.69; unsat;ERR;ERR;1.83; c69385be; unsat; 0.25
+../formulae/woorpje/smt/04_track_97.smt;0.12; sat;0.12; sat;1.34; unsat;2.63; 1c71b61d; sat; 1.12;0.01; sat;0.01; sat;TO;TO;4.63; sat;0.01; sat;3.33; c69385be; sat; 1.93
+../formulae/woorpje/smt/04_track_98.smt;0.05; unsat;0.02; unsat;19.38; unsat;2.05; 1c71b61d; unsat; 0.53;0.02; unsat;0.01; unsat;10.15; unsat;2.75; unsat;ERR;ERR;2.02; c69385be; unsat; 0.52
+../formulae/woorpje/smt/04_track_99.smt;1.87; sat;12.53; sat;18.53; unsat;TO;TO;TO;TO;0.49; sat;0.39; sat;TO;TO;43.36; sat;2.49; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/05_track_1.smt;0.02; sat;0.02; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;5.67; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_10.smt;0.02; sat;0.05; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.02; sat;0.03; sat;TO;TO;5.32; sat;0.01; sat;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_100.smt;0.08; sat;0.05; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.08; sat;0.1; sat;TO;TO;4.69; sat;0.02; sat;1.5; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_101.smt;0.04; sat;0.08; sat;0.19; unsat;1.53; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;12.8; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_102.smt;0.04; sat;0.07; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.02;0.07; sat;0.15; sat;TO;TO;4.3; sat;0.03; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_103.smt;0.03; sat;0.01; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;5.6; sat;0.01; sat;1.52; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_104.smt;0.04; sat;0.02; sat;ERR;ERR;1.5; 1c71b61d; unknown; 0.01;0.07; sat;0.07; sat;TO;TO;3.49; sat;0.01; sat;1.52; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_105.smt;0.03; sat;0.03; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.02;0.1; sat;TO;TO;TO;TO;5.15; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_106.smt;0.05; sat;0.11; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.07; sat;0.04; sat;TO;TO;9.9; sat;0.03; sat;1.56; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_107.smt;0.14; sat;0.19; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.03;0.02; sat;0.01; sat;TO;TO;9.0; sat;0.02; sat;1.54; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_108.smt;0.03; sat;0.02; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.02;0.04; sat;0.03; sat;TO;TO;3.73; sat;0.01; sat;1.53; c69385be; unknown; 0.01
+../formulae/woorpje/smt/05_track_109.smt;0.02; sat;0.02; sat;ERR;ERR;1.53; 1c71b61d; unknown; 0.02;0.01; sat;0.0; sat;TO;TO;5.06; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_11.smt;0.03; sat;0.1; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;7.47; sat;0.02; sat;1.6; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_110.smt;0.04; sat;0.11; sat;ERR;ERR;1.65; 1c71b61d; unknown; 0.04;0.02; sat;0.1; sat;TO;TO;9.02; sat;0.03; sat;1.52; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_111.smt;0.03; unsat;0.5; unsat;ERR;ERR;1.6; 1c71b61d; unknown; 0.05;0.02; unsat;0.0; unsat;40.57; OOM;3.34; unsat;TO;TO;1.67; c69385be; unknown; 0.05
+../formulae/woorpje/smt/05_track_112.smt;0.03; sat;0.04; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.08; sat;0.06; sat;TO;TO;4.78; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_113.smt;0.03; sat;0.04; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.03; sat;0.09; sat;TO;TO;3.58; sat;0.02; sat;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_114.smt;0.05; sat;0.12; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.03;0.04; sat;0.03; sat;TO;TO;8.9; sat;0.05; sat;1.6; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_115.smt;0.04; sat;0.12; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.03;0.03; sat;0.02; sat;TO;TO;3.56; sat;0.02; sat;1.61; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_116.smt;0.04; sat;0.08; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.02;0.22; sat;0.11; sat;TO;TO;8.25; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_117.smt;0.1; sat;0.11; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.04; sat;0.3; sat;TO;TO;19.17; sat;0.06; sat;1.55; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_118.smt;0.02; sat;0.03; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.01; sat;0.03; sat;TO;TO;3.45; sat;0.02; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_119.smt;0.05; unsat;0.04; unsat;ERR;ERR;1.53; 1c71b61d; unknown; 0.02;0.01; unsat;0.01; unsat;TO;TO;4.05; unsat;TO;TO;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_12.smt;0.03; sat;0.05; sat;TO;TO;TO;TO;TO;TO;0.01; sat;0.01; sat;TO;TO;5.43; sat;0.02; sat;TO;TO;TO;TO
+../formulae/woorpje/smt/05_track_120.smt;0.23; sat;0.06; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.03;0.01; sat;0.02; sat;TO;TO;6.52; sat;0.02; sat;1.69; c69385be; unknown; 0.05
+../formulae/woorpje/smt/05_track_121.smt;0.02; sat;0.02; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.03; sat;0.15; sat;50.23; sat;5.09; sat;0.01; sat;1.67; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_122.smt;0.03; sat;0.1; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.03;0.02; sat;0.02; sat;TO;TO;7.89; sat;ERR;ERR;1.62; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_123.smt;0.04; sat;0.08; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.03;0.01; sat;0.02; sat;TO;TO;3.73; sat;0.01; sat;1.64; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_124.smt;0.03; sat;0.02; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.05; sat;0.07; sat;TO;TO;4.02; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_125.smt;0.02; unsat;0.03; unsat;ERR;ERR;1.53; 1c71b61d; unknown; 0.02;0.02; unsat;0.01; unsat;TO;TO;2.4; unsat;TO;TO;1.64; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_126.smt;0.02; sat;0.01; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;54.51; sat;2.34; sat;0.01; sat;1.64; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_127.smt;0.02; sat;0.03; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.04; sat;0.04; sat;6.55; sat;6.43; sat;0.01; sat;1.62; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_128.smt;0.03; sat;0.05; sat;ERR;ERR;1.48; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;3.8; sat;0.01; sat;1.6; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_129.smt;0.03; sat;0.03; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.05; sat;0.08; sat;TO;TO;3.75; sat;0.01; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_13.smt;0.03; sat;0.04; sat;ERR;ERR;1.52; 1c71b61d; unknown; 0.02;0.03; sat;0.03; sat;TO;TO;7.0; sat;TO;TO;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_130.smt;0.02; sat;0.02; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.12; sat;TO;TO;TO;TO;4.98; sat;0.01; sat;1.62; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_131.smt;0.02; sat;0.01; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;4.05; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_132.smt;0.06; sat;0.04; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;5.4; sat;0.01; sat;1.58; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_133.smt;0.03; sat;0.01; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;2.33; sat;0.01; sat;1.61; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_134.smt;0.42; sat;0.05; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.06; sat;0.09; sat;TO;TO;5.61; sat;0.04; sat;1.66; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_135.smt;0.03; sat;0.05; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.04; sat;0.02; sat;TO;TO;6.51; sat;0.03; sat;1.63; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_136.smt;0.02; unsat;0.03; unsat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.01; unsat;0.01; unsat;TO;TO;2.77; unsat;TO;TO;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_137.smt;0.05; sat;0.07; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;3.83; sat;0.02; sat;1.53; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_138.smt;0.07; sat;0.05; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.01; sat;0.15; sat;TO;TO;4.99; sat;0.02; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_139.smt;0.13; unsat;0.38; unsat;ERR;ERR;1.53; 1c71b61d; unknown; 0.04;0.02; unsat;0.02; unsat;TO;TO;5.29; unsat;TO;TO;1.58; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_14.smt;0.1; sat;0.09; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.19; sat;3.98; sat;TO;TO;6.4; sat;0.01; sat;1.48; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_140.smt;0.03; sat;0.02; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.04; sat;0.04; sat;TO;TO;4.23; sat;0.01; sat;1.63; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_141.smt;0.03; sat;0.04; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;6.03; sat;0.01; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_142.smt;0.01; sat;0.01; sat;ERR;ERR;1.52; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;3.62; sat;0.0; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_143.smt;0.04; sat;0.04; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.02; sat;0.01; sat;TO;TO;7.61; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_144.smt;0.03; sat;0.03; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.01; sat;0.02; sat;TO;TO;4.59; sat;0.02; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_145.smt;0.03; unsat;0.06; unsat;ERR;ERR;1.62; 1c71b61d; unknown; 0.03;0.02; unsat;0.01; unsat;TO;TO;3.01; unsat;TO;TO;1.58; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_146.smt;0.02; sat;0.01; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;4.51; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_147.smt;0.02; unsat;0.02; unsat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.01; unsat;0.0; unsat;TO;TO;2.33; unsat;TO;TO;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_148.smt;0.03; unsat;0.03; unsat;ERR;ERR;1.59; 1c71b61d; unknown; 0.03;0.01; unsat;0.01; unsat;TO;TO;4.48; unsat;ERR;ERR;1.58; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_149.smt;0.03; sat;0.03; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.22; sat;0.24; sat;TO;TO;6.29; sat;0.01; sat;1.64; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_15.smt;0.02; sat;0.01; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;4.89; sat;0.01; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_150.smt;0.03; unsat;0.09; unsat;ERR;ERR;1.63; 1c71b61d; unknown; 0.03;0.02; unsat;0.01; unsat;TO;TO;3.09; unsat;TO;TO;1.63; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_151.smt;0.03; sat;0.08; sat;ERR;ERR;1.65; 1c71b61d; unknown; 0.03;0.02; sat;0.02; sat;TO;TO;5.77; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_152.smt;0.02; sat;0.01; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;3.53; sat;0.01; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_153.smt;0.05; sat;0.08; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.02; sat;0.02; sat;TO;TO;7.87; sat;0.06; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_154.smt;0.04; sat;0.04; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.12; sat;0.19; sat;TO;TO;4.68; sat;0.02; sat;1.64; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_155.smt;0.03; sat;0.03; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.15; sat;TO;TO;46.41; sat;3.39; sat;0.01; sat;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_156.smt;0.04; sat;0.03; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.06; sat;0.2; sat;TO;TO;5.03; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_157.smt;0.05; sat;0.06; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.02;0.01; sat;0.04; sat;TO;TO;10.75; sat;0.01; sat;1.53; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_158.smt;0.02; sat;0.02; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;5.08; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_159.smt;0.08; sat;0.13; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.03;0.03; sat;0.04; sat;TO;TO;3.85; sat;0.03; sat;1.6; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_16.smt;0.04; sat;0.06; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.03;0.02; sat;0.02; sat;TO;TO;6.43; sat;ERR;ERR;1.54; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_160.smt;0.03; sat;0.12; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.03;0.05; sat;0.04; sat;TO;TO;7.1; sat;0.03; sat;1.61; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_161.smt;0.02; sat;0.02; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.01; sat;1.21; sat;22.46; sat;4.61; sat;0.02; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_162.smt;0.05; unsat;0.16; unsat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.04; unsat;0.02; unsat;TO;TO;4.79; unsat;TO;TO;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_163.smt;0.03; sat;0.1; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;4.75; sat;0.02; sat;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_164.smt;0.04; sat;0.03; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.02; sat;0.07; sat;TO;TO;7.0; sat;0.01; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_165.smt;0.03; sat;0.03; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;4.72; sat;TO;TO;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_166.smt;0.02; sat;0.02; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;9.4; sat;4.39; sat;0.02; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_167.smt;0.04; sat;0.06; sat;ERR;ERR;1.65; 1c71b61d; unknown; 0.03;0.03; sat;0.01; sat;TO;TO;8.34; sat;0.01; sat;1.53; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_168.smt;0.03; sat;0.02; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.03; sat;0.04; sat;TO;TO;4.95; sat;TO;TO;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_169.smt;0.04; sat;0.08; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.02;0.02; sat;0.03; sat;TO;TO;7.53; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_17.smt;0.01; sat;0.01; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;22.36; sat;2.98; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_170.smt;0.02; sat;0.02; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.04; sat;0.04; sat;TO;TO;5.62; sat;0.01; sat;1.61; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_171.smt;0.02; sat;0.02; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.0; sat;0.02; sat;52.02; sat;7.23; sat;0.01; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_172.smt;0.05; sat;0.28; sat;0.2; unsat;1.65; 1c71b61d; unknown; 0.04;0.05; sat;0.07; sat;TO;TO;9.6; sat;0.03; sat;1.62; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_173.smt;0.07; sat;0.13; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.02;0.08; sat;0.02; sat;TO;TO;6.86; sat;0.04; sat;1.58; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_174.smt;0.03; sat;0.09; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.02;0.06; sat;0.09; sat;TO;TO;5.02; sat;0.03; sat;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_175.smt;0.03; sat;0.04; sat;ERR;ERR;1.65; 1c71b61d; unknown; 0.02;0.04; sat;0.04; sat;TO;TO;7.5; sat;0.01; sat;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_176.smt;0.04; sat;0.02; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;8.16; sat;0.01; sat;1.63; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_177.smt;0.04; unsat;0.14; unsat;ERR;ERR;1.64; 1c71b61d; unknown; 0.04;0.02; unsat;0.01; unsat;TO;TO;3.06; unsat;TO;TO;1.61; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_178.smt;0.05; sat;0.09; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.03;0.03; sat;0.05; sat;TO;TO;5.12; sat;0.02; sat;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_179.smt;0.03; sat;0.02; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;6.39; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_18.smt;0.04; sat;0.04; sat;ERR;ERR;1.64; 1c71b61d; unknown; 0.02;0.03; sat;0.01; sat;TO;TO;6.87; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_180.smt;0.02; sat;0.02; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.14; sat;0.15; sat;TO;TO;3.24; sat;0.02; sat;1.64; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_181.smt;0.02; sat;0.02; sat;ERR;ERR;1.64; 1c71b61d; unknown; 0.02;0.02; sat;0.0; sat;TO;TO;4.72; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_182.smt;0.03; sat;0.03; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.06; sat;0.02; sat;TO;TO;5.68; sat;0.01; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_183.smt;0.07; sat;0.19; sat;ERR;ERR;1.65; 1c71b61d; unknown; 0.03;0.06; sat;0.06; sat;TO;TO;9.04; sat;0.04; sat;1.63; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_184.smt;0.03; unsat;0.11; unsat;ERR;ERR;1.6; 1c71b61d; unknown; 0.03;0.01; unsat;0.02; unsat;TO;TO;3.3; unsat;TO;TO;1.57; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_185.smt;0.04; sat;0.25; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.04;0.03; sat;0.02; sat;19.21; OOM;5.22; sat;0.02; sat;1.64; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_186.smt;0.02; sat;0.02; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.04; sat;0.03; sat;TO;TO;6.16; sat;TO;TO;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_187.smt;0.04; sat;0.06; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.03;0.01; sat;0.02; sat;TO;TO;3.4; sat;0.02; sat;1.57; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_188.smt;0.04; sat;0.09; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.02;0.03; sat;0.02; sat;TO;TO;6.74; sat;0.02; sat;1.61; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_189.smt;0.01; sat;0.01; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;6.28; sat;0.01; sat;1.53; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_19.smt;0.03; unsat;0.11; unsat;ERR;ERR;1.6; 1c71b61d; unknown; 0.03;0.06; unsat;0.11; unsat;TO;TO;2.97; unsat;TO;TO;1.58; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_190.smt;0.07; sat;0.1; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.03;0.05; sat;TO;TO;TO;TO;5.66; sat;0.02; sat;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_191.smt;0.02; sat;0.01; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;2.57; sat;0.02; sat;1.51; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_192.smt;0.03; unsat;0.03; unsat;ERR;ERR;1.53; 1c71b61d; unknown; 0.02;0.01; unsat;0.01; unsat;13.47; sat;3.57; unsat;TO;TO;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_193.smt;0.04; sat;0.09; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.03;0.06; sat;0.05; sat;TO;TO;5.6; sat;0.03; sat;1.63; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_194.smt;0.04; sat;0.1; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.23; sat;0.14; sat;TO;TO;5.98; sat;0.03; sat;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_195.smt;0.07; sat;0.08; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.08; sat;0.43; sat;TO;TO;5.97; sat;0.04; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_196.smt;0.04; sat;0.07; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;4.45; sat;0.02; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_197.smt;0.04; sat;0.11; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.03;0.04; sat;0.05; sat;TO;TO;8.77; sat;0.03; sat;1.51; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_198.smt;0.03; sat;0.04; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.03; sat;0.4; sat;8.35; sat;4.18; sat;TO;TO;1.52; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_199.smt;0.03; sat;0.08; sat;0.21; unsat;1.61; 1c71b61d; unknown; 0.03;0.06; sat;0.09; sat;TO;TO;8.14; sat;0.02; sat;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_2.smt;0.03; sat;0.02; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.02;0.05; sat;0.11; sat;TO;TO;4.77; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_20.smt;0.03; sat;0.02; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.03; sat;0.02; sat;TO;TO;6.76; sat;ERR;ERR;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_200.smt;0.03; sat;0.01; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.02;0.01; sat;0.0; sat;TO;TO;4.79; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_21.smt;0.03; unsat;0.1; unsat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.02; unsat;0.01; unsat;TO;TO;3.97; unsat;TO;TO;1.6; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_22.smt;0.03; sat;0.03; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.02; sat;0.36; sat;TO;TO;5.02; sat;0.01; sat;1.61; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_23.smt;0.03; sat;0.08; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.01; sat;0.02; sat;TO;TO;8.54; sat;0.02; sat;1.66; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_24.smt;0.04; sat;0.06; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;5.1; sat;0.02; sat;1.65; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_25.smt;0.05; sat;0.12; sat;ERR;ERR;1.65; 1c71b61d; unknown; 0.03;0.01; sat;0.02; sat;TO;TO;14.61; sat;0.04; sat;1.57; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_26.smt;0.02; unsat;0.03; unsat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.01; unsat;0.01; unsat;TO;TO;2.31; unsat;TO;TO;1.51; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_27.smt;0.03; sat;0.04; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.03;0.06; sat;0.04; sat;TO;TO;4.67; sat;0.01; sat;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_28.smt;0.02; sat;0.03; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.04; sat;0.01; sat;7.63; sat;3.91; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_29.smt;0.02; sat;0.03; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;7.44; sat;0.01; sat;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_3.smt;0.02; sat;0.01; sat;0.27; unsat;1.67; 1c71b61d; sat; 0.1;0.01; sat;0.01; sat;TO;TO;2.37; sat;0.01; sat;1.64; c69385be; sat; 0.1
+../formulae/woorpje/smt/05_track_30.smt;0.03; sat;0.04; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.03;0.06; sat;0.05; sat;TO;TO;7.02; sat;0.01; sat;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_31.smt;0.08; sat;0.07; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.02;0.01; sat;0.22; sat;TO;TO;8.45; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_32.smt;0.03; sat;0.03; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.1; sat;TO;TO;TO;TO;4.26; sat;0.01; sat;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_33.smt;0.05; sat;0.04; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.03; sat;0.03; sat;TO;TO;7.86; sat;0.02; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_34.smt;0.05; sat;0.19; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.03; sat;0.03; sat;TO;TO;9.17; sat;0.02; sat;1.62; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_35.smt;0.03; sat;0.03; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.11; sat;0.05; sat;TO;TO;4.3; sat;0.02; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_36.smt;0.03; sat;0.05; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.37; sat;0.23; sat;TO;TO;3.82; sat;0.02; sat;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_37.smt;0.02; sat;0.01; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;4.48; sat;0.01; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_38.smt;0.04; sat;0.04; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.02; sat;TO;TO;TO;TO;7.55; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_39.smt;0.02; sat;0.03; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.03;0.02; sat;0.01; sat;TO;TO;7.72; sat;ERR;ERR;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_4.smt;0.06; sat;0.12; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.04; sat;0.02; sat;TO;TO;6.29; sat;0.01; sat;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_40.smt;0.03; sat;0.03; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.02;0.03; sat;0.11; sat;TO;TO;4.25; sat;0.01; sat;1.53; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_41.smt;0.05; sat;0.09; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.22; sat;TO;TO;TO;TO;8.21; sat;0.03; sat;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_42.smt;0.03; sat;0.02; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.05; sat;0.12; sat;TO;TO;5.09; sat;0.01; sat;1.53; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_43.smt;0.03; sat;0.03; sat;ERR;ERR;1.52; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;2.83; sat;0.02; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_44.smt;0.05; unsat;0.03; unsat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.01; unsat;0.02; unsat;TO;TO;3.12; unsat;TO;TO;1.63; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_45.smt;0.03; sat;0.03; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.03; sat;0.04; sat;TO;TO;4.82; sat;0.01; sat;1.68; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_46.smt;0.03; sat;0.02; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.02;0.07; sat;0.39; sat;TO;TO;3.28; sat;0.02; sat;1.67; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_47.smt;0.03; unsat;0.02; unsat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.01; unsat;0.01; unsat;TO;TO;2.65; unsat;TO;TO;1.65; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_48.smt;0.04; sat;0.08; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.02; sat;0.03; sat;TO;TO;5.69; sat;0.02; sat;1.62; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_49.smt;0.03; unsat;0.02; unsat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.01; unsat;0.01; unsat;TO;TO;2.57; unsat;TO;TO;1.65; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_5.smt;0.04; sat;0.07; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.03;0.02; sat;0.04; sat;TO;TO;4.07; sat;0.02; sat;1.59; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_50.smt;0.03; sat;0.04; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.05; sat;0.03; sat;TO;TO;5.59; sat;0.03; sat;1.65; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_51.smt;0.04; unsat;0.32; unsat;ERR;ERR;1.65; 1c71b61d; unknown; 0.04;0.05; unsat;0.03; unsat;22.89; OOM;4.32; unsat;TO;TO;1.56; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_52.smt;0.04; sat;0.07; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.03;0.04; sat;0.05; sat;TO;TO;21.5; sat;0.02; sat;1.57; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_53.smt;0.02; unsat;0.04; unsat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.03; unsat;0.02; unsat;12.75; sat;3.25; unsat;TO;TO;1.53; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_54.smt;0.02; sat;0.01; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;38.9; sat;3.92; sat;0.01; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_55.smt;0.05; sat;0.17; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.04;0.02; sat;0.02; sat;TO;TO;5.71; sat;0.03; sat;1.53; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_56.smt;0.04; sat;0.07; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;6.42; sat;0.01; sat;1.58; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_57.smt;0.03; sat;0.02; sat;ERR;ERR;1.52; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;2.39; sat;0.01; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_58.smt;0.02; sat;0.02; sat;0.74; sat;1.61; 1c71b61d; sat; 0.06;0.04; sat;0.02; sat;7.05; sat;6.88; sat;0.02; sat;1.57; c69385be; sat; 0.05
+../formulae/woorpje/smt/05_track_59.smt;0.03; sat;0.02; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;4.71; sat;0.01; sat;1.57; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_6.smt;0.03; sat;0.01; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;4.37; sat;ERR;ERR;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_60.smt;0.02; sat;0.01; sat;ERR;ERR;1.6; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;7.76; sat;4.93; sat;TO;TO;1.53; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_61.smt;0.04; sat;0.07; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.02; sat;0.03; sat;TO;TO;7.92; sat;ERR;ERR;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_62.smt;0.03; sat;0.02; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;5.82; sat;0.02; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_63.smt;0.06; sat;0.11; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.08; sat;0.07; sat;TO;TO;8.39; sat;0.1; sat;1.53; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_64.smt;0.03; sat;0.05; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.02;0.03; sat;0.06; sat;TO;TO;9.36; sat;0.01; sat;1.62; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_65.smt;0.03; sat;0.05; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.02;0.01; sat;0.16; sat;TO;TO;4.75; sat;0.01; sat;1.53; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_66.smt;0.03; sat;0.01; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;8.37; sat;ERR;ERR;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_67.smt;0.04; sat;0.07; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.03;0.01; sat;0.02; sat;TO;TO;4.19; sat;0.01; sat;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_68.smt;0.03; sat;0.01; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.02;0.01; sat;0.02; sat;TO;TO;3.67; sat;ERR;ERR;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_69.smt;0.03; sat;0.06; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.03; sat;0.03; sat;TO;TO;6.47; sat;0.02; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_7.smt;0.04; sat;0.08; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.02; sat;0.04; sat;TO;TO;5.82; sat;0.02; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_70.smt;0.03; sat;0.02; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.07; sat;0.12; sat;TO;TO;5.69; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_71.smt;0.04; sat;0.04; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;4.16; sat;0.01; sat;1.56; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_72.smt;0.02; sat;0.01; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;2.32; sat;0.01; sat;1.58; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_73.smt;0.02; sat;0.02; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.02; sat;0.01; sat;TO;TO;5.38; sat;0.01; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_74.smt;0.04; sat;0.03; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;6.8; sat;0.01; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_75.smt;0.02; sat;0.05; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.03; sat;0.03; sat;TO;TO;8.4; sat;0.02; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_76.smt;0.02; sat;0.03; sat;ERR;ERR;1.53; 1c71b61d; unknown; 0.02;0.02; sat;0.02; sat;TO;TO;4.84; sat;0.01; sat;1.52; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_77.smt;0.02; sat;0.03; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.03; sat;0.17; sat;TO;TO;4.3; sat;0.01; sat;1.5; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_78.smt;0.02; sat;0.01; sat;ERR;ERR;1.52; 1c71b61d; unknown; 0.02;0.01; sat;0.0; sat;TO;TO;3.32; sat;0.01; sat;1.5; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_79.smt;0.04; sat;0.08; sat;ERR;ERR;1.62; 1c71b61d; unknown; 0.02;0.03; sat;0.03; sat;TO;TO;8.21; sat;0.02; sat;1.61; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_8.smt;0.03; unsat;0.07; unsat;ERR;ERR;1.64; 1c71b61d; unknown; 0.03;0.01; unsat;0.01; unsat;TO;TO;2.92; unsat;TO;TO;1.57; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_80.smt;0.04; sat;0.1; sat;ERR;ERR;1.64; 1c71b61d; unknown; 0.03;0.02; sat;0.28; sat;TO;TO;13.8; sat;0.02; sat;1.58; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_81.smt;0.05; sat;0.12; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.03;0.14; sat;0.27; sat;TO;TO;8.9; sat;0.04; sat;1.57; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_82.smt;0.06; sat;0.06; sat;ERR;ERR;1.63; 1c71b61d; unknown; 0.02;0.04; sat;0.11; sat;TO;TO;5.82; sat;0.02; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_83.smt;0.07; sat;0.07; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.05; sat;0.05; sat;TO;TO;6.45; sat;0.01; sat;1.57; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_84.smt;0.02; sat;0.02; sat;ERR;ERR;1.55; 1c71b61d; unknown; 0.02;0.1; sat;TO;TO;TO;TO;6.45; sat;0.02; sat;1.62; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_85.smt;0.05; sat;0.13; sat;ERR;ERR;1.59; 1c71b61d; unknown; 0.03;0.02; sat;0.04; sat;TO;TO;7.64; sat;0.02; sat;1.63; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_86.smt;0.01; unsat;0.01; unsat;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.01; unsat;0.01; unsat;TO;TO;2.35; unsat;TO;TO;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_87.smt;0.02; sat;0.04; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.02;0.01; sat;0.01; sat;TO;TO;7.45; sat;0.0; sat;1.64; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_88.smt;0.03; sat;0.04; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.03;0.01; sat;0.01; sat;TO;TO;5.81; sat;0.01; sat;1.63; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_89.smt;0.04; sat;0.15; sat;ERR;ERR;1.57; 1c71b61d; unknown; 0.03;0.04; sat;0.03; sat;TO;TO;9.76; sat;0.02; sat;1.71; c69385be; unknown; 0.04
+../formulae/woorpje/smt/05_track_9.smt;0.02; sat;0.02; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.08; sat;TO;TO;TO;TO;3.3; sat;0.02; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_90.smt;0.02; sat;0.02; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.01; sat;0.0; sat;TO;TO;6.15; sat;0.01; sat;1.64; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_91.smt;0.04; sat;0.08; sat;ERR;ERR;1.61; 1c71b61d; unknown; 0.02;0.21; sat;0.29; sat;TO;TO;6.9; sat;0.02; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_92.smt;0.03; sat;0.03; sat;ERR;ERR;1.56; 1c71b61d; unknown; 0.02;0.07; sat;0.1; sat;TO;TO;6.55; sat;0.01; sat;1.56; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_93.smt;TO;TO;TO;TO;ERR;ERR;1.57; 1c71b61d; unknown; 0.02;0.02; sat;1.24; sat;TO;TO;4.81; sat;0.01; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_94.smt;0.05; sat;0.07; sat;ERR;ERR;1.52; 1c71b61d; unknown; 0.02;0.02; sat;0.04; sat;TO;TO;4.33; sat;0.01; sat;1.6; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_95.smt;0.02; sat;0.02; sat;ERR;ERR;1.67; 1c71b61d; unknown; 0.02;0.0; sat;0.02; sat;TO;TO;8.05; sat;0.01; sat;1.55; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_96.smt;0.04; sat;0.05; sat;ERR;ERR;1.65; 1c71b61d; unknown; 0.02;0.02; sat;TO;TO;22.06; sat;6.15; sat;0.01; sat;1.59; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_97.smt;0.06; sat;0.03; sat;ERR;ERR;1.58; 1c71b61d; unknown; 0.02;0.21; sat;0.15; sat;TO;TO;7.21; sat;0.01; sat;1.54; c69385be; unknown; 0.02
+../formulae/woorpje/smt/05_track_98.smt;0.07; sat;0.07; sat;ERR;ERR;1.54; 1c71b61d; unknown; 0.03;0.02; sat;0.03; sat;TO;TO;3.61; sat;0.02; sat;1.61; c69385be; unknown; 0.03
+../formulae/woorpje/smt/05_track_99.smt;0.04; unsat;0.1; unsat;ERR;ERR;1.63; 1c71b61d; unknown; 0.03;0.0; unsat;0.02; unsat;TO;TO;4.53; unsat;TO;TO;1.58; c69385be; unknown; 0.03
