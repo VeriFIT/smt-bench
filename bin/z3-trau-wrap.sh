@@ -11,9 +11,10 @@ INPUT=$1
 ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
 SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
-PROGRAM="${SCRIPT_DIR}/z3strRE-cav21-ae/RegexSolver/build/z3"
+PROGRAM="${SCRIPT_DIR}/z3-trau/build/z3"
 
-out=$(${PROGRAM} smt.string_solver=z3str3 smt.str.tactic=arr smt.arith.solver=2 ${INPUT})
+# we need to replace in_re and to_re with in.re and to.re
+out=$(cat ${INPUT} | sed 's|in_re|in.re|g' | sed 's|to_re|to.re|g' | ${PROGRAM} smt.string_solver=trau -in)
 ret=$?
 echo "result: ${out}"
 

@@ -4,6 +4,12 @@ z3:
 z3strRE:
   cmd: ../bin/z3strRE-wrap.sh $1
 
+z3str4:
+  cmd: ../bin/z3str4-wrap.sh $1
+
+z3-trau:
+  cmd: ../bin/z3-trau-wrap.sh $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
@@ -27,3 +33,9 @@ retro:
 
 sloth:
   cmd: ../bin/sloth-wrap.sh $1
+
+ostrich:
+  cmd: ../bin/ostrich-wrap.sh $1
+
+woorpje:
+  cmd: ../bin/woorpje-wrap.sh $1
