@@ -15,7 +15,7 @@ String Analysis via Automata Manipulation with Logic Circuit Representation. CAV
 (set-info :status unknown)
 
 (declare-fun literal_0 () String)
-(assert (= literal_0 "\x2f\x64\x72\x69\x76\x65\x72\x73\x2f\x61\x64\x6f\x64\x62\x2d\x69\x62\x61\x73\x65\x2e\x69\x6e\x63\x2e\x70\x68\x70"))
-(assert (str.in_re literal_0 (re.++ (re.* re.allchar) (re.++ (str.to_re "\x2f\x65\x76\x69\x6c") (re.* re.allchar)))))
+(assert (= literal_0 "\u{2f}\u{64}\u{72}\u{69}\u{76}\u{65}\u{72}\u{73}\u{2f}\u{61}\u{64}\u{6f}\u{64}\u{62}\u{2d}\u{69}\u{62}\u{61}\u{73}\u{65}\u{2e}\u{69}\u{6e}\u{63}\u{2e}\u{70}\u{68}\u{70}"))
+(assert (str.in_re literal_0 (re.++ (re.* re.allchar) (re.++ (str.to_re "\u{2f}\u{65}\u{76}\u{69}\u{6c}") (re.* re.allchar)))))
 (check-sat)
 (exit)

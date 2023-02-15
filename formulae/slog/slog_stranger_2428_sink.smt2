@@ -16,7 +16,7 @@ String Analysis via Automata Manipulation with Logic Circuit Representation. CAV
 
 (declare-fun sigmaStar_0 () String)
 (declare-fun literal_5 () String)
-(assert (= literal_5 "\x3c\x74\x68\x20\x63\x6c\x61\x73\x73\x3d\x22\x63\x32\x20\x68\x65\x61\x64\x65\x72\x22\x3e\x69\x70\x5f\x61\x64\x64\x72\x65\x73\x73\x3c\x2f\x74\x68\x3e\x5c\x6e"))
-(assert (str.in_re literal_5 (re.++ (re.* re.allchar) (re.++ (str.to_re "\x5c\x3c\x53\x43\x52\x49\x50\x54") (re.* re.allchar)))))
+(assert (= literal_5 "\u{3c}\u{74}\u{68}\u{20}\u{63}\u{6c}\u{61}\u{73}\u{73}\u{3d}\u{22}\u{63}\u{32}\u{20}\u{68}\u{65}\u{61}\u{64}\u{65}\u{72}\u{22}\u{3e}\u{69}\u{70}\u{5f}\u{61}\u{64}\u{64}\u{72}\u{65}\u{73}\u{73}\u{3c}\u{2f}\u{74}\u{68}\u{3e}\u{5c}\u{6e}"))
+(assert (str.in_re literal_5 (re.++ (re.* re.allchar) (re.++ (str.to_re "\u{5c}\u{3c}\u{53}\u{43}\u{52}\u{49}\u{50}\u{54}") (re.* re.allchar)))))
 (check-sat)
 (exit)
