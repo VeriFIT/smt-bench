@@ -10,6 +10,9 @@ z3str4:
 z3-trau:
   cmd: ../bin/z3-trau-wrap.sh $1
 
+z3-noodler:
+  cmd: ../bin/z3-noodler-wrap.sh $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
