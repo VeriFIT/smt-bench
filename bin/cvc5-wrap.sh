@@ -13,9 +13,9 @@ PARAMS="$*"
 ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
 SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
-CVC_PROG="${SCRIPT_DIR}/cvc5/build/bin/cvc5"
+CVC_PROG="${SCRIPT_DIR}/cvc5-Linux"
 
-out=$(${CVC_PROG} --lang smt2 --strings-exp ${INPUT} $PARAMS)
+out=$(${CVC_PROG} --lang smt2 ${INPUT} $PARAMS)
 ret=$?
 echo "result: ${out}"
 
