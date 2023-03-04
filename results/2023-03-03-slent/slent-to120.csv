@@ -1,4 +1,4 @@
-name;z3-runtime;z3-result;cvc5-runtime;cvc5-result;z3-noodler-d714ecd-runtime;z3-noodler-d714ecd-result;z3-b3b361a-noodler-runtime;z3-noodler-b3b361a-result
+name;z3-runtime;z3-result;cvc5-runtime;cvc5-result;z3-noodler-d714ecd-runtime;z3-noodler-d714ecd-result;z3-noodler-b3b361a-runtime;z3-noodler-b3b361a-result
 ../formulae/slent/slent_kaluza_1629_sink.smt2;0.01; unsat;0.01; unsat;0.01; unsat;0.02; unsat
 ../formulae/slent/slent_kaluza_1245_sink.smt2;0.01; sat;0.01; sat;0.02; sat;0.02; sat
 ../formulae/slent/slent_kaluza_1073_sink.smt2;0.02; sat;0.02; sat;0.03; sat;0.02; sat
