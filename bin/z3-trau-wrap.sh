@@ -14,7 +14,7 @@ SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 PROGRAM="${SCRIPT_DIR}/z3-trau/build/z3"
 
 # we need to replace in_re and to_re with in.re and to.re
-out=$(cat ${INPUT} | sed 's|in_re|in.re|g' | sed 's|to_re|to.re|g' | ${PROGRAM} smt.string_solver=trau -in)
+out=$(cat ${INPUT} | sed 's|in_re|in.re|g' | sed 's|to_re|to.re|g' | sed 's|QF_SLIA|ALL|g' | ${PROGRAM} smt.string_solver=trau -in)
 ret=$?
 echo "result: ${out}"
 
