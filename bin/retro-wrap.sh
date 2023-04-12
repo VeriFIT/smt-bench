@@ -19,7 +19,7 @@ ABSOLUTE_INPUT_PATH=$(readlink -f ${INPUT})
 
 (
   cd ${RETRO_DIR}
-  out=$(./${RETRO_EXE} ${ABSOLUTE_INPUT_PATH} | grep "sat")
+  out=$(LD_LIBRARY_PATH=${RETRO_DIR}/../lib ./${RETRO_EXE} ${ABSOLUTE_INPUT_PATH} | grep "sat")
   ret=$?
   echo "result: ${out}"
   exit ${ret}
