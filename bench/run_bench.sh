@@ -43,4 +43,6 @@ fi
 
 
 CUR_DATE=$(date +%Y-%m-%d-%H-%M)
-cat "$BENCH_NAME.input" | ./pycobench -c smt.yaml -j 1 -t 120 -m "z3-noodler" -o "$BENCH_NAME-to120-$(echo "$TOOLS" | tr ';' '-')-$CUR_DATE.tasks"
+TASKS_FILE="$BENCH_NAME-to120-$(echo "$TOOLS" | tr ';' '-')-$CUR_DATE.tasks"
+cat "$BENCH_NAME.input" | ./pycobench -c smt.yaml -j 1 -t 120 -m "z3-noodler" -o "$TASKS_FILE"
+echo "$TASKS_FILE"
