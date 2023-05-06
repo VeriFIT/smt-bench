@@ -13,6 +13,9 @@ z3-trau:
 z3-noodler:
   cmd: ../bin/z3-noodler-wrap.sh $1
 
+z3-noodler-underapprox:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox=true $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
