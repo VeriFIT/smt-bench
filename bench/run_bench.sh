@@ -5,9 +5,10 @@ show_help() {
 	echo "run_bench.sh [options] NAME_OF_BENCHMARK [TOOL1 TOOL2 ...]"
 	echo ""
 	echo "Runs tools TOOL1, TOOL2, ... on a given benchmark. If no"
-	echo "tools are given, runs z3-noodler. If NAME_OF_BENCHMARK"
-	echo "is 'quick', runs selection of quick benchmarks, if it is"
-	echo "'all' runs all benchmarks."
+	echo "tools are given, runs z3-noodler. If NAME_OF_BENCHMARK has"
+	echo "one of the special values 'quick'/'slow'/'all', the script"
+	echo "runs selection of quick/slow benchmarks or all benchmarks"
+	echo "respectively."
   echo "Options:"
   echo "  -h     Show this help message"
   echo "  -j N   How many processes to run in parallel (default=1)"
@@ -48,10 +49,15 @@ if [[ -z "$TOOLS" ]]; then
   TOOLS="z3-noodler"
 fi
 
+quick=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
+slow=("automatark" "str_small_rw" "full_str_int" "transducer_plus" "kaluza" "stringfuzz" "woorpje" "webapp" "kepler" "pyex")
 if [[ "$BENCH_NAME" == "quick" ]]; then
-	benchmarks=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
+	benchmarks=("${quick[@]}")
+elif [[ "$BENCH_NAME" == "slow" ]]; then
+	benchmarks=("${slow[@]}")
 elif [[ "$BENCH_NAME" == "all" ]]; then
-	benchmarks=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode" "transducer_plus" "kaluza" "automatark" "str_small_rw" "full_str_int" "stringfuzz" "woorpje" "webapp" "kepler" "pyex")
+	benchmarks=("${quick[@]}")
+	benchmarks+=("${slow[@]}")
 else
 	benchmarks=("$BENCH_NAME")
 fi
