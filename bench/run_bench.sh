@@ -49,9 +49,9 @@ if [[ -z "$TOOLS" ]]; then
 fi
 
 if [[ "$BENCH_NAME" == "quick" ]]; then
-	benchmarks=("sygus_qgen", "norn", "slog", "slent", "transducer_plus", "denghang")
-elif [[ "$BENCH_NAME" == "all" ]]
-	benchmarks=("sygus_qgen", "norn", "slog", "slent", "transducer_plus", "denghang", "leetcode", "kaluza", "automatark", "str_small_rw", "full_str_int", "stringfuzz", "woorpje", "webapp", "kepler", "pyex")
+	benchmarks=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
+elif [[ "$BENCH_NAME" == "all" ]]; then
+	benchmarks=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode" "transducer_plus" "kaluza" "automatark" "str_small_rw" "full_str_int" "stringfuzz" "woorpje" "webapp" "kepler" "pyex")
 else
 	benchmarks=("$BENCH_NAME")
 fi
@@ -67,5 +67,5 @@ for benchmark in "${benchmarks[@]}"; do
 done
 
 for tasks_file in "${tasks_files[@]}"; do
-	echo tasks_file
+	echo $tasks_file
 done
