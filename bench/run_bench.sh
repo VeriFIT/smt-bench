@@ -1,38 +1,46 @@
 #!/bin/bash
 
-help_message="Usage:
-	run_bench.sh NAME_OF_BENCHMARK [TOOL1 TOOL2 ...]
+show_help() {
+	echo "Usage:"
+	echo "run_bench.sh [options] NAME_OF_BENCHMARK [TOOL1 TOOL2 ...]"
+	echo ""
+	echo "Runs tools TOOL1, TOOL2, ... on a given benchmark. If no"
+	echo "tools are given, runs z3-noodler. If NAME_OF_BENCHMARK"
+	echo "is 'quick', runs selection of quick benchmarks, if it is"
+	echo "'all' runs all benchmarks."
+  echo "Options:"
+  echo "  -h     Show this help message"
+  echo "  -j N   How many processes to run in parallel (default=1)"
+}
 
-Runs tools TOOL1, TOOL2, ... on a given benchmark. If no
-tools are given, runs z3-noodler."
+j_value="1"
+while getopts "hj:" option; do
+    case $option in
+        h)
+            show_help 
+            exit 0
+            ;;
+        j)
+            j_value=$OPTARG
+            ;;
+        *)
+            echo "Invalid option: -$OPTARG"
+            show_help
+            exit 1
+            ;;
+    esac
+done
+
+# Shift the option index so that $1 refers to the first positional argument
+shift $((OPTIND - 1))
 
 if [ -z "$1" ]; then
-  echo "$help_message"
+  echo "Expected name of benchmark"
+  show_help
   exit 1
 fi
 
-if [ "$1" = "--help" ]; then
-	echo "$help_message"
-	exit 0
-fi
-
 BENCH_NAME="$1"
-
-# TOOLS=""
-# for arg in "${@:2}"
-# do
-#   TOOLS="$TOOLS-$arg"
-# done
-
-# if [[ -z "$TOOLS" ]]; then
-# 	TOOLS="-z3-noodler"
-# fi
-
-# if [ -z "$2" ]; then
-#   TOOLS="z3-noodler"
-# else
-#   TOOLS=$2
-# fi
 
 shift
 TOOLS=$(echo "$*" | tr ' ' ';')
@@ -40,9 +48,24 @@ if [[ -z "$TOOLS" ]]; then
   TOOLS="z3-noodler"
 fi
 
+if [[ "$BENCH_NAME" == "quick" ]]; then
+	benchmarks=("sygus_qgen", "norn", "slog", "slent", "transducer_plus", "denghang")
+elif [[ "$BENCH_NAME" == "all" ]]
+	benchmarks=("sygus_qgen", "norn", "slog", "slent", "transducer_plus", "denghang", "leetcode", "kaluza", "automatark", "str_small_rw", "full_str_int", "stringfuzz", "woorpje", "webapp", "kepler", "pyex")
+else
+	benchmarks=("$BENCH_NAME")
+fi
 
+tasks_files=()
+for benchmark in "${benchmarks[@]}"; do
+	echo "Running benchmark $benchmark"
+	CUR_DATE=$(date +%Y-%m-%d-%H-%M)
+	TASKS_FILE="$benchmark-to120-$(echo "$TOOLS" | tr ';' '-')-$CUR_DATE.tasks"
+	cat "$benchmark.input" | ./pycobench -c smt.yaml -j $j_value -t 120 -m "$TOOLS" -o "$TASKS_FILE"
+	tasks_files+=("$TASKS_FILE")
+	echo "$TASKS_FILE" >> tasks_names.txt
+done
 
-CUR_DATE=$(date +%Y-%m-%d-%H-%M)
-TASKS_FILE="$BENCH_NAME-to120-$(echo "$TOOLS" | tr ';' '-')-$CUR_DATE.tasks"
-cat "$BENCH_NAME.input" | ./pycobench -c smt.yaml -j 1 -t 120 -m "$TOOLS" -o "$TASKS_FILE"
-echo "$TASKS_FILE"
+for tasks_file in "${tasks_files[@]}"; do
+	echo tasks_file
+done
