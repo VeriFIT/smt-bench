@@ -19,6 +19,9 @@ z3-noodler-underapprox:
 z3-noodler-loop:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.loop_protect=true $1
 
+z3-noodler-nielsen:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_nielsen=true $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
