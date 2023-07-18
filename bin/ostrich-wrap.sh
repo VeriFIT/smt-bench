@@ -13,11 +13,14 @@ INPUT=$1
 shift
 PARAMS="$*"
 
+# it is impossible to get version of Ostrich directly, so we give it directly
+VERSION="1.3"
+
 OSTRICH_EXE="${SCRIPT_DIR}/ostrich/ostrich"
 ABSOLUTE_INPUT_PATH=$(readlink -f ${INPUT})
 
 out=$(${OSTRICH_EXE} -inputFormat=smtlib ${INPUT} ${PARAMS} 2> /dev/null)
 ret=$?
-echo "result: ${out}"
+echo "$VERSION-result: ${out}"
 
 exit ${ret}
