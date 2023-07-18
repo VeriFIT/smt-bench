@@ -8,8 +8,12 @@ fi
 
 INPUT=$1
 
+VERSION=$(z3 --version)
+VERSION=${VERSION#Z3 version }
+VERSION=${VERSION% -*}
+
 out=$(z3 -smt2 ${INPUT})
 ret=$?
-echo "result: ${out}"
+echo "$VERSION-result: ${out}"
 
 exit ${ret}

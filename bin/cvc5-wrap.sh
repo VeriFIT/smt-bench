@@ -15,8 +15,12 @@ SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
 CVC_PROG="${SCRIPT_DIR}/cvc5-Linux"
 
+VERSION=$(${CVC_PROG} --version)
+VERSION=${VERSION#This is cvc5 version }
+VERSION=${VERSION% [*}
+
 out=$(${CVC_PROG} --lang smt2 ${INPUT} $PARAMS)
 ret=$?
-echo "result: ${out}"
+echo "$VERSION-result: ${out}"
 
 exit ${ret}
