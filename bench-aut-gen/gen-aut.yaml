@@ -1,0 +1,8 @@
+# variants for automata generation from z3-noodler. The version of z3-noodler from the branch 
+# "gen-aut" is necessary and the tool needs to be built in DEBUG mode.
+
+z3-noodler-univ:
+  cmd: ../bench-aut-gen/z3-noodler-gen-wrap.sh univ -tr:str-gen_nfa_univ $1
+
+z3-noodler-compl:
+  cmd: ../bench-aut-gen/z3-noodler-gen-wrap.sh compl -tr:str-gen_nfa_compl $1
