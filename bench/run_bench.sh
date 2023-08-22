@@ -2,13 +2,14 @@
 
 show_help() {
 	echo "Usage:"
-	echo "run_bench.sh [options] NAME_OF_BENCHMARK [TOOL1 TOOL2 ...]"
+	echo "run_bench.sh [options] TOOL [BENCHMARK1 BENCHMARK2 BENCHMARK3 ...]"
 	echo ""
-	echo "Runs tools TOOL1, TOOL2, ... on a given benchmark. If no"
-	echo "tools are given, runs z3-noodler. If NAME_OF_BENCHMARK has"
-	echo "one of the special values 'quick'/'slow'/'all', the script"
+	echo "Runs TOOL on given benchmarkd. If BENCHMARKi can have one"
+	echo "of the special values 'quick'/'slow'/'all', the script then"
 	echo "runs selection of quick/slow benchmarks or all benchmarks"
-	echo "respectively."
+	echo "respectively. Note that if benchmark is given twice (for"
+	echo "example it is in quick, but also given explicitly), then"
+	echo "it will be run twice."
   echo "Options:"
   echo "  -h     Show this help message"
   echo "  -j N   How many processes to run in parallel (default=1)"
@@ -36,31 +37,36 @@ done
 shift $((OPTIND - 1))
 
 if [ -z "$1" ]; then
-  echo "Expected name of benchmark"
+  echo "Expected name of tool"
   show_help
   exit 1
 fi
 
-BENCH_NAME="$1"
-
+TOOL="$1"
 shift
 TOOLS=$(echo "$*" | tr ' ' ';')
 if [[ -z "$TOOLS" ]]; then
   TOOLS="z3-noodler"
 fi
 
+
 quick=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
 slow=("automatark" "str_small_rw" "full_str_int" "transducer_plus" "kaluza" "stringfuzz" "woorpje" "webapp" "kepler" "pyex")
-if [[ "$BENCH_NAME" == "quick" ]]; then
-	benchmarks=("${quick[@]}")
-elif [[ "$BENCH_NAME" == "slow" ]]; then
-	benchmarks=("${slow[@]}")
-elif [[ "$BENCH_NAME" == "all" ]]; then
-	benchmarks=("${quick[@]}")
-	benchmarks+=("${slow[@]}")
-else
-	benchmarks=("$BENCH_NAME")
-fi
+
+benchmarks=()
+for BENCH_NAME in "$@"
+do
+	if [[ "$BENCH_NAME" == "quick" ]]; then
+		benchmarks+=("${quick[@]}")
+	elif [[ "$BENCH_NAME" == "slow" ]]; then
+		benchmarks+=("${slow[@]}")
+	elif [[ "$BENCH_NAME" == "all" ]]; then
+		benchmarks+=("${quick[@]}")
+		benchmarks+=("${slow[@]}")
+	else
+		benchmarks+=("$BENCH_NAME")
+	fi
+done
 
 tasks_files=()
 for benchmark in "${benchmarks[@]}"; do
