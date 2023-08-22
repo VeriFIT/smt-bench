@@ -44,10 +44,6 @@ fi
 
 TOOL="$1"
 shift
-TOOLS=$(echo "$*" | tr ' ' ';')
-if [[ -z "$TOOLS" ]]; then
-  TOOLS="z3-noodler"
-fi
 
 
 quick=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
@@ -72,8 +68,8 @@ tasks_files=()
 for benchmark in "${benchmarks[@]}"; do
 	echo "Running benchmark $benchmark"
 	CUR_DATE=$(date +%Y-%m-%d-%H-%M)
-	TASKS_FILE="$benchmark-to120-$(echo "$TOOLS" | tr ';' '-')-$CUR_DATE.tasks"
-	cat "$benchmark.input" | ./pycobench -c smt.yaml -j $j_value -t 120 -m "$TOOLS" -o "$TASKS_FILE"
+	TASKS_FILE="$benchmark-to120-$TOOL-$CUR_DATE.tasks"
+	cat "$benchmark.input" | ./pycobench -c smt.yaml -j $j_value -t 120 -m "$TOOL" -o "$TASKS_FILE"
 	tasks_files+=("$TASKS_FILE")
 	echo "$TASKS_FILE" >> tasks_names.txt
 done
