@@ -2,7 +2,7 @@
 
 show_help() {
 	echo "Usage:"
-	echo "run_bench.sh [options] TOOL [BENCHMARK1 BENCHMARK2 BENCHMARK3 ...]"
+	echo "run_bench.sh [options] BENCHMARK1 [BENCHMARK2 BENCHMARK3 ...]"
 	echo ""
 	echo "Runs TOOL on given benchmarkd. If BENCHMARKi can have one"
 	echo "of the special values 'quick'/'slow'/'all', the script then"
@@ -12,15 +12,20 @@ show_help() {
 	echo "it will be run twice."
   echo "Options:"
   echo "  -h     Show this help message"
+  echi "  -t     Which tool to run (default=z3-noodler)"
   echo "  -j N   How many processes to run in parallel (default=8)"
 }
 
+TOOL="z3-noodler"
 j_value="8"
 while getopts "hj:" option; do
     case $option in
         h)
             show_help 
             exit 0
+            ;;
+        t)
+            TOOL=$OPTARG
             ;;
         j)
             j_value=$OPTARG
@@ -37,14 +42,10 @@ done
 shift $((OPTIND - 1))
 
 if [ -z "$1" ]; then
-  echo "Expected name of tool"
+  echo "Expected name of benchmark"
   show_help
   exit 1
 fi
-
-TOOL="$1"
-shift
-
 
 quick=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
 slow=("automatark" "str_small_rw" "full_str_int" "transducer_plus" "kaluza" "stringfuzz" "woorpje" "webapp" "kepler" "pyex")
