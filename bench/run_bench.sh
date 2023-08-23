@@ -12,10 +12,10 @@ show_help() {
 	echo "it will be run twice."
   echo "Options:"
   echo "  -h     Show this help message"
-  echo "  -j N   How many processes to run in parallel (default=1)"
+  echo "  -j N   How many processes to run in parallel (default=8)"
 }
 
-j_value="1"
+j_value="8"
 while getopts "hj:" option; do
     case $option in
         h)
