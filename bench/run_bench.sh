@@ -13,7 +13,7 @@ show_help() {
 	echo "are run."
 	echo "Options:"
 	echo "  -h     Show this help message"
-	echi "  -t     Which tool to run (default=z3-noodler)"
+	echo "  -t     Which tool to run (default=z3-noodler)"
 	echo "  -j N   How many processes to run in parallel (default=8)"
 }
 
