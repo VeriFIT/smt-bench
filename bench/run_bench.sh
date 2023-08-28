@@ -19,7 +19,8 @@ show_help() {
 
 QUICK=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
 SLOW=("automatark" "str_small_rw" "full_str_int" "transducer_plus" "kaluza" "stringfuzz" "woorpje" "webapp" "kepler" "pyex")
-ALL=${QUICK[@]}+${SLOW[@]}
+ALL=("${QUICK[@]}")
+ALL+=("${SLOW[@]}")
 
 tool="z3-noodler"
 j_value="8"
