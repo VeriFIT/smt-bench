@@ -24,7 +24,7 @@ ALL+=("${SLOW[@]}")
 
 tool="z3-noodler"
 j_value="8"
-while getopts "htj:" option; do
+while getopts "ht:j:" option; do
     case $option in
         h)
             show_help 
