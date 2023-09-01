@@ -12,9 +12,9 @@ show_help() {
 	echo "will be run twice. If no benchmark is given, all benchmarks"
 	echo "are run."
 	echo "Options:"
-	echo "  -h     Show this help message"
-	echo "  -t     Which tool to run (default=z3-noodler)"
-	echo "  -j N   How many processes to run in parallel (default=8)"
+	echo "  -h      Show this help message"
+	echo "  -t TOOL Which tool to run (default=z3-noodler)"
+	echo "  -j N    How many processes to run in parallel (default=8)"
 }
 
 QUICK=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
@@ -24,7 +24,7 @@ ALL+=("${SLOW[@]}")
 
 tool="z3-noodler"
 j_value="8"
-while getopts "hj:" option; do
+while getopts "htj:" option; do
     case $option in
         h)
             show_help 
