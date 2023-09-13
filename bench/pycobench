@@ -57,6 +57,9 @@ g_cmd_dict = {}
 # timeout for subprocesses (in seconds)
 g_timeout = 60
 
+# memory limit for subprocesses (in GB)
+g_memout = None
+
 # The file that contains information about submitted and finished tasks.  This
 # can be later used for restarting a prematurely stopped benchmark.
 g_tasks = 'pycobench.tasks'
@@ -147,6 +150,13 @@ class CalledProgramError(Exception):
 in a subprocesses ends with an error"""
     pass
 
+def limit_virtual_memory():
+    if g_memout is not None:
+        # The tuple below is of the form (soft limit, hard limit). Limit only
+        # the soft part so that the limit can be increased later (setting also
+        # the hard limit would prevent that).
+        # When the limit cannot be changed, setrlimit() raises ValueError.
+        resource.setrlimit(resource.RLIMIT_AS, (g_memout*1024*1024*1024, resource.RLIM_INFINITY))
 
 ###########################################
 def run_subproc_systime(cmd):
@@ -158,7 +168,10 @@ measured using system "time" command.
     cmd = g_time_cmd + cmd
     proc = subprocess.Popen(cmd,
                             stdout=subprocess.PIPE,
-                            stderr=subprocess.PIPE
+                            stderr=subprocess.PIPE,
+                            # preexec_fn is a callable object that will be called in the child process
+                            # just before the child is executed.
+                            preexec_fn=limit_virtual_memory
                             )
     try:
         outs, errs = proc.communicate(timeout=g_timeout)
@@ -404,6 +417,8 @@ Runs the main program according to the arguments obtained from the parser.
     # process additional program parameters
     global g_timeout
     g_timeout = args.timeout
+    global g_memout
+    g_memout = args.memout
     global g_tasks
     g_tasks = args.output_file
     global g_verbose
@@ -497,6 +512,9 @@ if __name__ == '__main__':
     parser.add_argument('-t', '--timeout', metavar='TIMEOUT', type=int,
                         dest='timeout', default=g_timeout,
                         help='The timeout in seconds (default: %(default)s)')
+    parser.add_argument('--memout', metavar='MEMOUT', type=int,
+                        dest='memout',
+                        help='The memory limit in GB (no limit if not given)')
     parser.add_argument('-m', '--methods', metavar='METHODS', type=str,
                         dest='methods',
                         help="Which methods from the configuration file to "

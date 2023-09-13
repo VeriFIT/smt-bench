@@ -13,13 +13,15 @@ INPUT=$1
 shift
 PARAMS="$*"
 
-# it is impossible to get version of Ostrich directly, so we give it directly
-VERSION="1.3"
+# It is impossible to get version of Ostrich directly, so we
+# either give it directly or get the git hash
+#VERSION="1.3"
+VERSION="$( cd ${SCRIPT_DIR}/ostrich && git rev-parse --short HEAD )"
 
 OSTRICH_EXE="${SCRIPT_DIR}/ostrich/ostrich"
 ABSOLUTE_INPUT_PATH=$(readlink -f ${INPUT})
 
-out=$(${OSTRICH_EXE} -inputFormat=smtlib ${INPUT} ${PARAMS} 2> /dev/null)
+out=$(${OSTRICH_EXE} +quiet -portfolio=strings ${PARAMS} ${INPUT} 2> /dev/null)
 ret=$?
 echo "$VERSION-result: ${out}"
 

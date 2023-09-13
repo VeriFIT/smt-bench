@@ -15,6 +15,7 @@ show_help() {
 	echo "  -h      Show this help message"
 	echo "  -t TOOL Which tool to run (default=z3-noodler)"
 	echo "  -j N    How many processes to run in parallel (default=8)"
+	echo "  -m N    Memory limit of each process in GB (default=8)"
 }
 
 QUICK=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
@@ -24,7 +25,8 @@ ALL+=("${SLOW[@]}")
 
 tool="z3-noodler"
 j_value="8"
-while getopts "ht:j:" option; do
+m_value="8"
+while getopts "ht:j:m:" option; do
     case $option in
         h)
             show_help 
@@ -35,6 +37,9 @@ while getopts "ht:j:" option; do
             ;;
         j)
             j_value=$OPTARG
+            ;;
+        j)
+            m_value=$OPTARG
             ;;
         *)
             echo "Invalid option: -$OPTARG"
@@ -72,7 +77,7 @@ for benchmark in "${benchmarks[@]}"; do
 	echo "Running benchmark $benchmark"
 	CUR_DATE=$(date +%Y-%m-%d-%H-%M)
 	TASKS_FILE="$benchmark-to120-$tool-$CUR_DATE.tasks"
-	cat "$benchmark.input" | ./pycobench -c smt.yaml -j $j_value -t 120 -m "$tool" -o "$TASKS_FILE"
+	cat "$benchmark.input" | ./pycobench -c smt.yaml -j $j_value -t 120 --memout $m_value -m "$tool" -o "$TASKS_FILE"
 	tasks_files+=("$TASKS_FILE")
 	echo "$TASKS_FILE" >> tasks_names.txt
 done
