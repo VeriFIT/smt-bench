@@ -1,4 +1,0 @@
-Variables {DE}
-Terminals {cgabhdjfei}
-Equation: geiebjgigEajfdjbgijciabdefeedcc = geiebjgigiacbdjddcdcbibcaabejbghcegibigbceaaefghbdehhfcbbecjhfgigfDgijciabdefeedcc
-SatGlucose(100)

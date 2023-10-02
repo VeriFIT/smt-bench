@@ -1,4 +1,0 @@
-Variables {IMJ}
-Terminals {acb}
-Equation: cbbbbbabcacabcbcJccccbacccaccaccaaaaaaabbbaccccaaabbacaacaaabbc = cbIbbbabbMaaaaaabbbaccccaaabbacaacaaabbc
-SatGlucose(100)

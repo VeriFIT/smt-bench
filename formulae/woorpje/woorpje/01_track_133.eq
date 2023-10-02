@@ -1,4 +1,0 @@
-Variables {HKEL}
-Terminals {cgabhdfei}
-Equation: ebcgadKdiecfaiifeeafffgafbhgdccdhfffdeffiebhieiefhHhhbehehbbgeghiggcdfbgadbgcdfcfdhhcfhfdcfcifefhggifheggbebfcca = ebcgLecfaiifeeafffgafbhEeggbebfcca
-SatGlucose(100)

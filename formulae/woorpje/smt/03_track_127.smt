@@ -1,5 +1,0 @@
-(set-logic QF_S)
-(declare-fun F () String)
-(declare-fun E () String)
-(assert (= (str.++  F "a" F)  (str.++  "a" E "aa") ))
-(check-sat)
