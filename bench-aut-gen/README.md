@@ -2,7 +2,7 @@
 
 ## Setup
 
-* build the current version of `z3-noodler` from the branch `gen-aut` in `DEBUG` mode (important)
+* build the current version of `z3-noodler` from the branch `gen-aut` in `DEBUG` mode (important). Use mata version `0.91.0` (newer versions might not be compatible with the branch `gen`-aut).
 * set the variable `NOODLER_PATH` to the directory containing the built executable
     ```
     export NOODLER_PATH=PATH
