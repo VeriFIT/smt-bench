@@ -1,6 +1,0 @@
-Variables {IFAJ}
-Terminals {cab}
-Equation: cabccabbaccbcFcabbc = cabccabbaccbccaAaabcJaaabaacbaacabbc
-Equation: cbcbbaccaIcacbbbaacabacbbbbcabcaaaaaaabbbcabcbbabaabcabcbc = cbcbbaccaIcacbbbaacabacbbbbcabcaaaaaaabbbcabcbbabaabcabcbc
-Equation: cbbIbcacccbaabccbacbbbbbacaccacaacacacbabcacccaacbbaacccaa = cbbbcbabbcacccbaabccbacbbbbbacaccacaacacacbabcacccaacbbaacccaa
-SatGlucose(100)
