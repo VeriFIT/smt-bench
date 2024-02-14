@@ -19,7 +19,7 @@ show_help() {
 }
 
 QUICK=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
-SLOW=("automatark" "str_small_rw" "full_str_int" "transducer_plus" "kaluza" "stringfuzz" "woorpje" "webapp" "kepler" "pyex")
+SLOW=("automatark" "str_small_rw" "transducer_plus" "stringfuzz" "kepler" "woorpje" "webapp" "kaluza" "pyex" "full_str_int")
 ALL=("${QUICK[@]}")
 ALL+=("${SLOW[@]}")
 
