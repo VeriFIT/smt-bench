@@ -4,13 +4,17 @@ show_help() {
 	echo "Usage:"
 	echo "run_bench.sh [options] [BENCHMARK1 BENCHMARK2 BENCHMARK3 ...]"
 	echo ""
-	echo "Runs given tool on given benchmarks. BENCHMARKi can have one"
-	echo "of the special values 'quick'/'slow'/'all', the script then"
-	echo "runs selection of quick/slow benchmarks or all benchmarks"
-	echo "respectively. Note that if benchmark is given twice (for"
-	echo "example it is in quick, but also given explicitly), then it"
-	echo "will be run twice. If no benchmark is given, all benchmarks"
-	echo "are run."
+	echo "Runs given tool on given benchmarks. BENCHMARKi can have one of"
+	echo "the special values 'all'/'quick'/'slow'/'int-conv'/'not-int-conv',"
+	echo "the script then runs selection of"
+	echo " - all - run all benchamrks,"
+	echo " - quick - benchmarks that z3-noodler computes quickly,"
+	echo " - slow - benchmarks that z3-noodler computes not so quickly,"
+	echo " - int-conv - benchmarks that contain to_int/from_int conversions,"
+	echo " - not-int-conv - benchmarks that do NOT contain to_int/from_int."
+	echo "Note that if benchmark is given twice (for example it is in quick,"
+	echo "but also given explicitly), then it will be run twice. If no"
+	echo "benchmark is given, all benchmarks are run."
 	echo "Options:"
 	echo "  -h      Show this help message"
 	echo "  -t TOOL Which tool to run (default=z3-noodler)"
@@ -22,6 +26,9 @@ QUICK=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
 SLOW=("automatark" "str_small_rw" "transducer_plus" "stringfuzz" "kepler" "woorpje" "webapp" "kaluza" "pyex" "full_str_int")
 ALL=("${QUICK[@]}")
 ALL+=("${SLOW[@]}")
+
+INT_CONV_BENCHS=("str_small_rw" "stringfuzz" "full_str_int")
+NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode", "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex")
 
 tool="z3-noodler"
 j_value="8"
@@ -61,12 +68,16 @@ fi
 
 for BENCH_NAME in "$@"
 do
-	if [[ "$BENCH_NAME" == "quick" ]]; then
+	if [[ "$BENCH_NAME" == "all" ]]; then
+		benchmarks+=("${ALL[@]}")
+	elif [[ "$BENCH_NAME" == "quick" ]]; then
 		benchmarks+=("${QUICK[@]}")
 	elif [[ "$BENCH_NAME" == "slow" ]]; then
 		benchmarks+=("${SLOW[@]}")
-	elif [[ "$BENCH_NAME" == "all" ]]; then
-		benchmarks+=("${ALL[@]}")
+	elif [[ "$BENCH_NAME" == "int-conv" ]]; then
+		benchmarks+=("${INT_CONV_BENCHS[@]}")
+	elif [[ "$BENCH_NAME" == "not-int-conv" ]]; then
+		benchmarks+=("${NOT_INT_CONV_BENCHS[@]}")
 	else
 		benchmarks+=("$BENCH_NAME")
 	fi
