@@ -28,7 +28,7 @@ ALL=("${QUICK[@]}")
 ALL+=("${SLOW[@]}")
 
 INT_CONV_BENCHS=("str_small_rw" "stringfuzz" "full_str_int")
-NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode", "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex")
+NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex")
 
 tool="z3-noodler"
 j_value="8"
