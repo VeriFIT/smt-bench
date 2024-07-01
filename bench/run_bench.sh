@@ -5,13 +5,17 @@ show_help() {
 	echo "run_bench.sh [options] [BENCHMARK1 BENCHMARK2 BENCHMARK3 ...]"
 	echo ""
 	echo "Runs given tool on given benchmarks. BENCHMARKi can have one of"
-	echo "the special values 'all'/'quick'/'slow'/'int-conv'/'not-int-conv',"
-	echo "the script then runs selection of"
-	echo " - all - run all benchamrks,"
-	echo " - quick - benchmarks that z3-noodler computes quickly,"
-	echo " - slow - benchmarks that z3-noodler computes not so quickly,"
-	echo " - int-conv - benchmarks that contain to_int/from_int conversions,"
-	echo " - not-int-conv - benchmarks that do NOT contain to_int/from_int."
+	echo "the special values:"
+	echo " - all - run all smtlib'24 benchamrks,"
+	echo " - quick - run smtlib'24 benchmarks that z3-noodler computes quickly,"
+	echo " - slow - run smtlib'24 benchmarks that z3-noodler computes not so quickly,"
+	echo " - int-conv - run smtlib'24 benchmarks that contain to_int/from_int conversions,"
+	echo " - regex - run smtlib'24 benchmarks that are regex-heavy."
+	echo " - equations - run smtlib'24 benchmarks that are equations-heavy."
+	echo " - predicates - run smtlib'24 benchmarks that are predicates-heavy."
+	echo " - qs_s - run smtlib'24 benchmarks from QF_S logic."
+	echo " - qf_slia - run smtlib'24 benchmarks from QF_SLIA logic."
+	echo " - qf_snia - run smtlib'24 benchmarks from QF_SNIA logic."
 	echo "Note that if benchmark is given twice (for example it is in quick,"
 	echo "but also given explicitly), then it will be run twice. If no"
 	echo "benchmark is given, all benchmarks are run."
@@ -22,13 +26,24 @@ show_help() {
 	echo "  -m N    Memory limit of each process in GB (default=8)"
 }
 
-QUICK=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode")
-SLOW=("automatark" "str_small_rw" "transducer_plus" "stringfuzz" "kepler" "woorpje" "webapp" "kaluza" "pyex" "full_str_int")
-ALL=("${QUICK[@]}")
-ALL+=("${SLOW[@]}")
+REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos")
+EQUATIONS=("norn" "slog" "slent" "omark" "kepler" "woorpje" "webapp" "kaluza")
+PREDICATES=("transducer_plus" "leetcode" "str_small_rw" "pyex" "full_str_int")
+
+QUICK=("sygus_qgen" "denghang" "transducer_plus" "norn" "slog" "slent" "omark" "leetcode" "snia")
+SLOW=("automatark" "str_small_rw" "stringfuzz" "kepler" "woorpje" "webapp" "redos" "kaluza" "pyex" "full_str_int")
 
 INT_CONV_BENCHS=("str_small_rw" "stringfuzz" "full_str_int")
-NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex")
+NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "omark" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex" "redos" "snia")
+
+QF_S=("sygus_qgen" "automatark" "slog" "omark" "woorpje")
+QF_SLIA=("denghang" "stringfuzz" "redos" "norn" "slent" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "leetcode" "str_small_rw" "pyex" "full_str_int")
+QF_SNIA=("snia")
+
+ALL=("${REGEX[@]}")
+ALL+=("${EQUATIONS[@]}")
+ALL+=("${PREDICATES[@]}")
+ALL+=("snia")
 
 tool="z3-noodler"
 j_value="8"
@@ -78,6 +93,18 @@ do
 		benchmarks+=("${INT_CONV_BENCHS[@]}")
 	elif [[ "$BENCH_NAME" == "not-int-conv" ]]; then
 		benchmarks+=("${NOT_INT_CONV_BENCHS[@]}")
+	elif [[ "$BENCH_NAME" == "regex" ]]; then
+		benchmarks+=("${REGEX[@]}")
+	elif [[ "$BENCH_NAME" == "equations" ]]; then
+		benchmarks+=("${EQUATIONS[@]}")
+	elif [[ "$BENCH_NAME" == "predicates" ]]; then
+		benchmarks+=("${PREDICATES[@]}")
+	elif [[ "$BENCH_NAME" == "qf_s" ]]; then
+		benchmarks+=("${QF_S[@]}")
+	elif [[ "$BENCH_NAME" == "qf_slia" ]]; then
+		benchmarks+=("${QF_SLIA[@]}")
+	elif [[ "$BENCH_NAME" == "qf_snia" ]]; then
+		benchmarks+=("${QF_SNIA[@]}")
 	else
 		benchmarks+=("$BENCH_NAME")
 	fi

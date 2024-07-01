@@ -10,6 +10,9 @@ z3str4:
 z3-trau:
   cmd: ../bin/z3-trau-wrap.sh $1
 
+z3-alpha:
+  cmd: ../bin/z3-alpha-wrap.sh $1
+
 z3-noodler:
   cmd: ../bin/z3-noodler-wrap.sh $1
 
@@ -21,6 +24,15 @@ z3-noodler-loop:
 
 z3-noodler-nielsen:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_nielsen=true $1
+
+z3-noodler-underappr-length-10:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox_length=10 $1
+
+z3-noodler-underappr-length-3:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox_length=3 $1
+
+z3-noodler-diseq:
+  cmd: ../bin/z3-noodler-diseq-wrap.sh $1
 
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
