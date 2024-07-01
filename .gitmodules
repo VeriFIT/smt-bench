@@ -1,9 +1,3 @@
-[submodule "formulae/QF_S"]
-	path = formulae/QF_S
-	url = https://clc-gitlab.cs.uiowa.edu:2443/SMT-LIB-benchmarks/QF_S.git
-[submodule "formulae/QF_SLIA"]
-	path = formulae/QF_SLIA
-	url = https://clc-gitlab.cs.uiowa.edu:2443/SMT-LIB-benchmarks/QF_SLIA.git
 [submodule "formulae/regex-smt-benchmarks"]
 	path = formulae/regex-smt-benchmarks
 	url = https://github.com/cdstanford/regex-smt-benchmarks.git
