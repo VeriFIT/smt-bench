@@ -34,6 +34,9 @@ z3-noodler-underappr-length-3:
 z3-noodler-diseq:
   cmd: ../bin/z3-noodler-diseq-wrap.sh $1
 
+z3-noodler-model:
+  cmd: ../bin/z3-noodler-model-wrap.sh $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
