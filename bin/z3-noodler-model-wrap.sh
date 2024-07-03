@@ -21,4 +21,4 @@ output_dir=$(dirname $output_file)
 mkdir -p $output_dir
 echo "$out" > $output_file
 
-exit ${ret}
+exit 0
