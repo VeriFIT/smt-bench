@@ -19,7 +19,7 @@ VERSION=$(${CVC_PROG} --version)
 VERSION=${VERSION#This is cvc5 version }
 VERSION=${VERSION% [*}
 
-out=$(${CVC_PROG} --lang smt2 $PARAMS)
+out=$(${CVC_PROG} --lang smt2 $PARAMS $INPUT)
 ret=$?
 echo "$VERSION-result: ${out}"
 
