@@ -1,3 +1,6 @@
 [submodule "formulae/regex-smt-benchmarks"]
 	path = formulae/regex-smt-benchmarks
 	url = https://github.com/cdstanford/regex-smt-benchmarks.git
+[submodule "formulae/zaligvinder"]
+	path = formulae/zaligvinder
+	url = https://github.com/jurajsic/zaligvinder.git
