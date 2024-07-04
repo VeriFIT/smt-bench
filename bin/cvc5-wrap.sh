@@ -19,7 +19,7 @@ VERSION=$(${CVC_PROG} --version)
 VERSION=${VERSION#This is cvc5 version }
 VERSION=${VERSION% [*}
 
-out=$({ grep -q "set-logic" ${INPUT} && cat ${INPUT} || echo -e "(set-logic QF_ALL)\n$(cat ${INPUT})"; } | ${CVC_PROG} --lang smt2 $PARAMS)
+out=$(${CVC_PROG} --lang smt2 $PARAMS)
 ret=$?
 echo "$VERSION-result: ${out}"
 
