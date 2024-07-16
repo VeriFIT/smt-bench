@@ -24,7 +24,6 @@ MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
   # replace stuff in model so that we have (assert (= var "its model"))
   add_to_input=$(echo "$MODEL" | sed 's/  (define-fun/(assert (=/g' | sed 's/ () String//g')
-  add_to_input=$("$string_var"$'\n')
   input_with_model="$(sed 's/(check-sat)//g; s/(exit)//g' "$INPUT")${add_to_input}(check-sat)"
   out=$(echo "$input_with_model" | ${CVC_PROG} --lang smt2 $PARAMS)
   ret=$?
