@@ -1,5 +1,20 @@
 #!/bin/bash
 
+remove_lines_related_with_RegLan() {
+    local input="$1"
+    local output=""
+
+    # Use awk to filter lines
+    output=$(awk '
+        BEGIN { remove = 0; }
+        /RegLan/ { remove = 1; next; }
+        /define-fun/ { remove = 0; }
+        { if (!remove) print $0; }
+    ' <<< "$input")
+
+    echo "$output"
+}
+
 # Check the number of command-line arguments
 if [ \( "$#" -lt 1 \) ] ; then
   echo "usage: ${0} <input> [params]"
@@ -25,24 +40,9 @@ z3_noodler_version_string=($("$z3_noodler_exe" --version))
 z3_noodler_git_hash=${z3_noodler_version_string[9]}
 mata_git_hash=${z3_noodler_version_string[13]}
 
-remove_lines_related_with_RegLan() {
-    local input="$1"
-    local output=""
-
-    # Use awk to filter lines
-    output=$(awk '
-        BEGIN { remove = 0; }
-        /RegLan/ { remove = 1; next; }
-        /define-fun/ { remove = 0; }
-        { if (!remove) print $0; }
-    ' <<< "$input")
-
-    echo "$output"
-}
-
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
   # replace stuff in model so that we have (assert (= var "its model"))
-  add_to_input=$(process_string "$MODEL" | sed 's/  (define-fun/(=/g' | sed 's/ () String//g' | sed 's/ () Int//g')
+  add_to_input=$(remove_lines_related_with_RegLan "$MODEL" | sed 's/  (define-fun/(=/g' | sed 's/ () String//g' | sed 's/ () Int//g')
   add_to_input="(assert (and ${add_to_input} ))"
   input_with_model="$(sed 's/(check-sat)//g; s/(exit)//g' "$INPUT")${add_to_input}(check-sat)"
   out=$(echo "$input_with_model" | ${CVC_PROG} --lang smt2 $PARAMS)
