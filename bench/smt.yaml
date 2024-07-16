@@ -66,3 +66,6 @@ ostrich:
 
 woorpje:
   cmd: ../bin/woorpje-wrap.sh $1
+
+check-model:
+  cmd: ../bin/check-model.sh $1
