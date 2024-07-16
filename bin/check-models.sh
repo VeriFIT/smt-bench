@@ -30,7 +30,7 @@ if [ "$RESULT_OF_MODEL" = "sat" ]; then
   add_to_input=$(echo "$MODEL" | sed 's/  (define-fun/(=/g' | sed 's/ () String//g' | sed 's/ () Int//g' | sed 's/ () RegLan//g')
   add_to_input="(assert (and ${add_to_input} ))"
   input_with_model="$(sed 's/(check-sat)//g; s/(exit)//g' "$INPUT")${add_to_input}(check-sat)"
-  out=$(echo "$input_with_model" | ${CVC_PROG} --lang smt2 $PARAMS)
+  out=$(echo "$input_with_model" | z3 -smt2 -in)
   ret=$?
   echo "${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}-result: ${out}"
   exit ${ret}
