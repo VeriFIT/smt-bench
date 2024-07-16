@@ -18,7 +18,7 @@ CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-static/bin/cvc5"
 PATH_TO_MODEL="../bench/model_output/${INPUT:3}"
 RESULT_OF_MODEL="$(head -n 1 "$PATH_TO_MODEL")"
 # take everything between 3rd and one-to-last line
-MODEL=(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
+MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
 
 
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
