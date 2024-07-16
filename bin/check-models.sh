@@ -27,7 +27,7 @@ mata_git_hash=${z3_noodler_version_string[13]}
 
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
   # replace stuff in model so that we have (assert (= var "its model"))
-  add_to_input=$(echo "$MODEL" | sed 's/  (define-fun/(=/g' | sed 's/ () String//g')
+  add_to_input=$(echo "$MODEL" | sed 's/  (define-fun/(=/g' | sed 's/ () String//g' | sed 's/ () Int//g' | sed 's/ () RegLan//g')
   add_to_input="(assert (and ${add_to_input} ))"
   input_with_model="$(sed 's/(check-sat)//g; s/(exit)//g' "$INPUT")${add_to_input}(check-sat)"
   out=$(echo "$input_with_model" | ${CVC_PROG} --lang smt2 $PARAMS)
