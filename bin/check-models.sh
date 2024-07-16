@@ -32,4 +32,5 @@ if [ "$RESULT_OF_MODEL" = "sat" ]; then
   exit ${ret}
 else
   echo "result: ${RESULT_OF_MODEL}"
+  exit 0
 fi
