@@ -30,7 +30,7 @@ SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
 CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-static/bin/cvc5"
 
-PATH_TO_MODEL="../bench/model_output/${INPUT:3}"
+PATH_TO_MODEL="../bench/model-output-${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}/${INPUT:3}"
 RESULT_OF_MODEL="$(head -n 1 "$PATH_TO_MODEL")"
 # take everything between 3rd and one-to-last line
 MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')

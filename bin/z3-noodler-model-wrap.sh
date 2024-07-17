@@ -16,7 +16,7 @@ out=$(sed '$i\
 ret=$?
 first_line=$(echo "$out" | head -n 1)
 echo "${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}-result: ${first_line}"
-output_file="model_output/${INPUT:3}"
+output_file="model-output-${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}/${INPUT:3}"
 output_dir=$(dirname $output_file)
 mkdir -p $output_dir
 echo "$out" > $output_file
