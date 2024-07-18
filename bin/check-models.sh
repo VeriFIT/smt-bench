@@ -30,15 +30,15 @@ SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
 CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-static/bin/cvc5"
 
-PATH_TO_MODEL="../bench/model-output-${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}/${INPUT:3}"
-RESULT_OF_MODEL="$(head -n 1 "$PATH_TO_MODEL")"
-# take everything between 3rd and one-to-last line
-MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
-
 z3_noodler_exe="${SCRIPT_DIR}/z3-noodler/build/z3"
 z3_noodler_version_string=($("$z3_noodler_exe" --version))
 z3_noodler_git_hash=${z3_noodler_version_string[9]}
 mata_git_hash=${z3_noodler_version_string[13]}
+
+PATH_TO_MODEL="../bench/model-output-${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}/${INPUT:3}"
+RESULT_OF_MODEL="$(head -n 1 "$PATH_TO_MODEL")"
+# take everything between 3rd and one-to-last line
+MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
 
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
   # replace stuff in model so that we have (assert (= var "its model"))
