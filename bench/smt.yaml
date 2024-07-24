@@ -46,6 +46,9 @@ cvc4:
 cvc5:
   cmd: ../bin/cvc5-wrap.sh $1
 
+cvc5-model:
+  cmd: ../bin/cvc5-model-wrap.sh $1
+
 noodler:
   cmd: ../bin/noodler-wrap.sh $1
 
