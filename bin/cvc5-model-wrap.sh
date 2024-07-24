@@ -19,7 +19,7 @@ VERSION=$(${CVC_PROG} --version)
 VERSION=${VERSION#This is cvc5 version }
 VERSION=${VERSION% [*}
 
-out=$($(sed '$i\
+out=$(sed '$i\
 (get-model)\
 ' ${INPUT} | ${CVC_PROG} --lang smt2 --produce-models $PARAMS)
 ret=$?
