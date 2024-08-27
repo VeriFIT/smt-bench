@@ -192,8 +192,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='''proc_results.py - \
 Processes results of benchmarks from pycobench''')
     parser.add_argument('results', metavar='result-file', nargs='?',
-                        help='file with results (output of pycobench);'
-                             'if not provided stdin is used')
+                        help='file with results (output of pycobench) (default: %(default)s)',
+                        type=argparse.FileType('r'), default=sys.stdin)
     parser.add_argument('--csv', action="store_true",
                         help='output in CSV')
     parser.add_argument('--text', action="store_true",
@@ -204,11 +204,4 @@ Processes results of benchmarks from pycobench''')
                         help='tick finished benchmarks (usable for filtering)')
     args = parser.parse_args()
 
-    if args.results:
-        fd = open(args.results, "r")
-    else:
-        fd = sys.stdin
-
-    proc_res(fd, args)
-    if args.results:
-        fd.close()
+    proc_res(args.results, args)
