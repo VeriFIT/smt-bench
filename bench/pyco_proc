@@ -85,7 +85,7 @@ def proc_res(fd, args):
                     spl = line.split(':', 1)
                     if len(spl) != 2:  # jump over lines not in the format
                         continue
-                    name, val = spl[0], spl[1]
+                    name, val = spl[0].strip(), spl[1].strip()
                     assert name not in eng_res["output"]
                     if name not in engines_outs[eng]:
                         engines_outs[eng].append(name)
