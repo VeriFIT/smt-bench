@@ -187,11 +187,9 @@ def proc_res(fd, args):
     return
 
 
-###############################
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='''proc_results.py - \
-Processes results of benchmarks from pycobench''')
-    parser.add_argument('results', metavar='result-file', nargs='?',
+def parse_args():
+    parser = argparse.ArgumentParser(description="Processes results of benchmarks from pycobench")
+    parser.add_argument('result_file', nargs='?',
                         help='file with results (output of pycobench) (default: %(default)s)',
                         type=argparse.FileType('r'), default=sys.stdin)
     parser.add_argument('--csv', action="store_true",
@@ -204,4 +202,11 @@ Processes results of benchmarks from pycobench''')
                         help='tick finished benchmarks (usable for filtering)')
     args = parser.parse_args()
 
-    proc_res(args.results, args)
+
+    return args
+
+
+###############################
+if __name__ == '__main__':
+    args = parse_args()
+    proc_res(args.result_file, args)
