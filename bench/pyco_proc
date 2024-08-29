@@ -210,7 +210,7 @@ def proc_res(fd, args):
 def parse_args():
     parser = argparse.ArgumentParser(description="Processes results of benchmarks from pycobench")
     parser.add_argument('result_file', nargs='?',
-                        help='file with results (output of pycobench) (default: %(default)s)',
+                        help='file with results (output of pycobench) (default: \'%(default)s\')',
                         type=argparse.FileType('r'), default=sys.stdin)
     parser.add_argument('--csv', action="store_true",
                         help='output in CSV')
@@ -222,13 +222,13 @@ def parse_args():
                         help='tick finished benchmarks (usable for filtering)')
     parser.add_argument('--stats-format',
                         choices=list(format_option.name.lower() for format_option in StatsFormat), 
-                        default="json",
-                        help='Which format to use for printing statistics (default: %(default)s)')
-    parser.add_argument('--stats', metavar="STATS_DESTINATION", nargs='?',
+                        default=StatsFormat.JSON.value,
+                        help='Which format to use for printing statistics (default: \'%(default)s\')')
+    parser.add_argument('--stats', nargs='?',
                         choices=list(destination_option.name.lower() for destination_option in StatsDestination),
                         const="results_file", default=None,
                         help='Whether to output statistics and where (default: skipping stats, flag without \
-                              argument: %(const)s)')
+                              argument: \'%(const)s\')')
     args = parser.parse_args()
 
     if args.stats:
