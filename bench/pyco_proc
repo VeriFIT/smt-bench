@@ -5,12 +5,24 @@ import argparse
 import csv
 import sys
 from tabulate import tabulate
+from enum import Enum
+from pathlib import Path
+import datetime
+
+from z3_statistics import Z3StatisticsParser, StatsFormat
 
 #  fmt = 'text'
 fmt = 'csv'
 
 # number of parameters of execution
 PARAMS_NUM = 1
+
+
+class RunResult(Enum):
+    """Result of a benchmark instance run."""
+    FINISHED = 1
+    ERROR = 2
+    TIMEOUT = 3
 
 
 ###########################################
@@ -20,6 +32,7 @@ def proc_res(fd, args):
     processes results of pycobench from file descriptor 'fd' using command line
     arguments 'args'
 """
+
     reader = csv.reader(
         fd, delimiter=';', quotechar='"',
         doublequote=False, quoting=csv.QUOTE_MINIMAL)
@@ -27,6 +40,9 @@ def proc_res(fd, args):
     engines = list()
     engines_outs = dict()
     results = dict()
+
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
+    Path(f"./stats/{current_time}/").mkdir(parents=True, exist_ok=True)
     for row in reader:
         assert len(row) >= 1 + 1 + PARAMS_NUM  # status + engine name + params
         status, eng = row[0], row[1]
@@ -50,25 +66,37 @@ def proc_res(fd, args):
             eng_res["retcode"] = retcode
             eng_res["error"] = err
             eng_res["output"] = dict()
+            eng_res["run_result"] = RunResult.FINISHED
 
             out_lines = out.split("###")
+            reading_inner_block = False
+            inner_block = ""
             for line in out_lines:
-                spl = line.split(':', 1)
-                if len(spl) != 2:  # jump over lines not in the format
-                    continue
-                name, val = spl[0], spl[1]
-                assert name not in eng_res["output"]
-                if name not in engines_outs[eng]:
-                    engines_outs[eng].append(name)
-                eng_res["output"][name] = val
+                if reading_inner_block:
+                    inner_block += line + "\n"
+                    if line.endswith(")"):
+                        reading_inner_block = False
+                        eng_res["output"][f"{engines_outs[eng][-1]}-stats"] = Z3StatisticsParser(inner_block).stats
+                        inner_block = ""
+                elif line.startswith("(:"):
+                    reading_inner_block = True
+                    inner_block += line + "\n"
+                else:
+                    spl = line.split(':', 1)
+                    if len(spl) != 2:  # jump over lines not in the format
+                        continue
+                    name, val = spl[0], spl[1]
+                    assert name not in eng_res["output"]
+                    if name not in engines_outs[eng]:
+                        engines_outs[eng].append(name)
+                    eng_res["output"][name] = val
 
             results[params][eng] = eng_res
+        elif status == 'error':
+            results[params][eng]["run_result"] = RunResult.ERROR
+        elif status == 'timeout':
+            results[params][eng]["run_result"] = RunResult.TIMEOUT
 
-        if status == 'error':
-            results[params][eng] = "ERR"
-
-        if status == 'timeout':
-            results[params][eng] = "TO"
 
     list_ptrns = list()
     for bench in results:
@@ -78,10 +106,15 @@ def proc_res(fd, args):
             out_len = len(engines_outs[eng]) + 1    # +1 = time
             if eng in results[bench]:
                 bench_res = results[bench][eng]
-                if bench_res == "ERR":
+                for out in engines_outs[eng]:
+                    if f"{out}-stats" in bench_res["output"]:
+                        bench_res["output"][f"{out}-stats"] = \
+                            Z3StatisticsParser.stats_formatter(bench_res["output"][f"{out}-stats"], StatsFormat.JSON)
+
+                if bench_res["run_result"] == RunResult.ERROR:
                     for i in range(out_len):
                         ls.append("ERR")
-                elif bench_res == "TO":
+                elif bench_res["run_result"] == RunResult.TIMEOUT:
                     for i in range(out_len):
                         ls.append("TO")
                 else:
@@ -91,7 +124,13 @@ def proc_res(fd, args):
                     ls.append(bench_res["runtime"])
                     for out in engines_outs[eng]:
                         if out in bench_res["output"]:
-                            ls.append(bench_res["output"][out])
+                            out_data = bench_res["output"][out]
+                            ls.append(out_data)
+
+                            if f"{out}-stats" in bench_res["output"]:
+                                stats_file_name = f"{eng}-{bench[0].replace("/", "_").replace(".", "_")}-stats.json"
+                                with open(f"./stats/{current_time}/{stats_file_name}", "w") as f:
+                                    f.write(bench_res["output"][f"{out}-stats"])
                         else:
                             sys.stderr.write("Warning: in {} and {}: "
                                 "element {} not in {}\n".format(bench, eng,
@@ -120,7 +159,10 @@ def proc_res(fd, args):
     for eng in engines:
         header += [eng + "-runtime"]
         for out in engines_outs[eng]:
-            header += [eng + "-" + out]
+            if "stats" in out:
+                header += [eng + "-stats"]
+            else:
+                header += [eng + "-" + out]
 
     fmt = "text"
     if args.csv:

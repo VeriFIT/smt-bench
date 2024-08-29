@@ -43,6 +43,9 @@ z3-noodler-model:
 z3-noodler-length:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_length_proc=true $1
 
+z3-noodler-stats:
+  cmd: ../bin/z3-noodler-wrap.sh -st $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
