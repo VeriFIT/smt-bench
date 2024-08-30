@@ -1,1 +1,9 @@
-.DS_Store
+.DS_Store/
+.venv/
+**/__pycache__/
+bin/*/build/
+bench/stats/
+formulae/QF_S/
+formulae/QF_SLIA/
+formulae/QF_SNIA/
+.idea
