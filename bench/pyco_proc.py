@@ -32,6 +32,12 @@ class RunResult(Enum):
     TIMEOUT = 3
 
 
+class InnerBlockType(Enum):
+    """Type of parsed inner block."""
+    MODEL = "model"
+    STATISTICS = "statistics"
+
+
 ###########################################
 def proc_res(fd, args):
     """proc_res(fd, args) -> _|_
@@ -80,24 +86,31 @@ def proc_res(fd, args):
 
             # out_lines = [out]
             out_lines = out.split("###")
-            reading_inner_block = False
+            inner_block_type: None | InnerBlockType = None
             inner_block = ""
             for line in out_lines:
-                if reading_inner_block:
+                if inner_block_type:
                     inner_block += line + "\n"
 
                     if line.endswith(")"):
-                        reading_inner_block = False
-
-                        engine_stats_name = f"{name.removesuffix('-result')}-stats"
-                        assert engine_stats_name not in eng_res["output"]
-                        if engine_stats_name not in engines_outs[eng]:
-                            engines_outs[eng].append(engine_stats_name)
-                        eng_res["output"][engine_stats_name] = Z3StatisticsParser(inner_block).stats
+                        if inner_block_type == InnerBlockType.STATISTICS:
+                            engine_stats_name = f"{name.removesuffix('-result')}-stats"
+                            assert engine_stats_name not in eng_res["output"]
+                            if engine_stats_name not in engines_outs[eng]:
+                                engines_outs[eng].append(engine_stats_name)
+                            eng_res["output"][engine_stats_name] = Z3StatisticsParser(inner_block).stats
+                        elif inner_block_type == InnerBlockType.MODEL:
+                            # TODO: Add model block handling.
+                            print("model:")
+                            print(inner_block)
 
                         inner_block = ""
+                        inner_block_type = None
                 elif line.startswith("(:"):
-                    reading_inner_block = True
+                    inner_block_type = InnerBlockType.STATISTICS
+                    inner_block += line + "\n"
+                elif line == "(":
+                    inner_block_type = InnerBlockType.MODEL
                     inner_block += line + "\n"
                 else:
                     spl = line.split(':', 1)
