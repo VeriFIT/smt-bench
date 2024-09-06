@@ -13,7 +13,7 @@ PARAMS="$*"
 ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
 SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
-CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-static/bin/cvc5"
+CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-x86_64-static/bin/cvc5"
 
 VERSION=$(${CVC_PROG} --version)
 VERSION=${VERSION#This is cvc5 version }
