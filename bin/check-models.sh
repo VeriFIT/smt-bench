@@ -28,7 +28,7 @@ PARAMS="$*"
 ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
 SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
-CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-static/bin/cvc5"
+CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-x86_64-static/bin/cvc5"
 
 z3_noodler_exe="${SCRIPT_DIR}/z3-noodler/build/z3"
 z3_noodler_version_string=($("$z3_noodler_exe" --version))
