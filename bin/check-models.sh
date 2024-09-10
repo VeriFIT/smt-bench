@@ -36,6 +36,9 @@ z3_noodler_git_hash=${z3_noodler_version_string[9]}
 mata_git_hash=${z3_noodler_version_string[13]}
 
 PATH_TO_MODEL="../bench/model-output-${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}/${INPUT:3}"
+if [ ! -f "$PATH_TO_MODEL" ]; then
+    exit 1
+fi
 RESULT_OF_MODEL="$(head -n 1 "$PATH_TO_MODEL")"
 # take everything between 3rd and one-to-last line
 MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
