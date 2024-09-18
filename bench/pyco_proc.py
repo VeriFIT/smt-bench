@@ -85,7 +85,12 @@ def proc_res(fd, args):
             name = ""
 
             # out_lines = [out]
-            out_lines = out.split("###")
+            out_lines = []
+            lines = out.split("###")
+            for line in lines:
+                if "WARNING" in line:
+                    continue
+                out_lines.append(line)
             inner_block_type: None | InnerBlockType = None
             inner_block = ""
             for line in out_lines:
@@ -94,15 +99,16 @@ def proc_res(fd, args):
 
                     if line.endswith(")"):
                         if inner_block_type == InnerBlockType.STATISTICS:
-                            engine_stats_name = f"{name.removesuffix('-result')}-stats"
+                            engine_stats_name = "stats"
                             assert engine_stats_name not in eng_res["output"]
                             if engine_stats_name not in engines_outs[eng]:
                                 engines_outs[eng].append(engine_stats_name)
                             eng_res["output"][engine_stats_name] = Z3StatisticsParser(inner_block).stats
                         elif inner_block_type == InnerBlockType.MODEL:
                             # TODO: Add model block handling.
-                            print("model:")
-                            print(inner_block)
+                            # print("model:")
+                            # print(inner_block)
+                            pass
 
                         inner_block = ""
                         inner_block_type = None
@@ -125,8 +131,10 @@ def proc_res(fd, args):
 
             results[params][eng] = eng_res
         elif status == 'error':
+            results[params][eng] = {}
             results[params][eng]["run_result"] = RunResult.ERROR
         elif status == 'timeout':
+            results[params][eng] = {}
             results[params][eng]["run_result"] = RunResult.TIMEOUT
 
 
@@ -139,7 +147,7 @@ def proc_res(fd, args):
             if eng in results[bench]:
                 bench_res = results[bench][eng]
                 for out in engines_outs[eng]:
-                    if out.endswith("-stats"):
+                    if out == "stats":
                         bench_res["output"][out] = \
                             Z3StatisticsParser.stats_formatter(bench_res["output"][out], args.stats_format)
 
@@ -158,7 +166,7 @@ def proc_res(fd, args):
                         if out in bench_res["output"]:
                             out_data = bench_res["output"][out]
 
-                            if out.endswith("-stats"):
+                            if out == "stats":
                                 if args.stats == StatsDestination.SEPARATE_FILES:
                                     stats_file_name = f"{eng}-{bench[0].replace('/', '_').replace('.', '_')}-stats.json"
                                     with open(f"./stats/{current_time}/{stats_file_name}", "w") as f:
@@ -197,7 +205,7 @@ def proc_res(fd, args):
     for eng in engines:
         header += [eng + "-runtime"]
         for out in engines_outs[eng]:
-            if out.endswith("-stats") and args.stats != StatsDestination.OUTPUT_FILE:
+            if out == "stats" and args.stats != StatsDestination.OUTPUT_FILE:
                 continue
             header += [eng + "-" + out]
             # header += [eng + "-result"]
