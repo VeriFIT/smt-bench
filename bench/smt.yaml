@@ -5,7 +5,7 @@ z3-model:
   cmd: ../bin/z3-model-wrap.sh $1
 
 z3-no-model:
-  cmd: ../bin/z3-wrap.sh model=false $1
+  cmd: ../bin/z3-model-wrap.sh model=false $1
 
 z3strRE:
   cmd: ../bin/z3strRE-wrap.sh $1
