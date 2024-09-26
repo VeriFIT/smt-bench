@@ -12,9 +12,7 @@ VERSION=$(z3 --version)
 VERSION=${VERSION#Z3 version }
 VERSION=${VERSION% -*}
 
-out=$(sed '$i\
-(get-model)\
-' ${INPUT} | z3 model=true -smt2 -in)
+out=$(z3 -model -smt2 ${INPUT})
 ret=$?
 first_line=$(echo "$out" | head -n 1)
 echo "$VERSION-result: ${first_line}"
