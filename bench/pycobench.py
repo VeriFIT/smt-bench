@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# pycobench - a small benchmarking solution
+# pycobench.py - a small benchmarking solution
 #
 # A small environment for running benchmarks
 #
@@ -495,9 +495,7 @@ Runs the main program according to the arguments obtained from the parser.
 ###########################################
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-                description="pycobench - "
-                "Executes benchmarks given using a configuration file on "
-                "cases given in input")
+                description="Executes benchmarks given using a configuration file on cases given in input")
     parser.add_argument('-j', '--jobs', type=int, default=os.cpu_count(),
                         help='The number of jobs (workers) to run '
                         'concurrently (default: %(default)s)')
