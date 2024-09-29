@@ -52,13 +52,10 @@ class Z3StatisticsParser:
     def stats(self) -> dict:
         return self._stats
 
-    def print_stats(self, stats_file: io.TextIOWrapper | None = None, format: StatsFormat = StatsFormat.JSON) -> None:
+    def print_stats(self, stats_file: io.TextIOWrapper, format: StatsFormat = StatsFormat.JSON) -> None:
         formatted_stats = Z3StatisticsParser.stats_formatter(stats=self.stats, format=format)
         formatted_stats += "\n"
-        if stats_file:
-            stats_file.write(formatted_stats)
-        else:
-            print(formatted_stats)
+        stats_file.write(formatted_stats)
 
 
 def parse_args():
