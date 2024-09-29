@@ -22,6 +22,9 @@ z3-noodler:
 z3-noodler-underapprox:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox=true $1
 
+z3-noodler-no-underapprox:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox=false $1
+
 z3-noodler-loop:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.loop_protect=true $1
 
@@ -48,6 +51,12 @@ z3-noodler-length:
 
 z3-noodler-no-length:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_length_proc=false $1
+
+z3-noodler-no-memb:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_membership_heur=false $1
+
+z3-noodler-no-unary:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_unary_proc=false $1
 
 z3-noodler-stats:
   cmd: ../bin/z3-noodler-wrap.sh -st $1
