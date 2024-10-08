@@ -22,17 +22,11 @@ z3-noodler:
 z3-noodler-underapprox:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox=true $1
 
-z3-noodler-no-underapprox:
-  cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox=false $1
-
 z3-noodler-loop:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.loop_protect=true $1
 
 z3-noodler-nielsen:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_nielsen=true $1
-
-z3-noodler-no-nielsen:
-  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_nielsen=false $1
 
 z3-noodler-underappr-length-10:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox_length=10 $1
@@ -49,6 +43,12 @@ z3-noodler-model:
 z3-noodler-length:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_length_proc=true $1
 
+z3-noodler-no-underapprox:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox=false $1
+
+z3-noodler-no-nielsen:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_nielsen=false $1
+
 z3-noodler-no-length:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_length_proc=false $1
 
@@ -58,8 +58,26 @@ z3-noodler-no-memb:
 z3-noodler-no-unary:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_unary_proc=false $1
 
+z3-noodler-no-underapprox-stats:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.underapprox=false -st $1
+
+z3-noodler-no-nielsen-stats:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_nielsen=false -st $1
+
+z3-noodler-no-length-stats:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_length_proc=false -st $1
+
+z3-noodler-no-memb-stats:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_membership_heur=false -st $1
+
+z3-noodler-no-unary-stats:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_unary_proc=false -st $1
+
 z3-noodler-only-stabilization:
-  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_membership_heur=false smt.str.try_length_proc=false smt.str.try_nielsen=false $1
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_membership_heur=false smt.str.try_length_proc=false smt.str.try_nielsen=false smt.str.try_unary_proc=false $1
+
+z3-noodler-only-stabilization-stats:
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.try_membership_heur=false smt.str.try_length_proc=false smt.str.try_nielsen=false smt.str.try_unary_proc=false -st $1
 
 z3-noodler-stats:
   cmd: ../bin/z3-noodler-wrap.sh -st $1
