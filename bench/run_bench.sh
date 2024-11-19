@@ -60,7 +60,7 @@ while getopts "ht:j:m:" option; do
         j)
             j_value=$OPTARG
             ;;
-        j)
+        m)
             m_value=$OPTARG
             ;;
         *)
