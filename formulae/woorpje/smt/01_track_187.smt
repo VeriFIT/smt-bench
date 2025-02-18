@@ -1,0 +1,6 @@
+(set-logic QF_S)
+(declare-fun H () String)
+(declare-fun C () String)
+(declare-fun F () String)
+(assert (= (str.++  "icgai" H "fh" C "f")  (str.++  H "cgaii" F "hfcdc" H "fifbcf") ))
+(check-sat)
