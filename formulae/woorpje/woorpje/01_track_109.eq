@@ -1,4 +1,0 @@
-Variables {LDA}
-Terminals {cgabhdfei}
-Equation: dbcAhAhhcahiigibAieAdgcgacihfifdALeAdahgeeibhhfiaeehhaAfccgfeagegg = dbcADiffAaggAAAbafeAdaAgeeibhhfiaeeAAaAfccgfeagegg
-SatGlucose(100)

@@ -1,5 +1,0 @@
-(set-logic QF_S)
-(declare-fun B () String)
-(declare-fun A () String)
-(assert (= (str.++  "aabcbcbabaaabbbcacbbcccbcbbcaabbabcacccb" A "aacccaaaacbbabccc")  (str.++  "aabcbcbab" B "aabcacccaaaaacccaaaacbbabccc") ))
-(check-sat)

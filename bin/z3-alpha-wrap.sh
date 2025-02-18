@@ -17,8 +17,8 @@ SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 VERSION="smtcomp2024"
 
 #out=$(${SCRIPT_DIR}/z3alpha smt.string_solver=z3str3 smt.str.tactic=dAfterMid smt.str.pre_milliseconds=23000 smt.str.mid_milliseconds=10000 -smt2 ${INPUT})
-cd ${SCRIPT_DIR}/z3alpha_submission
-out=$(python3 z3alpha.py ../${INPUT})
+cd ${SCRIPT_DIR}/z3alpha/smtcomp24
+out=$(python3 z3alpha.py ../../${INPUT})
 
 ret=$?
 echo "$VERSION-result: ${out}"

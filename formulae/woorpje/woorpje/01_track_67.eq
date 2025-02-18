@@ -1,4 +1,0 @@
-Variables {HDF}
-Terminals {cgabhdjfei}
-Equation: bccHcagdjdaebDicicaccdeadfeacehdc = bccecijbbifhciibcfaaebecagdjdaebFjaachbbbcbiicicaccdeadfeacehdc
-SatGlucose(100)

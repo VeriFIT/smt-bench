@@ -14,14 +14,18 @@ To download [Z3](https://github.com/Z3Prover/z3), use `pip3`:
 ```
 pip3 install z3-solver
 ```
-For [cvc5](https://github.com/cvc5/cvc5), go to the [releases](https://github.com/cvc5/cvc5/releases), download `cvc5-Linux-x86_64-static.zip` from the latest version and unpack it into `bin/`.
+For [cvc5](https://github.com/cvc5/cvc5), download [this](https://github.com/cvc5/cvc5/releases/download/cvc5-1.2.0/cvc5-Linux-x86_64-static.zip) file and unpack it into `bin/`.
 
-For both [Z3-Noodler](https://github.com/VeriFIT/z3-noodler) and [Ostrich](https://github.com/uuverifiers/ostrich), clone the given tool into `bin/` and build them following the instructions in their READMEs.
+For [Z3-Alpha](https://github.com/JohnLyu2/z3alpha), just clone it into `bin/`.
 
-Good luck finding other tools...
+For [Ostrich](https://github.com/uuverifiers/ostrich), download [this](https://github.com/uuverifiers/ostrich/releases/download/v1.4smtcomp/ostrich-2024.tar.gz) file and unpack it into `bin/`.
+
+For [Z3-Trau](https://github.com/diepbp/z3-trau) and [Noodler](https://github.com/vhavlena/Noodler), clone the given tools into `bin/` and follow the instructions in their READMEs.
+
+For Z3Str3RE, clone [this](https://git.zs.informatik.uni-kiel.de/mku/z3str3re_artefact) repository into `bin/` and unpack `z3str3RE_artefact.tar.gz` (inside the cloned directory).
 
 ## How to run
-Go to `bench/` and use the script `run_bench.sh` (see `--help` for the instructions how to use it).
+Go to `bench/` and run `run_bench.sh -t NAME_OF_TOOL slog_old str_2 kaluza_hard pyex_hard`.
 
 ## How to process the results
-See the following [repo](https://github.com/jurajsic/smt-string-bench-results).
+See the following [repo](https://github.com/VeriFIT/smt-string-bench-results/tree/fmjournal).

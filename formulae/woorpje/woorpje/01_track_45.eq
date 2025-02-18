@@ -1,4 +1,0 @@
-Variables {BG}
-Terminals {ab}
-Equation: baaaaaaabaaaBbaabbbbbbbaababbaabbbaaabbbbb = baaaaaaabaaaabbbbbbabbbabbabbbaabbaaaababbabbbabbaaGbaabbbbbbbaababbaabbbaaabbbbb
-SatGlucose(100)

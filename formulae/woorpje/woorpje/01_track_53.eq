@@ -1,4 +1,0 @@
-Variables {BFE}
-Terminals {ab}
-Equation: bbaaabbbabBbabbbbbabbbbbabbbabbBbbbaEaaabbBaaaaaBbbaabbbaabbbbbbbbaabababaa = bbaaabbbabbabBbbbbabbbbbabbBbbabbbbaaabbBbabaabaaaababbFaabbbabaaaaababbbaabbbaabbbbbbbbaabababaa
-SatGlucose(100)

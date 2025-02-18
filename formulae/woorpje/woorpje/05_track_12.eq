@@ -1,6 +1,0 @@
-Variables {IEA}
-Terminals {cabdfe}
-Equation: aebcdaecfbcdcbAIAdaefccAfaaedfdd = aE
-Equation: cccbedeAedAeacbfcAdadeedaAcfaeaaccfcaAdA = cccbedebedbeacAfcbdadeedaAcfaeaaccfcabdb
-Equation: bfffffecAadfdeaAebbcebeAcaccceaecafeefAc = bfffffecbadfdeabeAAceAeAcaccceaecafeefbc
-SatGlucose(100)
