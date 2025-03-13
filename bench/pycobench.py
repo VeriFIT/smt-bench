@@ -200,7 +200,7 @@ measured using system "time" command.
     result['stderr'] = result['stderr'][-OUTPUT_LIMIT:]
 
     # if result['retcode'] not in {0, 1}:
-    if result['retcode'] not in {0}:
+    if result['retcode'] not in {0, 1}:
         raise CalledProgramError(result['stderr'])
 
     # extract the output of the time command from stderr
