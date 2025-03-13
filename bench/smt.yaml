@@ -73,6 +73,9 @@ z3-noodler-no-memb-stats:
 z3-noodler-no-unary-stats:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_unary_proc=false -st $1
 
+z3-noodler-notcont-pldi:
+  cmd: ../bin/z3-noodler-pldi-wrap.sh smt.str.ca_constr=true -st $1
+
 z3-noodler-only-stabilization:
   cmd: ../bin/z3-noodler-wrap.sh smt.str.try_membership_heur=false smt.str.try_length_proc=false smt.str.try_nielsen=false smt.str.try_unary_proc=false $1
 
