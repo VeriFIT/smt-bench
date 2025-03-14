@@ -24,6 +24,7 @@ show_help() {
 	echo "  -t TOOL Which tool to run (default=z3-noodler)"
 	echo "  -j N    How many processes to run in parallel (default=8)"
 	echo "  -m N    Memory limit of each process in GB (default=8)"
+	echo "  -s N    Timeout for each process in seconds (default=120)"
 }
 
 REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos")
@@ -48,7 +49,8 @@ ALL+=("snia")
 tool="z3-noodler"
 j_value="8"
 m_value="8"
-while getopts "ht:j:m:" option; do
+s_value="120"
+while getopts "ht:j:m:s:" option; do
     case $option in
         h)
             show_help 
@@ -62,6 +64,9 @@ while getopts "ht:j:m:" option; do
             ;;
         m)
             m_value=$OPTARG
+            ;;
+        s)
+            s_value=$OPTARG
             ;;
         *)
             echo "Invalid option: -$OPTARG"
@@ -115,9 +120,9 @@ tasks_files=()
 for benchmark in "${benchmarks[@]}"; do
 	echo "Running benchmark $benchmark"
 	CUR_DATE=$(date +%Y-%m-%d-%H-%M)
-	FILE_PREFIX="$benchmark-to120-$tool-$CUR_DATE"
+	FILE_PREFIX="$benchmark-to$s_value-$tool-$CUR_DATE"
 	TASKS_FILE="$FILE_PREFIX.tasks"
-	cat "$benchmark.input" | ./pycobench.py -c smt.yaml -j $j_value -t 120 --memout $m_value -m "$tool" -o "$TASKS_FILE"
+	cat "$benchmark.input" | ./pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE"
 	tasks_files+=("$TASKS_FILE")
 	echo "$TASKS_FILE" >> tasks_names.txt
 done
