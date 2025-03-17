@@ -117,9 +117,9 @@ done
 
 tasks_files=()
 
+CUR_DATE=$(date +%Y-%m-%d-%H-%M)
 for benchmark in "${benchmarks[@]}"; do
 	echo "Running benchmark $benchmark"
-	CUR_DATE=$(date +%Y-%m-%d-%H-%M)
 	FILE_PREFIX="$benchmark-to$s_value-$tool-$CUR_DATE"
 	TASKS_FILE="$FILE_PREFIX.tasks"
 	cat "$benchmark.input" | ./pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE"
