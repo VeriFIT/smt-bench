@@ -7,7 +7,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Downloading benchmarks
-To download [SMT-LIB'24 benchmarks](https://zenodo.org/records/11061097), run the `download_smt_benchmarks.sh` script.
+To download [SMT-LIB'25 benchmarks](https://zenodo.org/records/11061097), run the `download_smt_benchmarks.sh` script.
 
 ## Downloading tools
 To download [Z3](https://github.com/Z3Prover/z3), use `pip3`:
