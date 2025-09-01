@@ -123,3 +123,13 @@ woorpje:
 
 check-model:
   cmd: ../bin/check-models.sh $1
+
+check-model-z3:
+  cmd: ../bin/check-models-z3.sh $1
+
+check-model-cvc5:
+  cmd: ../bin/check-models-cvc5.sh $1
+
+check-model-ostrich:
+  cmd: ../bin/check-models-ostrich.sh $1
+

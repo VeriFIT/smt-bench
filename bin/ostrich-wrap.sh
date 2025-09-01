@@ -15,7 +15,7 @@ PARAMS="$*"
 
 # It is impossible to get version of Ostrich directly, so we
 # either give it directly or get the git hash
-#VERSION="1.3"
+#VERSION=""
 VERSION="$( cd ${SCRIPT_DIR}/ostrich && git rev-parse --short HEAD )"
 
 OSTRICH_EXE="${SCRIPT_DIR}/ostrich/ostrich"
