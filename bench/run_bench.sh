@@ -6,16 +6,16 @@ show_help() {
 	echo ""
 	echo "Runs given tool on given benchmarks. BENCHMARKi can have one of"
 	echo "the special values:"
-	echo " - all - run all smtlib'24 benchamrks,"
-	echo " - quick - run smtlib'24 benchmarks that z3-noodler computes quickly,"
-	echo " - slow - run smtlib'24 benchmarks that z3-noodler computes not so quickly,"
-	echo " - int-conv - run smtlib'24 benchmarks that contain to_int/from_int conversions,"
-	echo " - regex - run smtlib'24 benchmarks that are regex-heavy."
-	echo " - equations - run smtlib'24 benchmarks that are equations-heavy."
-	echo " - predicates - run smtlib'24 benchmarks that are predicates-heavy."
-	echo " - qs_s - run smtlib'24 benchmarks from QF_S logic."
-	echo " - qf_slia - run smtlib'24 benchmarks from QF_SLIA logic."
-	echo " - qf_snia - run smtlib'24 benchmarks from QF_SNIA logic."
+	echo " - all - run all smtlib benchamrks,"
+	echo " - quick - run smtlib benchmarks that z3-noodler computes quickly,"
+	echo " - slow - run smtlib benchmarks that z3-noodler computes not so quickly,"
+	echo " - int-conv - run smtlib benchmarks that contain to_int/from_int conversions,"
+	echo " - regex - run smtlib benchmarks that are regex-heavy."
+	echo " - equations - run smtlib benchmarks that are equations-heavy."
+	echo " - predicates - run smtlib benchmarks that are predicates-heavy."
+	echo " - qs_s - run smtlib benchmarks from QF_S logic."
+	echo " - qf_slia - run smtlib benchmarks from QF_SLIA logic."
+	echo " - qf_snia - run smtlib benchmarks from QF_SNIA logic."
 	echo "Note that if benchmark is given twice (for example it is in quick,"
 	echo "but also given explicitly), then it will be run twice. If no"
 	echo "benchmark is given, all benchmarks are run."
@@ -31,20 +31,19 @@ REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos" "matching" "hor
 EQUATIONS=("norn" "slog" "slent" "omark" "kepler" "woorpje" "webapp" "kaluza")
 PREDICATES=("transducer_plus" "leetcode" "str_small_rw" "pcp" "rna" "negated_predicates" "pyex" "full_str_int")
 
-QUICK=("sygus_qgen" "denghang" "transducer_plus" "norn" "slog" "slent" "omark" "leetcode" "snia" "pcp" "rna" "matching" "hornstr" "negated_predicates")
+QUICK=("sygus_qgen" "denghang" "transducer_plus" "norn" "slog" "slent" "omark" "leetcode" "pcp" "rna" "matching" "hornstr" "negated_predicates")
 SLOW=("automatark" "str_small_rw" "stringfuzz" "kepler" "woorpje" "webapp" "redos" "kaluza" "pyex" "full_str_int")
 
 INT_CONV_BENCHS=("str_small_rw" "stringfuzz" "full_str_int")
-NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "omark" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex" "redos" "snia" "pcp" "matching" "hornstr" "negated_predicates")
+NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "omark" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex" "redos" "pcp" "matching" "hornstr" "negated_predicates")
 
 QF_S=("sygus_qgen" "automatark" "matching" "hornstr" "slog" "omark" "woorpje" "pcp" "rna" "negated_predicates")
 QF_SLIA=("denghang" "stringfuzz" "redos" "norn" "slent" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "leetcode" "str_small_rw" "pyex" "full_str_int")
-QF_SNIA=("snia")
+QF_SNIA=("kaluza")
 
 ALL=("${REGEX[@]}")
 ALL+=("${EQUATIONS[@]}")
 ALL+=("${PREDICATES[@]}")
-ALL+=("snia")
 
 tool="z3-noodler"
 j_value="8"
