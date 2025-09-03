@@ -10,6 +10,7 @@ show_help() {
 	echo " - quick - run smtlib benchmarks that z3-noodler computes quickly,"
 	echo " - slow - run smtlib benchmarks that z3-noodler computes not so quickly,"
 	echo " - int-conv - run smtlib benchmarks that contain to_int/from_int conversions,"
+	echo " - replace-all - run smtlib benchmarks that contain replace_all or replace_re_all"
 	echo " - regex - run smtlib benchmarks that are regex-heavy."
 	echo " - equations - run smtlib benchmarks that are equations-heavy."
 	echo " - predicates - run smtlib benchmarks that are predicates-heavy."
@@ -36,6 +37,8 @@ SLOW=("automatark" "str_small_rw" "stringfuzz" "kepler" "woorpje" "webapp" "redo
 
 INT_CONV_BENCHS=("str_small_rw" "stringfuzz" "full_str_int")
 NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "omark" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex" "redos" "pcp" "matching" "hornstr" "negated_predicates")
+
+REPLACE_ALL_BENCHS=("webapp" "transducer_plus" "pcp" "rna")
 
 QF_S=("sygus_qgen" "automatark" "matching" "hornstr" "slog" "omark" "woorpje" "pcp" "rna" "negated_predicates")
 QF_SLIA=("denghang" "stringfuzz" "redos" "norn" "slent" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "leetcode" "str_small_rw" "pyex" "full_str_int")
@@ -97,6 +100,8 @@ do
 		benchmarks+=("${INT_CONV_BENCHS[@]}")
 	elif [[ "$BENCH_NAME" == "not-int-conv" ]]; then
 		benchmarks+=("${NOT_INT_CONV_BENCHS[@]}")
+	elif [[ "$BENCH_NAME" == "replace-all" ]]; then
+		benchmarks+=("${REPLACE_ALL_BENCHS[@]}")
 	elif [[ "$BENCH_NAME" == "regex" ]]; then
 		benchmarks+=("${REGEX[@]}")
 	elif [[ "$BENCH_NAME" == "equations" ]]; then
