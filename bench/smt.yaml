@@ -89,10 +89,10 @@ z3-noodler-stats:
   cmd: ../bin/z3-noodler-wrap.sh -st $1
 
 z3-noodler-no-nft-preprocess:
-  cmd: ../bin/z3-noodler-wrap.sh str.preprocess_nft=false $1
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.preprocess_nft=false $1
 
 z3-noodler-no-homomorphic-heuristic:
-  cmd: ../bin/z3-noodler-wrap.sh str.homomorphism_heuristic=false $1
+  cmd: ../bin/z3-noodler-wrap.sh smt.str.homomorphism_heuristic=false $1
 
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
