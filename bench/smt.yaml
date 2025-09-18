@@ -88,6 +88,12 @@ z3-noodler-only-stabilization-stats:
 z3-noodler-stats:
   cmd: ../bin/z3-noodler-wrap.sh -st $1
 
+z3-noodler-no-nft-preprocess:
+  cmd: ../bin/z3-noodler-wrap.sh smt.preprocess_nft=false $1
+
+z3-noodler-no-homomorphic-heuristic:
+  cmd: ../bin/z3-noodler-wrap.sh str.homomorphism_heuristic=false $1
+
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
 
@@ -117,6 +123,9 @@ sloth:
 
 ostrich:
   cmd: ../bin/ostrich-wrap.sh $1
+
+ostrich-model:
+  cmd: ../bin/ostrich-model-wrap.sh $1
 
 woorpje:
   cmd: ../bin/woorpje-wrap.sh $1
