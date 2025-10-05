@@ -26,6 +26,8 @@ show_help() {
 	echo "  -j N    How many processes to run in parallel (default=8)"
 	echo "  -m N    Memory limit of each process in GB (default=8)"
 	echo "  -s N    Timeout for each process in seconds (default=120)"
+	echo "  --bind-to-cpu  Bind each worker thread to a specific CPU; good to combine with --cpu-affinity"
+	echo "  --cpu-affinity c1,c2,c3 Pin processes to specific CPU cores (default=all)"
 }
 
 REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos" "matching" "hornstr")
@@ -52,10 +54,12 @@ tool="z3-noodler"
 j_value="8"
 m_value="8"
 s_value="120"
-while getopts "ht:j:m:s:" option; do
+cpu_affinity=""
+cpu_bind_arg=""
+while getopts "ht:j:m:s:-:" option; do
     case $option in
         h)
-            show_help 
+            show_help
             exit 0
             ;;
         t)
@@ -70,6 +74,24 @@ while getopts "ht:j:m:s:" option; do
         s)
             s_value=$OPTARG
             ;;
+        -)
+            case $OPTARG in
+				cpu-affinity)
+                    cpu_affinity="${!OPTIND}"; OPTIND=$(( $OPTIND + 1 ))
+                    ;;
+                cpu-affinity=*)
+                    cpu_affinity="${OPTARG#*=}"
+                    ;;
+				bind-to-cpu)
+					cpu_bind_arg="--bind-to-cpu"
+					;;
+				*)
+					echo "Invalid option: --$OPTARG"
+					show_help
+					exit 1
+					;;
+            esac
+            ;;
         *)
             echo "Invalid option: -$OPTARG"
             show_help
@@ -77,6 +99,13 @@ while getopts "ht:j:m:s:" option; do
             ;;
     esac
 done
+
+# Handle optional CPU affinity argument
+cpu_affinity_arg=""
+if [ -n "$cpu_affinity" ]; then
+	IFS=',' read -r -a cpu_array <<< "$cpu_affinity"
+	cpu_affinity_arg="--cpu-affinity ${cpu_array[*]}"
+fi
 
 # Shift the option index so that $1 refers to the first positional argument
 shift $((OPTIND - 1))
@@ -126,7 +155,7 @@ for benchmark in "${benchmarks[@]}"; do
 	echo "Running benchmark $benchmark"
 	FILE_PREFIX="$benchmark-to$s_value-$tool-$CUR_DATE"
 	TASKS_FILE="$FILE_PREFIX.tasks"
-	cat "$benchmark.input" | ./pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE"
+	cat "$benchmark.input" | ./pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE" $cpu_affinity_arg $cpu_bind_arg
 	tasks_files+=("$TASKS_FILE")
 	echo "$TASKS_FILE" >> tasks_names.txt
 done

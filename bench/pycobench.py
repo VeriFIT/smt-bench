@@ -90,6 +90,16 @@ g_verbose = False
 # should we be verbose
 g_verbose = False
 
+# cpu affinity
+g_cpu_affinity = list(range(os.cpu_count()))  # by default, all CPUs
+g_bind_to_cpu = False
+
+#############################################
+# if g_cpu_affinity is not empty, pin the thread to a specific CPU
+def get_cpu_affiliation(worker_idx):
+    if not g_bind_to_cpu:
+        return g_cpu_affinity
+    return [g_cpu_affinity[worker_idx % len(g_cpu_affinity)]]
 
 ###########################################
 # taken from https://psutil.readthedocs.io/en/latest/#kill-process-tree
@@ -150,7 +160,7 @@ class CalledProgramError(Exception):
 in a subprocesses ends with an error"""
     pass
 
-def limit_virtual_memory():
+def limit_virtual_memory(cpu_affinity):
     if g_memout is not None:
         # The tuple below is of the form (soft limit, hard limit). Limit only
         # the soft part so that the limit can be increased later (setting also
@@ -158,8 +168,11 @@ def limit_virtual_memory():
         # When the limit cannot be changed, setrlimit() raises ValueError.
         resource.setrlimit(resource.RLIMIT_AS, (g_memout*1024*1024*1024, resource.RLIM_INFINITY))
 
+    p = psutil.Process()
+    p.cpu_affinity(cpu_affinity)
+
 ###########################################
-def run_subproc_systime(cmd):
+def run_subproc_systime(cmd, cpu_affinity):
     """run_subproc(cmd) -> dict()
 
 Runs a command as a subprocess and collects results.  The time consumed is
@@ -171,7 +184,7 @@ measured using system "time" command.
                             stderr=subprocess.PIPE,
                             # preexec_fn is a callable object that will be called in the child process
                             # just before the child is executed.
-                            preexec_fn=limit_virtual_memory
+                            preexec_fn=lambda: limit_virtual_memory(cpu_affinity)
                             )
     try:
         outs, errs = proc.communicate(timeout=g_timeout)
@@ -230,7 +243,7 @@ measured using system "time" command.
 
 
 ###########################################
-def execute_benchmark(params):
+def execute_benchmark(params, cpu_affinity):
     """execute_benchmark(params) -> None
 
 Executes one benchmark.
@@ -260,7 +273,7 @@ Executes one benchmark.
 
     try:
         # result = run_subproc(cmd)
-        result = run_subproc_systime(cmd)
+        result = run_subproc_systime(cmd, cpu_affinity)
         return result
     except subprocess.TimeoutExpired:
         return {'timeout': True}
@@ -276,7 +289,7 @@ def merge_two_dicts(x, y):
 
 
 ###########################################
-def worker():
+def worker(cpu_affinity):
     """worker() -> None
 
 Main function of a thread for processing tasks.
@@ -286,7 +299,7 @@ Main function of a thread for processing tasks.
         if item is None:     # None signals end of processing
             g_result_queue.put(None)   # signal termination of worker
             break
-        res = execute_benchmark(item)
+        res = execute_benchmark(item, cpu_affinity)
         g_result_queue.put(merge_two_dicts(item, res))
         g_task_queue.task_done()
 
@@ -423,6 +436,11 @@ Runs the main program according to the arguments obtained from the parser.
     g_tasks = args.output_file
     global g_verbose
     g_verbose = args.verbose
+    global g_cpu_affinity
+    if args.cpu_affinity is not None:
+        g_cpu_affinity = sorted(set(args.cpu_affinity))
+    global g_bind_to_cpu
+    g_bind_to_cpu = args.bind_to_cpu
 
     list_of_tasks = []   # these are the tasks that are to be procecessed
     if args.tasklist:   # we want to continue in a tasklist
@@ -461,7 +479,7 @@ Runs the main program according to the arguments obtained from the parser.
     # start the workers
     threads = []
     for i in range(num_worker_threads):
-        t = threading.Thread(target=worker)
+        t = threading.Thread(target=worker, args=(get_cpu_affiliation(i),))
         t.start()
         threads.append(t)
 
@@ -521,6 +539,10 @@ if __name__ == '__main__':
                         help="verbose output")
     parser.add_argument('-c', '--conf', metavar='config.yaml', nargs=1, required=True,
                         help='configuration file (in YAML)')
+    parser.add_argument('--cpu-affinity', type=int, nargs='+',
+                        help="set CPU affinity to the given list of CPUs (0-based)")
+    parser.add_argument('--bind-to-cpu', action='store_true', default=False,
+                        help="pin each worker thread to a specific CPU; good to combine with --cpu-affinity")
     parser.add_argument('input', nargs="?",
                         help="input file with the tasks in CSV (default: %(default)s)",
                         type=argparse.FileType('r'), default=sys.stdin)
