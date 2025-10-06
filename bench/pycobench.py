@@ -95,7 +95,8 @@ g_cpu_affinity = list(range(os.cpu_count()))  # by default, all CPUs
 g_bind_to_cpu = False
 
 #############################################
-# if g_cpu_affinity is not empty, pin the thread to a specific CPU
+# If g_bind_to_cpu is True, then each worker is pinned to a specific CPU;
+# otherwise, all workers can use all CPUs in g_cpu_affinity
 def get_cpu_affiliation(worker_idx):
     if not g_bind_to_cpu:
         return g_cpu_affinity
@@ -438,7 +439,7 @@ Runs the main program according to the arguments obtained from the parser.
     g_verbose = args.verbose
     global g_cpu_affinity
     if args.cpu_affinity is not None:
-        g_cpu_affinity = sorted(set(args.cpu_affinity))
+        g_cpu_affinity = args.cpu_affinity
     global g_bind_to_cpu
     g_bind_to_cpu = args.bind_to_cpu
 
@@ -540,9 +541,9 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--conf', metavar='config.yaml', nargs=1, required=True,
                         help='configuration file (in YAML)')
     parser.add_argument('--cpu-affinity', type=int, nargs='+',
-                        help="set CPU affinity to the given list of CPUs (0-based)")
+                        help="Set CPU affinity to the given list of CPUs.")
     parser.add_argument('--bind-to-cpu', action='store_true', default=False,
-                        help="pin each worker thread to a specific CPU; good to combine with --cpu-affinity")
+                        help="Pin each worker thread to a specific CPU.")
     parser.add_argument('input', nargs="?",
                         help="input file with the tasks in CSV (default: %(default)s)",
                         type=argparse.FileType('r'), default=sys.stdin)
