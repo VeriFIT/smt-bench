@@ -26,8 +26,8 @@ show_help() {
 	echo "  -j N    How many processes to run in parallel (default=8)"
 	echo "  -m N    Memory limit of each process in GB (default=8)"
 	echo "  -s N    Timeout for each process in seconds (default=120)"
-	echo "  --bind-to-cpu  Bind each worker thread to a specific CPU; good to combine with --cpu-affinity"
-	echo "  --cpu-affinity c1,c2,c3 Pin processes to specific CPU cores (default=all)"
+	echo "  --cpu-affinity c0,c1,c2 Pin processes to specific CPU cores (default=all)."
+	echo "  --bind-to-cpu  Bind each worker thread to a specific CPU."
 }
 
 REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos" "matching" "hornstr")
@@ -99,7 +99,6 @@ while getopts "ht:j:m:s:-:" option; do
             ;;
     esac
 done
-
 # Handle optional CPU affinity argument
 cpu_affinity_arg=""
 if [ -n "$cpu_affinity" ]; then
