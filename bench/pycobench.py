@@ -95,9 +95,11 @@ g_cpu_affinity = list(range(os.cpu_count()))  # by default, all CPUs
 g_bind_to_cpu = False
 
 #############################################
-# If g_bind_to_cpu is True, then each worker is pinned to a specific CPU;
-# otherwise, all workers can use all CPUs in g_cpu_affinity
+
 def get_cpu_affiliation(worker_idx):
+    """ If g_bind_to_cpu is True, then each worker is pinned to a specific CPU;
+    otherwise, all workers can use all CPUs in g_cpu_affinity
+    """
     if not g_bind_to_cpu:
         return g_cpu_affinity
     return [g_cpu_affinity[worker_idx % len(g_cpu_affinity)]]
@@ -174,7 +176,7 @@ def limit_virtual_memory(cpu_affinity):
 
 ###########################################
 def run_subproc_systime(cmd, cpu_affinity):
-    """run_subproc(cmd) -> dict()
+    """run_subproc(cmd, cpu_affinity) -> dict()
 
 Runs a command as a subprocess and collects results.  The time consumed is
 measured using system "time" command.
@@ -245,7 +247,7 @@ measured using system "time" command.
 
 ###########################################
 def execute_benchmark(params, cpu_affinity):
-    """execute_benchmark(params) -> None
+    """execute_benchmark(params, cpu_affinity) -> None
 
 Executes one benchmark.
 """
@@ -291,7 +293,7 @@ def merge_two_dicts(x, y):
 
 ###########################################
 def worker(cpu_affinity):
-    """worker() -> None
+    """worker(cpu_affinity) -> None
 
 Main function of a thread for processing tasks.
 """
