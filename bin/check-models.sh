@@ -73,7 +73,7 @@ RESULT_OF_MODEL="$(head -n 1 "$PATH_TO_MODEL")"
 MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
 
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
-  # replace stuff in model so that we have (assert (= var "its model"))
+  # replace stuff in model so that we do not have definitions for regex variables
   add_to_input=$(remove_lines_related_with_RegLan "$MODEL")
 
   input_without_declarations=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | sed '/declare-const/d; /declare-fun/d')
@@ -81,7 +81,7 @@ if [ "$RESULT_OF_MODEL" = "sat" ]; then
   before=$(echo "$input_without_declarations" | awk '/set-logic/ {print; exit} {print}')
   after=$(echo "$input_without_declarations" | awk '/set-logic/ {f=1; next} f {print}')
 
-  out=$(echo "$before" "$add_to_input" "$after" | ${CVC_PROG} --lang smt2 $PARAMS)
+  out=$(echo "$before" "$add_to_input" "$after" | ${CVC_PROG} --lang smt2)
   ret=$?
   echo "${VERSION}-result: ${out}"
   exit ${ret}
