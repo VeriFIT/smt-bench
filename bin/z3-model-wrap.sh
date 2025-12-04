@@ -8,6 +8,9 @@ fi
 
 INPUT=$1
 
+ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
+SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
+
 VERSION=$(z3 --version)
 VERSION=${VERSION#Z3 version }
 VERSION=${VERSION% -*}

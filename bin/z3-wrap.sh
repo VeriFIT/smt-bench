@@ -6,6 +6,9 @@ if [ \( "$#" -ne 1 \) ] ; then
 	exit 1
 fi
 
+ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
+SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
+
 INPUT=$1
 
 VERSION=$(z3 --version)
