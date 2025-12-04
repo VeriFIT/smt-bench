@@ -10,7 +10,7 @@ z3_noodler_version_string=($("$z3_noodler_exe" --version))
 z3_noodler_git_hash=${z3_noodler_version_string[9]}
 mata_git_hash=${z3_noodler_version_string[13]}
 
-out=$("$z3_noodler_exe" smt.string_solver="noodler" -smt2 ${INPUT})
+out=$(./clean-formula.sh "$INPUT" | "$z3_noodler_exe" model=false -in)
 ret=$?
 echo "${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}-result: ${out}"
 

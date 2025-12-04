@@ -12,7 +12,7 @@ VERSION=$(z3 --version)
 VERSION=${VERSION#Z3 version }
 VERSION=${VERSION% -*}
 
-out=$(z3 model=false -smt2 ${INPUT})
+out=$(./clean-formula.sh "$INPUT" | z3 model=false -in)
 ret=$?
 echo "$VERSION-result: ${out}"
 

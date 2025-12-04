@@ -21,7 +21,7 @@ VERSION="$( cd ${SCRIPT_DIR}/ostrich && git rev-parse --short HEAD )"
 OSTRICH_EXE="${SCRIPT_DIR}/ostrich/ostrich"
 ABSOLUTE_INPUT_PATH=$(readlink -f ${INPUT})
 
-out=$(${OSTRICH_EXE} +quiet -portfolio=strings ${PARAMS} ${INPUT} 2> /dev/null)
+out=$(${OSTRICH_EXE} +quiet -portfolio=strings -inputFormat=smtlib ${PARAMS} < (./clean-formula.sh "$INPUT") 2> /dev/null)
 ret=$?
 echo "$VERSION-result: ${out}"
 

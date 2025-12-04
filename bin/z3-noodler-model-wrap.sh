@@ -10,15 +10,20 @@ z3_noodler_version_string=($("$z3_noodler_exe" --version))
 z3_noodler_git_hash=${z3_noodler_version_string[9]}
 mata_git_hash=${z3_noodler_version_string[13]}
 
-out=$(sed '$i\
-(get-model)\
-' ${INPUT} | "$z3_noodler_exe" smt.string_solver="noodler" model=true -smt2 -in)
+out=$(./clean-formula.sh "$INPUT" | "$z3_noodler_exe" -model model=true -in)
 ret=$?
 first_line=$(echo "$out" | head -n 1)
 echo "${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}-result: ${first_line}"
-output_file="model-output-${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}/${INPUT:3}"
+output_file="model-output-z3-noodler-${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}/${INPUT:3}"
 output_dir=$(dirname $output_file)
 mkdir -p $output_dir
 echo "$out" > $output_file
 
-exit 0
+case "$var" in
+  sat|unsat|unknown)
+    exit 0
+    ;;
+  *)
+    exit ${ret}
+    ;;
+esac

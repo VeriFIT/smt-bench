@@ -19,7 +19,7 @@ VERSION=$(${CVC_PROG} --version)
 VERSION=${VERSION#This is cvc5 version }
 VERSION=${VERSION% [*}
 
-out=$(${CVC_PROG} --lang smt2 $PARAMS $INPUT)
+out=$(./clean-formula.sh "$INPUT" | ${CVC_PROG} --lang smt2 $PARAMS)
 ret=$?
 echo "$VERSION-result: ${out}"
 

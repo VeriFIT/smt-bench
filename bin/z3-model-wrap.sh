@@ -12,7 +12,7 @@ VERSION=$(z3 --version)
 VERSION=${VERSION#Z3 version }
 VERSION=${VERSION% -*}
 
-out=$(z3 -model -smt2 ${INPUT})
+out=$(./clean-formula.sh "$INPUT" | z3 -model -in)
 ret=$?
 first_line=$(echo "$out" | head -n 1)
 echo "$VERSION-result: ${first_line}"
@@ -21,4 +21,11 @@ output_dir=$(dirname $output_file)
 mkdir -p $output_dir
 echo "$out" > $output_file
 
-exit 0 # we return 0 because for unsat instances ret==1
+case "$var" in
+  sat|unsat|unknown)
+    exit 0 # for unsat|unknwon, the return value migth not be 0
+    ;;
+  *)
+    exit ${ret}
+    ;;
+esac
