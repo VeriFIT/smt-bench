@@ -75,7 +75,7 @@ MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
   # replace stuff in model so that we have (assert (= var "its model"))
   add_to_input=$(remove_lines_related_with_RegLan "$MODEL")
-  out=$(./clean-formula.sh "$INPUT" | sed '/declare-const/d; /declare-fun/d' | sed "/set-logic/a $(printf '%s' "$add_to_input")" | ${CVC_PROG} --lang smt2 $PARAMS)
+  out=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | sed '/declare-const/d; /declare-fun/d' | sed "/set-logic/a $(printf '%s' "$add_to_input")" | ${CVC_PROG} --lang smt2 $PARAMS)
   ret=$?
   echo "${VERSION}-result: ${out}"
   exit ${ret}

@@ -19,7 +19,7 @@ VERSION=$(${CVC_PROG} --version)
 VERSION=${VERSION#This is cvc5 version }
 VERSION=${VERSION% [*}
 
-out=$(./clean-formula.sh "$INPUT" | ${CVC_PROG} --produce-models --dump-models $PARAMS)
+out=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | ${CVC_PROG} --produce-models --dump-models $PARAMS)
 ret=$?
 first_line=$(echo "$out" | head -n 1)
 echo "$VERSION-result: ${first_line}"
@@ -28,7 +28,7 @@ output_dir=$(dirname $output_file)
 mkdir -p $output_dir
 echo "$out" > $output_file
 
-case "$var" in
+case "$first_line" in
   sat|unsat|unknown)
     exit 0
     ;;

@@ -10,7 +10,7 @@ z3_noodler_version_string=($("$z3_noodler_exe" --version))
 z3_noodler_git_hash=${z3_noodler_version_string[9]}
 mata_git_hash=${z3_noodler_version_string[13]}
 
-out=$(./clean-formula.sh "$INPUT" | "$z3_noodler_exe" -model model=true -in)
+out=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | "$z3_noodler_exe" -model model=true -in)
 ret=$?
 first_line=$(echo "$out" | head -n 1)
 echo "${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}-result: ${first_line}"
@@ -19,7 +19,7 @@ output_dir=$(dirname $output_file)
 mkdir -p $output_dir
 echo "$out" > $output_file
 
-case "$var" in
+case "$first_line" in
   sat|unsat|unknown)
     exit 0
     ;;
