@@ -46,7 +46,7 @@ case "$TOOL" in
     ;;
   z3-noodler)
     TOOL_NAME="z3-noodler"
-    z3_noodler_version_string=$(${SCRIPT_DIR}/z3-noodler/build/z3 --version)
+    z3_noodler_version_string=($(${SCRIPT_DIR}/z3-noodler/build/z3 --version))
     z3_noodler_git_hash=${z3_noodler_version_string[9]}
     mata_git_hash=${z3_noodler_version_string[13]}
     VERSION="${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}"
@@ -75,7 +75,13 @@ MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
   # replace stuff in model so that we have (assert (= var "its model"))
   add_to_input=$(remove_lines_related_with_RegLan "$MODEL")
-  out=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | sed '/declare-const/d; /declare-fun/d' | sed "/set-logic/a $(printf '%s' "$add_to_input")" | ${CVC_PROG} --lang smt2 $PARAMS)
+
+  input_without_declarations=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | sed '/declare-const/d; /declare-fun/d')
+  # Split so that the line with "set-logic" stays in the first part
+  before=$(echo "$input_without_declarations" | awk '/set-logic/ {print; exit} {print}')
+  after=$(echo "$input_without_declarations" | awk '/set-logic/ {f=1; next} f {print}')
+
+  out=$(echo "$before" "$add_to_input" "$after" | ${CVC_PROG} --lang smt2 $PARAMS)
   ret=$?
   echo "${VERSION}-result: ${out}"
   exit ${ret}
