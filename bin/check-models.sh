@@ -73,15 +73,25 @@ RESULT_OF_MODEL="$(head -n 1 "$PATH_TO_MODEL")"
 MODEL=$(sed '3,$!d' "$PATH_TO_MODEL" | sed '$d')
 
 if [ "$RESULT_OF_MODEL" = "sat" ]; then
-  # replace stuff in model so that we do not have definitions for regex variables
+  # remove definitions of regexes, we assume that they are not actually "free" variables in the original formula (there must be asserts )
   add_to_input=$(remove_lines_related_with_RegLan "$MODEL")
 
-  input_without_declarations=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | sed '/declare-const/d; /declare-fun/d')
+  # remove declarations (they will be replaced by definitions from model), except those declaring regexes
+  input_without_declarations=$(${SCRIPT_DIR}/clean-formula.sh "$INPUT" | sed '
+/RegLan/!{
+/declare-const/d
+/declare-fun/d
+/declare-sort/d
+}
+')
+
+  input_sort_declarations=$(grep "declare-sort" "$INPUT")
+
   # Split so that the line with "set-logic" stays in the first part
   before=$(echo "$input_without_declarations" | awk '/set-logic/ {print; exit} {print}')
   after=$(echo "$input_without_declarations" | awk '/set-logic/ {f=1; next} f {print}')
 
-  out=$(echo "$before" "$add_to_input" "$after" | ${CVC_PROG} --lang smt2)
+  out=$(echo "$before" "$input_sort_declarations" "$add_to_input" "$after" | ${CVC_PROG} --lang smt2)
   ret=$?
   echo "${VERSION}-result: ${out}"
   exit ${ret}
