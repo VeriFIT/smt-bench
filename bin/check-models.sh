@@ -91,7 +91,10 @@ if [ "$RESULT_OF_MODEL" = "sat" ]; then
   before=$(echo "$input_without_declarations" | awk '/set-logic/ {print; exit} {print}')
   after=$(echo "$input_without_declarations" | awk '/set-logic/ {f=1; next} f {print}')
 
-  out=$(echo "$before" "$input_sort_declarations" "$add_to_input" "$after" | ${CVC_PROG} --lang smt2)
+  out=$(echo "$before
+$input_sort_declarations
+$add_to_input
+$after" | ${CVC_PROG} --lang smt2)
   ret=$?
   echo "${VERSION}-result: ${out}"
   exit ${ret}

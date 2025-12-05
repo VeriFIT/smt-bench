@@ -19,5 +19,5 @@ sed \
     -e 's/(set-option :produce-unsat-cores true)//g' \
     -e 's/(set-option :produce-models true)//g' \
     -e 's/(get-unsat-core)//g' \
-    -e 's/get-value//g' \
+    -e 's/get-value/g' \
     "$INPUT"
