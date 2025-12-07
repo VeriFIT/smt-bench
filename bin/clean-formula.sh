@@ -9,7 +9,7 @@ fi
 INPUT="$1"
 
 if ! grep -q "set-logic" "$INPUT"; then
-    echo "(set-logic QF_ALL)"
+    echo "(set-logic ALL)"
 fi
 
 
