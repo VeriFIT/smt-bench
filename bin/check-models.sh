@@ -29,7 +29,7 @@ PARAMS="$*"
 ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
 SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
-source tool_info.sh
+source ${SCRIPT_DIR}/tool_info.sh
 load_tool_info "$TOOL" "$SCRIPT_DIR"
 
 CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-x86_64-static/bin/cvc5"

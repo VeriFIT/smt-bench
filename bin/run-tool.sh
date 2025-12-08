@@ -15,7 +15,7 @@ PARAMS="$*"
 ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
 SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
-source tool_info.sh
+source ${SCRIPT_DIR}/tool_info.sh
 load_tool_info "$TOOL" "$SCRIPT_DIR"
 
 out=$(${TOOL_PATH} "${TOOL_ARGS_NO_MODEL[@]}" $PARAMS <(${SCRIPT_DIR}/clean-formula.sh "$INPUT"))
