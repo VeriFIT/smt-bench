@@ -22,7 +22,7 @@ out=$(${TOOL_PATH} "${TOOL_ARGS_MODEL[@]}" $PARAMS <(${SCRIPT_DIR}/clean-formula
 ret=$?
 first_line=$(echo "$out" | head -n 1)
 echo "${VERSION}-result: ${first_line}"
-output_file="model-output-{$TOOL_NAME}-${VERSION}/${INPUT:3}"
+output_file="model-output-${TOOL_NAME}-${VERSION}/${INPUT:3}"
 output_dir=$(dirname $output_file)
 mkdir -p $output_dir
 echo "$out" > $output_file
