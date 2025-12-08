@@ -29,40 +29,10 @@ PARAMS="$*"
 ABSOLUTE_SCRIPT_PATH=$(readlink -f $0)
 SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 
+source tool_info.sh
+load_tool_info "$TOOL" "$SCRIPT_DIR"
+
 CVC_PROG="${SCRIPT_DIR}/cvc5-Linux-x86_64-static/bin/cvc5"
-
-case "$TOOL" in
-  cvc5)
-    TOOL_NAME="cvc5"
-    VERSION=$(${CVC_PROG} --version)
-    VERSION=${VERSION#This is cvc5 version }
-    VERSION=${VERSION% [*}
-    ;;
-  z3)
-    TOOL_NAME="z3"
-    VERSION=$(z3 --version)
-    VERSION=${VERSION#Z3 version }
-    VERSION=${VERSION% -*}
-    ;;
-  z3-noodler)
-    TOOL_NAME="z3-noodler"
-    z3_noodler_version_string=($(${SCRIPT_DIR}/z3-noodler/build/z3 --version))
-    z3_noodler_git_hash=${z3_noodler_version_string[9]}
-    mata_git_hash=${z3_noodler_version_string[13]}
-    VERSION="${z3_noodler_git_hash:0:7}-${mata_git_hash:0:7}"
-    ;;
-  ostrich)
-    TOOL_NAME="ostrich"
-    # It is impossible to get version of Ostrich directly, so we
-    # either give it directly or get the git hash
-    #VERSION=""
-    VERSION="$( cd ${SCRIPT_DIR}/ostrich && git rev-parse --short HEAD )"
-    ;;
-  *)
-    echo "<tool> must be one of z3, cvc5, z3-noodler, or ostrich"
-    ;;
-esac
-
 
 PATH_TO_MODEL="../bench/model-output-${TOOL_NAME}-${VERSION}/${INPUT:3}"
 if [ ! -f "$PATH_TO_MODEL" ]; then
