@@ -18,9 +18,9 @@ SCRIPT_DIR=$(dirname ${ABSOLUTE_SCRIPT_PATH})
 source ${SCRIPT_DIR}/tool_info.sh
 load_tool_info "$TOOL" "$SCRIPT_DIR"
 
-# create temporary input file and set up a trap to delete it after script ends (in any way)
-tmp_input_file=$(mktemp --suffix=.smt2)
-trap 'rm -f "$tmp_input_file"' EXIT
+# create temporary input file
+tmp_input_file="/tmp/${INPUT:3}"
+mkdir -p $(dirname $tmp_input_file)
 ${SCRIPT_DIR}/clean-formula.sh "$INPUT" > "$tmp_input_file"
 
 out=$(${TOOL_PATH} "${TOOL_ARGS_MODEL[@]}" $PARAMS "$tmp_input_file")
