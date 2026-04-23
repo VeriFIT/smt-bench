@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check the number of command-line arguments
-if [ \( "$#" -lt 2 \) ] ; then
+if [ \( "$#" -lt 1 \) ] ; then
 	echo "usage: ${0} <input> [params]"
 	exit 1
 fi
