@@ -95,7 +95,7 @@ z3-noodler-no-homomorphic-heuristic:
   cmd: ../bin/run-tool.sh $1 z3-noodler smt.str.homomorphism_heuristic=false
 
 z3-noodler-warnings:
-  cmd ../bin/run-warnings.sh $1
+  cmd: ../bin/run-warnings.sh $1
 
 cvc4:
   cmd: ../bin/cvc4-wrap.sh $1
