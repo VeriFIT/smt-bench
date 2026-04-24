@@ -21,7 +21,7 @@ tmp_input_file="/tmp/${INPUT:3}"
 mkdir -p $(dirname $tmp_input_file)
 ${SCRIPT_DIR}/clean-formula.sh "$INPUT" > "$tmp_input_file"
 
-out=$(${TOOL_PATH} model=true smt.str.enable_warnings=true $PARAMS "$tmp_input_file" 2>&1)
+out=$(${TOOL_PATH} model=true smt.str.enable_warnings=true $PARAMS "$tmp_input_file" 2>&1 | tr '\n' ' ')
 echo "$VERSION-result: ${out}"
 
 exit 0
