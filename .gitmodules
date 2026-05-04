@@ -4,3 +4,6 @@
 [submodule "formulae/zaligvinder"]
 	path = formulae/zaligvinder
 	url = https://github.com/jurajsic/zaligvinder.git
+[submodule "formulae/ecma2020-smt-bench"]
+	path = formulae/ecma2020-smt-bench
+	url = https://github.com/Kumismar/ecma2020-smt-bench.git
