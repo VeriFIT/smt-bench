@@ -14,7 +14,6 @@ show_help() {
     echo " - regex - run smtlib benchmarks that are regex-heavy."
     echo " - equations - run smtlib benchmarks that are equations-heavy."
     echo " - predicates - run smtlib benchmarks that are predicates-heavy."
-    echo " - ecma2020 - run the ecma2020 benchmark (might not work for all the solvers)."
     echo " - qs_s - run smtlib benchmarks from QF_S logic."
     echo " - qf_slia - run smtlib benchmarks from QF_SLIA logic."
     echo " - qf_snia - run smtlib benchmarks from QF_SNIA logic."
@@ -34,7 +33,6 @@ show_help() {
 REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos" "matching" "hornstr")
 EQUATIONS=("norn" "slog" "slent" "omark" "kepler" "woorpje" "webapp" "kaluza")
 PREDICATES=("transducer_plus" "leetcode" "str_small_rw" "pcp" "rna" "negated_predicates" "pyex" "full_str_int")
-ECMA2020=("ecma2020")
 
 QUICK=("sygus_qgen" "denghang" "transducer_plus" "norn" "slog" "slent" "omark" "leetcode" "pcp" "rna" "matching" "hornstr" "negated_predicates")
 SLOW=("automatark" "str_small_rw" "stringfuzz" "kepler" "woorpje" "webapp" "redos" "kaluza" "pyex" "full_str_int")
@@ -51,7 +49,6 @@ QF_SNIA=("kaluza")
 ALL=("${REGEX[@]}")
 ALL+=("${EQUATIONS[@]}")
 ALL+=("${PREDICATES[@]}")
-ALL+=("${ECMA2020[@]}")
 
 tool="z3-noodler"
 j_value="8"
@@ -139,8 +136,6 @@ do
         benchmarks+=("${EQUATIONS[@]}")
     elif [[ "$BENCH_NAME" == "predicates" ]]; then
         benchmarks+=("${PREDICATES[@]}")
-    elif [[ "$BENCH_NAME" == "ecma2020" ]]; then
-        benchmarks+=("${ECMA2020[@]}")
     elif [[ "$BENCH_NAME" == "qf_s" ]]; then
         benchmarks+=("${QF_S[@]}")
     elif [[ "$BENCH_NAME" == "qf_slia" ]]; then
