@@ -38,10 +38,10 @@ z3-noodler-diseq:
   cmd: ../bin/run-tool.sh $1 z3-noodler smt.str.ca_constr=true
 
 z3-noodler-model:
-  cmd: ../bin/run-tool-model.sh $1 z3-noodler model_validate=true
+  cmd: ../bin/run-tool-model.sh $1 z3-noodler
 
 z3-noodler-model-validate:
-  cmd: ../bin/run-tool-model.sh $1 z3-noodler model_validate=true
+  cmd: ../bin/run-model-validate.sh $1
 
 z3-noodler-length:
   cmd: ../bin/run-tool.sh $1 z3-noodler smt.str.try_length_proc=true
