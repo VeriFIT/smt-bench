@@ -64,8 +64,14 @@ g_memout = None
 # can be later used for restarting a prematurely stopped benchmark.
 g_tasks = 'pycobench.tasks'
 
-# the command to measure CPU time
-g_time_cmd = ['/usr/bin/time', '-p']
+# the command to measure CPU time (and peak memory, via GNU time's %M)
+g_time_cmd = ['/usr/bin/time', '-f', 'real %e\nuser %U\nsys %S\nmaxrss %M']
+
+# fraction of the memory limit (g_memout) that a process' peak RSS must reach
+# for an abnormal exit to be classified as a memory-limit hit (MEMOUT) rather
+# than a generic error; RLIMIT_AS bounds virtual address space, not RSS, so
+# this is a heuristic, not an exact match
+MEMOUT_RSS_THRESHOLD = 0.95
 
 # the command for hard timeout
 g_timeout_cmd = ['timeout', '-s', 'KILL']
@@ -163,6 +169,26 @@ class CalledProgramError(Exception):
 in a subprocesses ends with an error"""
     pass
 
+
+class MemoryLimitError(Exception):
+    """MemoryLimitError: exception for the case when a program called in a
+subprocess ends abnormally and its peak memory usage indicates it hit the
+configured memory limit"""
+    pass
+
+
+def is_memory_limit_hit(result):
+    """is_memory_limit_hit(result) -> bool
+
+Decides, from the peak RSS reported by /usr/bin/time, whether a process
+probably died because it hit the memory limit (g_memout).
+"""
+    if g_memout is None or 'maxrss_kb' not in result:
+        return False
+    limit_kb = g_memout * 1024 * 1024
+    return result['maxrss_kb'] >= limit_kb * MEMOUT_RSS_THRESHOLD
+
+
 def limit_virtual_memory(cpu_affinity):
     if g_memout is not None:
         # The tuple below is of the form (soft limit, hard limit). Limit only
@@ -215,28 +241,30 @@ measured using system "time" command.
     result['stdout'] = result['stdout'][-OUTPUT_LIMIT:]
     result['stderr'] = result['stderr'][-OUTPUT_LIMIT:]
 
-    # if result['retcode'] not in {0, 1}:
-    if result['retcode'] not in {0, 1}:
-        raise CalledProgramError(result['stderr'])
-
-    # extract the output of the time command from stderr
-    try:
-        stderr_split = result["stderr"].splitlines()
-        if len(stderr_split) < 3:
-            raise Exception
-
-        time_lines = stderr_split[-3:]
-        stderr_split = stderr_split[:-3]
-        result["stderr"] = "\n".join(stderr_split)
+    # extract the output of the time command from stderr; done before the
+    # retcode check below so that an abnormal exit can still be classified
+    # using the peak memory usage
+    stderr_split = result["stderr"].splitlines()
+    if len(stderr_split) >= 4:
+        time_lines = stderr_split[-4:]
         for line in time_lines:
             mtch = re.search(r'user\s+(?P<time>\d+\.\d+)', line)
             if mtch:
                 result['time'] = float(mtch.group('time'))
+            mtch = re.search(r'maxrss\s+(?P<maxrss>\d+)', line)
+            if mtch:
+                result['maxrss_kb'] = int(mtch.group('maxrss'))
 
-        if 'time' not in result:
-            raise Exception
+        if 'time' in result:
+            stderr_split = stderr_split[:-4]
+            result["stderr"] = "\n".join(stderr_split)
 
-    except Exception:
+    if result['retcode'] not in {0, 1}:
+        if is_memory_limit_hit(result):
+            raise MemoryLimitError(result['stderr'])
+        raise CalledProgramError(result['stderr'])
+
+    if 'time' not in result:
         raise Exception("Could not extract measured time\n" +
                         "retcode: " + str(result['retcode']) + "\n" +
                         "stdout: " + result['stdout'] + "\n" +
@@ -280,6 +308,8 @@ Executes one benchmark.
         return result
     except subprocess.TimeoutExpired:
         return {'timeout': True}
+    except MemoryLimitError as e:
+        return {'memout': True, 'error_msg': remove_newlines(str(e))}
     except CalledProgramError as e:
         return {'error': True, 'error_msg': remove_newlines(str(e))}
 
@@ -319,6 +349,11 @@ christian]).
         writer.writerow(['timeout', result['method']] + result['params'])
         task_file.flush()
         res_string = termcolor.colored('TIMEOUT', 'yellow')
+    elif 'memout' in result:
+        writer.writerow(['memout', result['method']] +
+                        result['params'] + [result['error_msg']])
+        task_file.flush()
+        res_string = termcolor.colored('MEMOUT', 'magenta', attrs=['bold'])
     elif 'error' in result:
         writer.writerow(['error', result['method']] +
                         result['params'] + [result['error_msg']])
