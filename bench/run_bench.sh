@@ -154,7 +154,7 @@ for benchmark in "${benchmarks[@]}"; do
     echo "Running benchmark $benchmark"
     FILE_PREFIX="$benchmark-to$s_value-$tool-$CUR_DATE"
     TASKS_FILE="$FILE_PREFIX.tasks"
-    cat "$benchmark.input" | ./pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE" $cpu_affinity_arg $cpu_bind_arg
+    cat "$benchmark.input" | ../harnesses/pycobench/src/pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE" $cpu_affinity_arg $cpu_bind_arg
     tasks_files+=("$TASKS_FILE")
     echo "$TASKS_FILE" >> tasks_names.txt
 done

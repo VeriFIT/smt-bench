@@ -2,7 +2,9 @@
 SMT benchmarking platform
 
 ## Installing Dependencies
+The benchmark harness is [pycobench](https://github.com/VeriFIT/pycobench), a submodule in `harnesses/pycobench`:
 ```
+git submodule update --init harnesses/pycobench
 pip3 install -r requirements.txt
 ```
 

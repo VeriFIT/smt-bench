@@ -28,7 +28,7 @@ bench-noodler:
 # Process pycobench results into a table, e.g. 'just process --csv bench/FILE.tasks'.
 [no-cd]
 process *ARGS:
-	'{{ justfile_directory() }}/bench/pyco_proc.py' {{ ARGS }}
+	'{{ justfile_directory() }}/harnesses/pycobench/src/pyco_proc.py' {{ ARGS }}
 
 # Download the SMT-LIB string benchmarks into 'formulae/'.
 download:
