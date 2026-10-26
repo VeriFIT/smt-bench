@@ -6,6 +6,14 @@ SMT benchmarking platform
 pip3 install -r requirements.txt
 ```
 
+### Alternative: Nix
+The repository is a Nix flake whose development shell provides the Python dependencies, GNU `time`, `unbuffer`, `zstd`, `curl`, and Z3 (as the `z3` tool):
+```
+nix develop   # 'direnv allow' enters the shell automatically.
+nix fmt       # Formats the Nix files.
+```
+Inside the shell, `just` wraps the scripts, e.g. `just bench -t z3 quick`, `just process --csv bench/FILE.tasks`, or `just download`; run `just help` to list all recipes.
+
 ## Downloading benchmarks
 To download [SMT-LIB'25 benchmarks](https://zenodo.org/records/11061097), run the `download_smt_benchmarks.sh` script (you need to have `unzstd` installed).
 

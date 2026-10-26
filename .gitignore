@@ -8,3 +8,6 @@ formulae/QF_SLIA/
 formulae/QF_SNIA/
 .idea
 /bench/*.tasks
+# Nix
+.direnv/
+/result*
