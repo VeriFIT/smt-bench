@@ -29,6 +29,11 @@
           curl
           zstd
 
+          # scripts/build_version.sh and scripts/compare_versions.sh; the C++ compiler and make come with mkShell.
+          cmake
+          git
+          gh # Resolves 'pr/<N>' revisions.
+
           just
           nixd
           nixfmt

@@ -30,6 +30,28 @@ bench-noodler:
 process *ARGS:
 	'{{ justfile_directory() }}/harnesses/pycobench/src/pyco_proc.py' {{ ARGS }}
 
+# Specs are '<tool>:<rev>[=<label>],...' or a bare <rev> of z3-noodler; the first build is the baseline.
+# Example: just compare --fetch-from ../z3-noodler --sample 20 devel=before my-branch=after
+# Benchmark revisions of a solver against each other into 'results/'; 'just compare --help' lists the options.
+compare *ARGS:
+	./scripts/compare_versions.sh {{ ARGS }}
+
+# Build one tool at one revision (tag, branch, commit) into 'build/bin/<tool>-<rev>'.
+build-version REV TOOL="z3-noodler" *ARGS:
+	./scripts/build_version.sh {{ ARGS }} {{ TOOL }} {{ REV }}
+
+# List the tools that 'compare' can build and the repositories they are cloned from.
+tools:
+	./scripts/build_version.sh --list-tools
+
+# Regenerate the report of a finished comparison, e.g. 'just report results/RUN --baseline z3-noodler-after'.
+report RUN *ARGS:
+	./scripts/report.sh {{ ARGS }} {{ RUN }}
+
+# Remove the builds of 'compare' not rebuilt for DAYS days.
+clean-versions DAYS="30" *ARGS:
+	./scripts/clean_versions.sh --older-than {{ DAYS }} {{ ARGS }}
+
 # Download the SMT-LIB string benchmarks into 'formulae/'.
 download:
 	./download_smt_benchmarks.sh
