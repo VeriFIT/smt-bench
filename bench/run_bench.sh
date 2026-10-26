@@ -30,25 +30,7 @@ show_help() {
     echo "  --bind-to-cpu  Bind each worker thread to a specific CPU."
 }
 
-REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos" "matching" "hornstr")
-EQUATIONS=("norn" "slog" "slent" "omark" "kepler" "woorpje" "webapp" "kaluza")
-PREDICATES=("transducer_plus" "leetcode" "str_small_rw" "pcp" "rna" "negated_predicates" "pyex" "full_str_int")
-
-QUICK=("sygus_qgen" "denghang" "transducer_plus" "norn" "slog" "slent" "omark" "leetcode" "pcp" "rna" "matching" "hornstr" "negated_predicates")
-SLOW=("automatark" "str_small_rw" "stringfuzz" "kepler" "woorpje" "webapp" "redos" "kaluza" "pyex" "full_str_int")
-
-INT_CONV_BENCHS=("str_small_rw" "stringfuzz" "full_str_int")
-NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "omark" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex" "redos" "pcp" "matching" "hornstr" "negated_predicates")
-
-REPLACE_ALL_BENCHS=("webapp" "transducer_plus" "pcp" "rna")
-
-QF_S=("sygus_qgen" "automatark" "matching" "hornstr" "slog" "omark" "woorpje" "pcp" "rna" "negated_predicates")
-QF_SLIA=("denghang" "stringfuzz" "redos" "norn" "slent" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "leetcode" "str_small_rw" "pyex" "full_str_int")
-QF_SNIA=("kaluza")
-
-ALL=("${REGEX[@]}")
-ALL+=("${EQUATIONS[@]}")
-ALL+=("${PREDICATES[@]}")
+source "$(dirname "$0")/benchmark_sets.sh"
 
 tool="z3-noodler"
 j_value="8"
@@ -118,33 +100,7 @@ fi
 
 for BENCH_NAME in "$@"
 do
-    if [[ "$BENCH_NAME" == "all" ]]; then
-        benchmarks+=("${ALL[@]}")
-    elif [[ "$BENCH_NAME" == "quick" ]]; then
-        benchmarks+=("${QUICK[@]}")
-    elif [[ "$BENCH_NAME" == "slow" ]]; then
-        benchmarks+=("${SLOW[@]}")
-    elif [[ "$BENCH_NAME" == "int-conv" ]]; then
-        benchmarks+=("${INT_CONV_BENCHS[@]}")
-    elif [[ "$BENCH_NAME" == "not-int-conv" ]]; then
-        benchmarks+=("${NOT_INT_CONV_BENCHS[@]}")
-    elif [[ "$BENCH_NAME" == "replace-all" ]]; then
-        benchmarks+=("${REPLACE_ALL_BENCHS[@]}")
-    elif [[ "$BENCH_NAME" == "regex" ]]; then
-        benchmarks+=("${REGEX[@]}")
-    elif [[ "$BENCH_NAME" == "equations" ]]; then
-        benchmarks+=("${EQUATIONS[@]}")
-    elif [[ "$BENCH_NAME" == "predicates" ]]; then
-        benchmarks+=("${PREDICATES[@]}")
-    elif [[ "$BENCH_NAME" == "qf_s" ]]; then
-        benchmarks+=("${QF_S[@]}")
-    elif [[ "$BENCH_NAME" == "qf_slia" ]]; then
-        benchmarks+=("${QF_SLIA[@]}")
-    elif [[ "$BENCH_NAME" == "qf_snia" ]]; then
-        benchmarks+=("${QF_SNIA[@]}")
-    else
-        benchmarks+=("$BENCH_NAME")
-    fi
+    mapfile -t -O "${#benchmarks[@]}" benchmarks < <(benchmark_set_members "$BENCH_NAME")
 done
 
 tasks_files=()
