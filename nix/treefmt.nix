@@ -5,6 +5,8 @@
       #  format the enclosing main checkout instead.
       projectRootFile = "flake.nix";
       programs.nixfmt.enable = true;
+      # Formatted upstream.
+      settings.global.excludes = [ "harnesses/pycobench/**" ];
     };
   };
 }
