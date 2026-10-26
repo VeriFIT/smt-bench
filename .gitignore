@@ -8,6 +8,9 @@ formulae/QF_SLIA/
 formulae/QF_SNIA/
 .idea
 /bench/*.tasks
+# scripts/build_version.sh and scripts/compare_versions.sh
+/build/
+/results/
 # Nix
 .direnv/
 /result*

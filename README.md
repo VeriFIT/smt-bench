@@ -33,5 +33,20 @@ Good luck finding other tools...
 ## How to run
 Go to `bench/` and use the script `run_bench.sh` (see `--help` for the instructions how to use it).
 
+## How to compare revisions of a tool
+`scripts/compare_versions.sh` (`just compare`) benchmarks several revisions of Z3-Noodler against each other on the same formulae.
+Every revision is built from source into `build/bin/` (the repository is cloned into `build/subjects/` on first use, Mata is fetched in the version the revision pins), and every build becomes one pycobench engine:
+```
+# a tag against the tip of devel, on the 'quick' benchmarks of run_bench.sh
+just compare v1.8.0 devel
+# unpublished branches of a local clone, 20 instances of every regex benchmark, 30 s timeout
+just compare --fetch-from ../z3-noodler --benchmarks regex --sample 20 --timeout 30 devel=before my-branch=after
+# a pull request against the commit it is based on
+just compare pr/123
+```
+A build is `<rev>[=<label>]`; a revision is a tag, branch, or commit, or `pr/<N>` for both sides of a pull request.
+Each run lands in `results/<benchmarks>-<timestamp>/`: `manifest.json` records the commits and settings, `compare.csv` the measurements, and `compare-report/` the report of pycobench's `pyco_plot.py`: the answers of the builds, solved instances (sat or unsat) and PAR-2 overall and per benchmark, pairwise speed-ups, the instances one build found sat and another unsat (`disagreements.csv`), and cactus and scatter plots.
+See `./scripts/compare_versions.sh --help` for the options.
+
 ## How to process the results
 See the following [repo](https://github.com/jurajsic/smt-string-bench-results).
