@@ -2,19 +2,24 @@
 SMT benchmarking platform
 
 ## Installing Dependencies
-The benchmark harness is [pycobench](https://github.com/VeriFIT/pycobench), a submodule in `harnesses/pycobench`:
+The benchmark harness is [pycobench](https://github.com/VeriFIT/pycobench), a submodule in `harnesses/pycobench`.
+Its Python dependencies are declared in `pyproject.toml` and pinned in `uv.lock`:
 ```
 git submodule update --init harnesses/pycobench
-pip3 install -r requirements.txt
+uv sync                     # creates '.venv' from uv.lock; activate it or prefix commands with 'uv run'
+# or, without uv:
+pip3 install .              # installs only the dependencies, the scripts run from the checkout
 ```
+After changing the dependencies in `pyproject.toml`, run `uv lock` and commit `uv.lock`.
 
 ### Alternative: Nix
-The repository is a Nix flake whose development shell provides the Python dependencies, GNU `time`, `unbuffer`, `zstd`, `curl`, and Z3 (as the `z3` tool):
+The repository is a Nix flake whose development shell provides the Python dependencies (built from `uv.lock` with [uv2nix](https://github.com/pyproject-nix/uv2nix)), GNU `time`, `unbuffer`, `zstd`, `curl`, and Z3 (as the `z3` tool):
 ```
 nix develop   # 'direnv allow' enters the shell automatically.
 nix fmt       # Formats the Nix files.
 ```
-Inside the shell, `just` wraps the scripts, e.g. `just bench -t z3 quick`, `just process --csv bench/FILE.tasks`, or `just download`; run `just help` to list all recipes.
+Inside the shell, `uv run` uses the shell's Python environment; do not run `uv sync` there.
+`just` wraps the scripts, e.g. `just bench -t z3 quick`, `just process --csv bench/FILE.tasks`, or `just download`; run `just help` to list all recipes.
 
 ## Downloading benchmarks
 To download [SMT-LIB'25 benchmarks](https://zenodo.org/records/11061097), run the `download_smt_benchmarks.sh` script (you need to have `unzstd` installed).

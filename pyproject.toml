@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "smt-bench"
+version = "0.1.0"
+description = "An SMT benchmarking platform using pycobench"
+readme = "README.md"
+requires-python = ">=3.9"
+# The dependencies of pycobench in 'harnesses/pycobench'.
+dependencies = [
+    "PyYAML>=5.1",
+    "tabulate>=0.8.6",
+    "psutil>=5.7.0",
+    "termcolor>=1.1.0",
+    "pandas>=1.1.1",
+    "numpy",
+    "matplotlib>=3.5",
+    "typing-extensions>=4.15.0",
+]
+
+[tool.uv]
+package = false
+python-downloads = "never"
+
+# 'pip install .' installs only the dependencies: the scripts run from the checkout.
+[tool.hatch.build.targets.wheel]
+bypass-selection = true
