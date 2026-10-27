@@ -1,17 +1,20 @@
+{ inputs, ... }:
 {
   perSystem =
     { pkgs, lib, ... }:
     let
-      # requirements.txt stays the single list of Python dependencies; Nix provides the versions of nixpkgs.
-      requirements = lib.filter (line: line != "" && !lib.hasPrefix "#" line) (
-        lib.splitString "\n" (builtins.readFile ../requirements.txt)
-      );
-      pythonEnv = pkgs.python3.withPackages (
-        ps:
-        map (
-          line: ps.${lib.toLower (builtins.head (builtins.match "([A-Za-z0-9_.-]+).*" line))}
-        ) requirements
-      );
+      inherit (inputs.omniflake.unified) uv2nix pyproject-nix build-system-pkgs;
+      # pyproject.toml and uv.lock are the single source of the Python dependencies, shared with uv and pip.
+      workspace = uv2nix.lib.workspace.loadWorkspace { workspaceRoot = ../.; };
+      pythonSet =
+        (pkgs.callPackage pyproject-nix.build.packages { python = pkgs.python3; }).overrideScope
+          (
+            lib.composeManyExtensions [
+              build-system-pkgs.overlays.wheel
+              (workspace.mkPyprojectOverlay { sourcePreference = "wheel"; })
+            ]
+          );
+      pythonEnv = pythonSet.mkVirtualEnv "smt-bench-env" workspace.deps.default;
     in
     {
       devShells.default = pkgs.mkShell {
@@ -19,6 +22,7 @@
 
         packages = with pkgs; [
           pythonEnv
+          uv
 
           # Runtime of pycobench and the scripts in 'bench/' and 'bin/'.
           time # GNU time, measures runtime and peak memory.
@@ -38,6 +42,18 @@
           nixd
           nixfmt
         ];
+
+        env = {
+          # 'uv run' uses the Nix environment instead of creating '.venv'.
+          UV_PROJECT_ENVIRONMENT = "${pythonEnv}";
+          UV_NO_SYNC = "1";
+          UV_PYTHON = pkgs.python3.interpreter;
+          UV_PYTHON_DOWNLOADS = "never";
+        };
+
+        shellHook = ''
+          unset PYTHONPATH
+        '';
       };
     };
 }
