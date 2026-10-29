@@ -36,7 +36,7 @@ process *ARGS:
 compare *ARGS:
 	./scripts/compare_versions.sh {{ ARGS }}
 
-# Build one tool at one revision (tag, branch, commit) into 'build/bin/<tool>-<rev>'.
+# Build one tool at one revision (tag, branch, commit) into 'build/bin/<tool>-<rev>'; '--mata REV' builds against another Mata.
 build-version REV TOOL="z3-noodler" *ARGS:
 	./scripts/build_version.sh {{ ARGS }} {{ TOOL }} {{ REV }}
 
