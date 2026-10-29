@@ -40,7 +40,7 @@ Go to `bench/` and use the script `run_bench.sh` (see `--help` for the instructi
 
 ## How to compare revisions of a tool
 `scripts/compare_versions.sh` (`just compare`) benchmarks several revisions of Z3-Noodler against each other on the same formulae.
-Every revision is built from source into `build/bin/` (the repository is cloned into `build/subjects/` on first use, Mata is fetched in the version the revision pins), and every build becomes one pycobench engine:
+Every revision is built from source into `build/bin/` (the repository is cloned into `build/subjects/` on first use, Mata is fetched in the version the revision pins unless `--mata` names another one), and every build becomes one pycobench engine:
 ```
 # a tag against the tip of devel, on the 'quick' benchmarks of run_bench.sh
 just compare v1.8.0 devel
@@ -48,9 +48,14 @@ just compare v1.8.0 devel
 just compare --fetch-from ../z3-noodler --benchmarks regex --sample 20 --timeout 30 devel=before my-branch=after
 # a pull request against the commit it is based on
 just compare pr/123
+# an unpublished branch built against an unpublished Mata branch, once more with another random seed
+just compare --fetch-from ../z3-noodler --fetch-mata-from ../mata --mata new=my-mata-branch --mata new-seed=my-mata-branch \
+    --params new-seed=smt.random_seed=7 devel my-branch=new my-branch=new-seed
 ```
 A build is `<rev>[=<label>]`; a revision is a tag, branch, or commit, or `pr/<N>` for both sides of a pull request.
-Each run lands in `results/<benchmarks>-<timestamp>/`: `manifest.json` records the commits and settings, `compare.csv` the measurements, and `compare-report/` the report of pycobench's `pyco_plot.py`: the answers of the builds, solved instances (sat or unsat) and PAR-2 overall and per benchmark, pairwise speed-ups, the instances one build found sat and another unsat (`disagreements.csv`), and cactus and scatter plots.
+`--mata <label>=<rev>` builds `<label>` against a revision of Mata (tag, branch, or commit; `--fetch-mata-from` fetches the branches of a local clone), and `--params <label>=<params>` runs `<label>` with extra solver parameters.
+Builds of the same commits are built once, so one revision can run under several labels with different parameters.
+Each run lands in `results/<benchmarks>-<timestamp>/`: `manifest.json` records the commits (Mata's too), parameters, and settings, `compare.csv` the measurements, and `compare-report/` the report of pycobench's `pyco_plot.py`: the answers of the builds, solved instances (sat or unsat) and PAR-2 overall and per benchmark, pairwise speed-ups, the instances one build found sat and another unsat (`disagreements.csv`), and cactus and scatter plots.
 See `./scripts/compare_versions.sh --help` for the options.
 
 ## How to process the results

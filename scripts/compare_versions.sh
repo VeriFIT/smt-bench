@@ -17,6 +17,13 @@
 # GitHub pull request N and expands to two builds: the commit it is based on and
 # its tip, labelled '<label>-base' and '<label>-head'.
 #
+# Z3-Noodler builds against the Mata its CMakeLists.txt pins, unless
+# '--mata <label>=<rev>' names another revision of Mata for the build <label>;
+# Mata revisions resolve like the tool's ones, with --fetch-mata-from in place of
+# --fetch-from. '--params <label>=<params>' passes solver parameters to the build
+# <label>. Builds of the same commits are built once, so one revision can run
+# under several labels with different parameters.
+#
 # Examples:
 #   # a tag against the tip of devel, on the quick benchmarks
 #   ./scripts/compare_versions.sh v1.4.0 devel
@@ -24,6 +31,11 @@
 #   ./scripts/compare_versions.sh --fetch-from ../z3-noodler --sample 50 old-branch=before new-branch=after
 #   # a pull request against what it branched off, on the regex benchmarks
 #   ./scripts/compare_versions.sh --benchmarks regex pr/123
+#   # an unpublished branch against devel, built against an unpublished Mata branch,
+#   # once with the default and once with another random seed
+#   ./scripts/compare_versions.sh --fetch-from ../z3-noodler --fetch-mata-from ../mata \
+#       --mata new=my-mata-branch --mata new-seed=my-mata-branch --params new-seed='smt.random_seed=7' \
+#       devel my-branch=new my-branch=new-seed
 
 set -euo pipefail
 
@@ -43,6 +55,12 @@ usage() { {
         echo "  -n|--sample <int>           run only <int> evenly spread instances of every benchmark"
         echo "  -F|--fetch-from <repo>      fetch the branches and tags of <repo> (a path or URL), so that"
         echo "                              its unpublished revisions can be compared; repeatable"
+        echo "  -m|--mata <label>=<rev>     build <label> against revision <rev> of Mata (tag, branch, commit)"
+        echo "                              instead of the one it pins; repeatable"
+        echo "     --fetch-mata-from <repo> fetch the branches and tags of the Mata clone <repo>; repeatable"
+        echo "  -p|--params <label>=<params>"
+        echo "                              run <label> with the whitespace-separated solver parameters"
+        echo "                              <params>, e.g. 'smt.random_seed=7'; repeatable"
         echo "  -t|--timeout <int>          timeout per instance in seconds [default=120]"
         echo "  -j|--jobs <int>             number of parallel jobs [default=8]"
         echo "  -M|--memout <GB>            memory limit per instance [default=8]"
@@ -61,6 +79,9 @@ usage() { {
 benchmark_names=()
 sample=""
 fetch_from=()
+fetch_mata_from=()
+mata_opts=()
+params_opts=()
 timeout=120
 jobs=8
 memout=8
@@ -90,6 +111,15 @@ while [ $# -gt 0 ]; do
             shift 2;;
         -F|--fetch-from)
             fetch_from+=( "$2" )
+            shift 2;;
+        -m|--mata)
+            mata_opts+=( "$2" )
+            shift 2;;
+        --fetch-mata-from)
+            fetch_mata_from+=( "$2" )
+            shift 2;;
+        -p|--params)
+            params_opts+=( "$2" )
             shift 2;;
         -t|--timeout)
             timeout="$2"
@@ -137,19 +167,23 @@ done
 for i in "${!fetch_from[@]}"; do
     [ ! -e "${fetch_from[$i]}" ] || fetch_from[$i]=$(realpath "${fetch_from[$i]}")
 done
+for i in "${!fetch_mata_from[@]}"; do
+    [ ! -e "${fetch_mata_from[$i]}" ] || fetch_mata_from[$i]=$(realpath "${fetch_mata_from[$i]}")
+done
 cd "$rootdir"
 
 # === Builds ===
 
 # Refreshes <subject> once per run: its upstream branches and tags, and the
-# branches and tags of every --fetch-from repository.
+# branches and tags of every <repo> (--fetch-from or --fetch-mata-from).
 declare -A refreshed=()
 refresh() {
     local subject=$1 repo
+    shift
     [ -z "${refreshed[$subject]:-}" ] || return 0
     git -C "$subject" fetch --quiet --tags --prune origin ||
         echo "warning: could not fetch $subject from its origin; using what it has" >&2
-    for repo in "${fetch_from[@]}"; do
+    for repo in "$@"; do
         git -C "$subject" fetch --quiet --tags "$repo" "+refs/heads/*:refs/remotes/fetched/*" ||
             die "could not fetch the branches of $repo into $subject"
     done
@@ -164,6 +198,11 @@ resolve() {
         git -C "$subject" rev-parse --verify --quiet "$candidate^{commit}" 2>/dev/null && return 0
     done
     return 1
+}
+
+# The label ends up in column names, file names and plot legends.
+clean_label() {
+    printf '%s' "$1" | tr -cs 'A-Za-z0-9._-' '-' | sed -E 's/-+$//'
 }
 
 # Resolves 'pr/<N>' of a GitHub pull request into the commits it compares.
@@ -193,7 +232,7 @@ for spec in "${specs[@]}"; do
     fi
     [ -n "$spec_revs" ] || die "spec '$spec' lists no revision"
     subject=$(./scripts/build_version.sh --subject "$spec_tool")
-    refresh "$subject"
+    refresh "$subject" "${fetch_from[@]}"
     IFS=',' read -r -a spec_rev_list <<< "$spec_revs"
     entries=()
     for entry in "${spec_rev_list[@]}"; do
@@ -218,8 +257,7 @@ for spec in "${specs[@]}"; do
         commits+=( "$commit" )
         tools+=( "$spec_tool" )
         revs+=( "$rev" )
-        # The label ends up in column names, file names and plot legends.
-        labels+=( "$(printf '%s' "$label" | tr -cs 'A-Za-z0-9._-' '-' | sed -E 's/-+$//')" )
+        labels+=( "$(clean_label "$label")" )
     done
 done
 
@@ -231,10 +269,59 @@ for i in "${!tools[@]}"; do
     [[ " ${methods[*]} " != *" $method "* ]] || die "two builds are labelled '${labels[$i]}'; name them with '<rev>=<label>'"
     methods+=( "$method" )
 done
+
+# Splits the '<label>=<value>' arguments of option <option> into the associative
+# array <out>, checking that every label names one build.
+by_label() {
+    local option=$1 entry label
+    local -n out=$2
+    shift 2
+    for entry in "$@"; do
+        label=$(clean_label "${entry%%=*}")
+        [[ "$entry" == *=* ]] && [ -n "$label" ] || die "$option needs '<label>=<value>', got '$entry'"
+        [ -z "${out[$label]+set}" ] || die "$option is given twice for '$label'"
+        [[ " ${labels[*]} " == *" $label "* ]] || die "$option: no build is labelled '$label' (labels: ${labels[*]})"
+        out["$label"]="${entry#*=}"
+    done
+}
+declare -A mata_rev_of=() params_of=()
+by_label --mata mata_rev_of "${mata_opts[@]}"
+by_label --params params_of "${params_opts[@]}"
+
+mata_revs=()
+mata_commits=()
+params=()
+for i in "${!labels[@]}"; do
+    label="${labels[$i]}"
+    mata_revs+=( "${mata_rev_of[$label]:-}" )
+    mata_commit=""
+    if [ -n "${mata_rev_of[$label]:-}" ]; then
+        [ "${tools[$i]}" = z3-noodler ] || die "--mata: '$label' is a build of ${tools[$i]}, not of z3-noodler"
+        mata_subject=$(./scripts/build_version.sh --subject mata)
+        refresh "$mata_subject" "${fetch_mata_from[@]}"
+        mata_commit=$(resolve "$mata_subject" "${mata_rev_of[$label]}") ||
+            die "mata: revision '${mata_rev_of[$label]}' not found (unpublished? pass --fetch-mata-from <clone>)"
+    fi
+    mata_commits+=( "$mata_commit" )
+    params+=( "${params_of[$label]:-}" )
+done
+
+# Builds of the same commits share one binary, named after the first of their labels.
+declare -A built=()
+binaries=()
 for i in "${!tools[@]}"; do
-    # The commit, not the label, is what gets built: a branch fetched from a clone
-    # need not exist in the subject under that name.
-    ./scripts/build_version.sh "${build_opts[@]}" "${tools[$i]}" "${commits[$i]}" "${labels[$i]}"
+    key="${tools[$i]} ${commits[$i]} ${mata_commits[$i]}"
+    if [ -z "${built[$key]:-}" ]; then
+        mata_opt=()
+        [ -z "${mata_commits[$i]}" ] || mata_opt=( --mata "${mata_commits[$i]}" )
+        # The commit, not the label, is what gets built: a branch fetched from a clone
+        # need not exist in the subject under that name.
+        ./scripts/build_version.sh "${build_opts[@]}" "${mata_opt[@]}" "${tools[$i]}" "${commits[$i]}" "${labels[$i]}"
+        built[$key]="${tools[$i]}-${labels[$i]}"
+    else
+        echo "[!] ${methods[$i]}: same build as ${built[$key]}"
+    fi
+    binaries+=( "${built[$key]}" )
 done
 
 # === Instances ===
@@ -300,13 +387,15 @@ if [ "$pin" = true ]; then
 fi
 
 # pycobench runs in 'bench/', where the formulae of the inputs are relative to.
+# It splits 'cmd' at whitespace; the single quotes only keep YAML off the parameters.
 config="$run_dir/compare.yaml"
 {
     echo "# Generated by scripts/compare_versions.sh -- regenerate, do not edit."
-    for method in "${methods[@]}"; do
+    for i in "${!methods[@]}"; do
+        cmd="../bin/run-build.sh \$1 ../build/bin/${binaries[$i]}${params[$i]:+ ${params[$i]}}"
         echo
-        echo "$method:"
-        echo "  cmd: ../bin/run-build.sh \$1 ../build/bin/$method"
+        echo "${methods[$i]}:"
+        echo "  cmd: '${cmd//\'/\'\'}'"
     done
 } > "$config"
 
@@ -314,7 +403,9 @@ pyco=harnesses/pycobench/src
 [ -f "$pyco/pycobench.py" ] || die "no $pyco; run 'git submodule update --init harnesses/pycobench'"
 manifest_args=( --file "$config" --file "$instances" --repository smt-bench . --repository pycobench harnesses/pycobench )
 for i in "${!methods[@]}"; do
-    manifest_args+=( --engine "${methods[$i]}" "tool=${tools[$i]}" "rev=${revs[$i]}" "commit=${commits[$i]}" )
+    manifest_args+=( --engine "${methods[$i]}" "tool=${tools[$i]}" "rev=${revs[$i]}" "commit=${commits[$i]}"
+        "binary=build/bin/${binaries[$i]}" "params=${params[$i]}" )
+    [ -z "${mata_commits[$i]}" ] || manifest_args+=( "mata_rev=${mata_revs[$i]}" "mata_commit=${mata_commits[$i]}" )
 done
 [ -z "$cpus" ] || manifest_args+=( --cpus $cpus )
 manifest_args+=( --set benchmarks "${benchmarks[*]}" --set sample "${sample:-all}" --set test_run "$testrun"
