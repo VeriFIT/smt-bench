@@ -1,27 +1,31 @@
 # smt-bench
-SMT benchmarking platform
+SMT benchmarking platform for string solvers, built on the [pycobench](https://github.com/VeriFIT/pycobench) harness (submodule `harnesses/pycobench`).
 
-## Installing Dependencies
+## Documentation
+- [Setup](docs/setup.md): dependencies with Nix or without it, formulae, solvers.
+- [Running benchmarks](docs/running.md): `bench/run_bench.sh`, benchmark sets, engines, processing results.
+- [Comparing revisions](docs/comparing-versions.md): building and benchmarking revisions of Z3-Noodler with `scripts/compare_versions.sh`.
+- [Memory limit](docs/memory-limit.md): the address-space limit and the optional cgroup limit (`--cgroup`).
+
+## Quick start
+With Nix:
 ```
-pip3 install -r requirements.txt
+git submodule update --init --recursive
+nix develop                      # or 'nix-shell', or 'direnv allow'
+just download                    # SMT-LIB string benchmarks into formulae/
+just bench -t z3 -j 4 quick      # results in bench/*.tasks
+just compare v1.8.0 devel        # results in results/<benchmarks>-<timestamp>/
 ```
 
-## Downloading benchmarks
-To download [SMT-LIB'25 benchmarks](https://zenodo.org/records/11061097), run the `download_smt_benchmarks.sh` script (you need to have `unzstd` installed).
-
-## Downloading tools
-To download [Z3](https://github.com/Z3Prover/z3), use `pip3`:
+Without Nix (needs Python ≥ 3.9, GNU `time`, `curl`, `zstd`; `git`, `cmake` and a C++ compiler for comparisons):
 ```
-pip3 install z3-solver
+git submodule update --init --recursive
+uv sync && source .venv/bin/activate    # or: pip3 install .
+pip3 install z3-solver                  # the 'z3' tool
+./download_smt_benchmarks.sh
+(cd bench && ./run_bench.sh -t z3 -j 4 quick)
+./scripts/compare_versions.sh v1.8.0 devel
 ```
-For [cvc5](https://github.com/cvc5/cvc5), go to the [releases](https://github.com/cvc5/cvc5/releases), download `cvc5-Linux-x86_64-static.zip` from the latest version and unpack it into `bin/`.
 
-For both [Z3-Noodler](https://github.com/VeriFIT/z3-noodler) and [Ostrich](https://github.com/uuverifiers/ostrich), clone the given tool into `bin/` and build them following the instructions in their READMEs.
-
-Good luck finding other tools...
-
-## How to run
-Go to `bench/` and use the script `run_bench.sh` (see `--help` for the instructions how to use it).
-
-## How to process the results
-See the following [repo](https://github.com/jurajsic/smt-string-bench-results).
+## Processing the results
+`just process --csv bench/FILE.tasks` (or `python3 harnesses/pycobench/src/pyco_proc.py --csv bench/FILE.tasks`) turns a run into a table; see also [smt-string-bench-results](https://github.com/jurajsic/smt-string-bench-results).
