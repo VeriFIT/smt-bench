@@ -58,5 +58,10 @@ Builds of the same commits are built once, so one revision can run under several
 Each run lands in `results/<benchmarks>-<timestamp>/`: `manifest.json` records the commits (Mata's too), parameters, and settings, `compare.csv` the measurements, and `compare-report/` the report of pycobench's `pyco_plot.py`: the answers of the builds, solved instances (sat or unsat) and PAR-2 overall and per benchmark, pairwise speed-ups, the instances one build found sat and another unsat (`disagreements.csv`), and cactus and scatter plots.
 See `./scripts/compare_versions.sh --help` for the options.
 
+## Memory limit
+Both `run_bench.sh` (`-m`) and `compare_versions.sh` (`--memout`) limit every run to some GiB, by default through pycobench, which caps the address space of every process.
+A solver dies on a failed allocation under that cap long before it uses that much memory (a growing vector fails at about half), and one reserving more address space than it touches (a JVM, a sanitizer build) may die earlier still; `run-tool.sh`, `run-tool-model.sh`, and `run-build.sh` in `bin/` report a failed allocation as a memout.
+With `--cgroup`, every run goes to a systemd scope of its own that caps the memory the run uses (without swap) instead, and a run the kernel kills for exceeding it counts as a memout; this needs a systemd user session with the memory controller delegated, which `bin/run-memory-limited.sh 1 true` checks.
+
 ## How to process the results
 See the following [repo](https://github.com/jurajsic/smt-string-bench-results).
