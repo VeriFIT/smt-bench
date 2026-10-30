@@ -28,6 +28,9 @@ show_help() {
     echo "  -s N    Timeout for each process in seconds (default=120)"
     echo "  --cpu-affinity c0,c1,c2 Pin processes to specific CPU cores (default=all)."
     echo "  --bind-to-cpu  Bind each worker thread to a specific CPU."
+    echo "  --cgroup  Enforce the memory limit on the memory each run uses, in a systemd scope"
+    echo "            per run (see ../bin/run-memory-limited.sh), instead of on the address"
+    echo "            space of each process."
 }
 
 source "$(dirname "$0")/benchmark_sets.sh"
@@ -38,6 +41,7 @@ m_value="8"
 s_value="120"
 cpu_affinity=""
 cpu_bind_arg=""
+cgroup=false
 while getopts "ht:j:m:s:-:" option; do
     case $option in
         h)
@@ -67,6 +71,9 @@ while getopts "ht:j:m:s:-:" option; do
                 bind-to-cpu)
                     cpu_bind_arg="--bind-to-cpu"
                     ;;
+                cgroup)
+                    cgroup=true
+                    ;;
                 *)
                     echo "Invalid option: --$OPTARG"
                     show_help
@@ -86,6 +93,26 @@ cpu_affinity_arg=""
 if [ -n "$cpu_affinity" ]; then
     IFS=',' read -r -a cpu_array <<< "$cpu_affinity"
     cpu_affinity_arg="--cpu-affinity ${cpu_array[*]}"
+fi
+
+config=smt.yaml
+memout_arg="--memout $m_value"
+if [ "$cgroup" = true ]; then
+    ../bin/run-memory-limited.sh "$m_value" true || exit 1
+    # Every engine runs under run-memory-limited.sh, and pycobench sets no address-space limit of its own.
+    config=$(mktemp --suffix=.yaml)
+    trap 'rm -f "$config"' EXIT
+    python3 -c '
+import sys, yaml
+limit, path = sys.argv[1:]
+with open(path) as f:
+    config = yaml.safe_load(f)
+for name, engine in config.items():
+    if name != "defaults":
+        engine["cmd"] = "../bin/run-memory-limited.sh " + limit + " " + engine["cmd"]
+yaml.safe_dump(config, sys.stdout)
+' "$m_value" smt.yaml > "$config" || exit 1
+    memout_arg=""
 fi
 
 # Shift the option index so that $1 refers to the first positional argument
@@ -110,7 +137,7 @@ for benchmark in "${benchmarks[@]}"; do
     echo "Running benchmark $benchmark"
     FILE_PREFIX="$benchmark-to$s_value-$tool-$CUR_DATE"
     TASKS_FILE="$FILE_PREFIX.tasks"
-    cat "$benchmark.input" | ../harnesses/pycobench/src/pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE" $cpu_affinity_arg $cpu_bind_arg
+    cat "$benchmark.input" | ../harnesses/pycobench/src/pycobench.py -c "$config" -j $j_value -t $s_value $memout_arg -m "$tool" -o "$TASKS_FILE" $cpu_affinity_arg $cpu_bind_arg
     tasks_files+=("$TASKS_FILE")
     echo "$TASKS_FILE" >> tasks_names.txt
 done
