@@ -1,67 +1,31 @@
 # smt-bench
-SMT benchmarking platform
+SMT benchmarking platform for string solvers, built on the [pycobench](https://github.com/VeriFIT/pycobench) harness (submodule `harnesses/pycobench`).
 
-## Installing Dependencies
-The benchmark harness is [pycobench](https://github.com/VeriFIT/pycobench), a submodule in `harnesses/pycobench`.
-Its Python dependencies are declared in `pyproject.toml` and pinned in `uv.lock`:
+## Documentation
+- [Setup](docs/setup.md): dependencies with Nix or without it, formulae, solvers.
+- [Running benchmarks](docs/running.md): `bench/run_bench.sh`, benchmark sets, engines, processing results.
+- [Comparing revisions](docs/comparing-versions.md): building and benchmarking revisions of Z3-Noodler with `scripts/compare_versions.sh`.
+- [Memory limit](docs/memory-limit.md): the address-space limit and the optional cgroup limit (`--cgroup`).
+
+## Quick start
+With Nix:
 ```
-git submodule update --init harnesses/pycobench
-uv sync                     # creates '.venv' from uv.lock; activate it or prefix commands with 'uv run'
-# or, without uv:
-pip3 install .              # installs only the dependencies, the scripts run from the checkout
+git submodule update --init --recursive
+nix develop                      # or 'nix-shell', or 'direnv allow'
+just download                    # SMT-LIB string benchmarks into formulae/
+just bench -t z3 -j 4 quick      # results in bench/*.tasks
+just compare v1.8.0 devel        # results in results/<benchmarks>-<timestamp>/
 ```
-After changing the dependencies in `pyproject.toml`, run `uv lock` and commit `uv.lock`.
 
-### Alternative: Nix
-The repository is a Nix flake whose development shell provides the Python dependencies (built from `uv.lock` with [uv2nix](https://github.com/pyproject-nix/uv2nix)), GNU `time`, `unbuffer`, `zstd`, `curl`, and Z3 (as the `z3` tool):
+Without Nix (needs Python ≥ 3.9, GNU `time`, `curl`, `zstd`; `git`, `cmake` and a C++ compiler for comparisons):
 ```
-nix develop   # 'direnv allow' enters the shell automatically.
-nix fmt       # Formats the Nix files.
+git submodule update --init --recursive
+uv sync && source .venv/bin/activate    # or: pip3 install .
+pip3 install z3-solver                  # the 'z3' tool
+./download_smt_benchmarks.sh
+(cd bench && ./run_bench.sh -t z3 -j 4 quick)
+./scripts/compare_versions.sh v1.8.0 devel
 ```
-Inside the shell, `uv run` uses the shell's Python environment; do not run `uv sync` there.
-`just` wraps the scripts, e.g. `just bench -t z3 quick`, `just process --csv bench/FILE.tasks`, or `just download`; run `just help` to list all recipes.
 
-## Downloading benchmarks
-To download [SMT-LIB'25 benchmarks](https://zenodo.org/records/11061097), run the `download_smt_benchmarks.sh` script (you need to have `unzstd` installed).
-
-## Downloading tools
-To download [Z3](https://github.com/Z3Prover/z3), use `pip3`:
-```
-pip3 install z3-solver
-```
-For [cvc5](https://github.com/cvc5/cvc5), go to the [releases](https://github.com/cvc5/cvc5/releases), download `cvc5-Linux-x86_64-static.zip` from the latest version and unpack it into `bin/`.
-
-For both [Z3-Noodler](https://github.com/VeriFIT/z3-noodler) and [Ostrich](https://github.com/uuverifiers/ostrich), clone the given tool into `bin/` and build them following the instructions in their READMEs.
-
-Good luck finding other tools...
-
-## How to run
-Go to `bench/` and use the script `run_bench.sh` (see `--help` for the instructions how to use it).
-
-## How to compare revisions of a tool
-`scripts/compare_versions.sh` (`just compare`) benchmarks several revisions of Z3-Noodler against each other on the same formulae.
-Every revision is built from source into `build/bin/` (the repository is cloned into `build/subjects/` on first use, Mata is fetched in the version the revision pins unless `--mata` names another one), and every build becomes one pycobench engine:
-```
-# a tag against the tip of devel, on the 'quick' benchmarks of run_bench.sh
-just compare v1.8.0 devel
-# unpublished branches of a local clone, 20 instances of every regex benchmark, 30 s timeout
-just compare --fetch-from ../z3-noodler --benchmarks regex --sample 20 --timeout 30 devel=before my-branch=after
-# a pull request against the commit it is based on
-just compare pr/123
-# an unpublished branch built against an unpublished Mata branch, once more with another random seed
-just compare --fetch-from ../z3-noodler --fetch-mata-from ../mata --mata new=my-mata-branch --mata new-seed=my-mata-branch \
-    --params new-seed=smt.random_seed=7 devel my-branch=new my-branch=new-seed
-```
-A build is `<rev>[=<label>]`; a revision is a tag, branch, or commit, or `pr/<N>` for both sides of a pull request.
-`--mata <label>=<rev>` builds `<label>` against a revision of Mata (tag, branch, or commit; `--fetch-mata-from` fetches the branches of a local clone), and `--params <label>=<params>` runs `<label>` with extra solver parameters.
-Builds of the same commits are built once, so one revision can run under several labels with different parameters.
-Each run lands in `results/<benchmarks>-<timestamp>/`: `manifest.json` records the commits (Mata's too), parameters, and settings, `compare.csv` the measurements, and `compare-report/` the report of pycobench's `pyco_plot.py`: the answers of the builds, solved instances (sat or unsat) and PAR-2 overall and per benchmark, pairwise speed-ups, the instances one build found sat and another unsat (`disagreements.csv`), and cactus and scatter plots.
-See `./scripts/compare_versions.sh --help` for the options.
-
-## Memory limit
-Both `run_bench.sh` (`-m`) and `compare_versions.sh` (`--memout`) limit every run to some GiB, by default through pycobench, which caps the address space of every process.
-A solver dies on a failed allocation under that cap long before it uses that much memory (a growing vector fails at about half), and one reserving more address space than it touches (a JVM, a sanitizer build) may die earlier still; `run-tool.sh`, `run-tool-model.sh`, and `run-build.sh` in `bin/` report a failed allocation as a memout.
-With `--cgroup`, every run goes to a systemd scope of its own that caps the memory the run uses (without swap) instead, and a run the kernel kills for exceeding it counts as a memout; this needs a systemd user session with the memory controller delegated, which `bin/run-memory-limited.sh 1 true` checks.
-
-## How to process the results
-See the following [repo](https://github.com/jurajsic/smt-string-bench-results).
+## Processing the results
+`just process --csv bench/FILE.tasks` (or `python3 harnesses/pycobench/src/pyco_proc.py --csv bench/FILE.tasks`) turns a run into a table; see also [smt-string-bench-results](https://github.com/jurajsic/smt-string-bench-results).
