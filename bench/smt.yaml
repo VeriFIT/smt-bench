@@ -1,3 +1,7 @@
+# run-tool.sh and run-tool-model.sh exit with 3 when the solver failed to allocate memory under the limit of --memout.
+defaults:
+  return_codes: {0: finished, 1: finished, 3: memout, '*': error}
+
 z3:
   cmd: ../bin/run-tool.sh $1 z3
 
