@@ -17,6 +17,7 @@ binary=$2
 shift 2
 
 script_dir=$(dirname "$(readlink -f "$0")")
+source "$script_dir/memout_exit.sh"
 [ -f "$input" ] || { echo "error: no such formula: $input" >&2; exit 2; }
 
 # The solver's stderr is captured with its answers and passed on below, to tell a failed allocation apart.
@@ -25,11 +26,7 @@ ret=$?
 grep -vxE 'sat|unsat|unknown' <<< "$out" >&2
 answers=$(grep -xE 'sat|unsat|unknown' <<< "$out" | paste -sd,)
 echo "result: ${answers:-none}"
-# Under the address-space limit of --memout, the solver aborts on std::bad_alloc (or reports running out of memory)
-# below the peak at which pycobench would call the run a memout; exit 3, which compare.yaml maps to memout.
-if [ "$ret" -ne 0 ] && grep -qE 'std::bad_alloc|out of memory' <<< "$out"; then
-    exit 3
-fi
+exit_if_out_of_memory "$ret" "$out"
 # Die of the signal that killed the solver, so that pycobench counts the run as a crash, not an error.
 [ "$ret" -le 128 ] || kill -s $((ret - 128)) $$
 exit $ret
