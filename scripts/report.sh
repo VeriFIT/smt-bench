@@ -2,7 +2,9 @@
 
 # Turns the measurements of a scripts/compare_versions.sh run into its report
 # with pycobench's pyco_plot: the answers of the builds, and the summary,
-# per-benchmark and pairwise tables, cactus and scatter plots of the metrics.
+# per-benchmark and pairwise tables, cactus and scatter plots of the metrics;
+# and with scripts/report_changes.py: per benchmark, the instances every build
+# gains and loses against the baseline, and the list of those instances.
 # A run counts as solved only when it answered sat or unsat, so PAR-2 charges
 # 'unknown' like a timeout and only definite answers are cross-checked.
 # The report lands in 'results/<run>/compare-report'.
@@ -34,6 +36,7 @@ usage() { {
 
 rootdir=$(cd "$(dirname "$0")/.." && pwd)
 timeout=""
+baseline=""
 plot_args=()
 args=()
 while [ $# -gt 0 ]; do
@@ -45,6 +48,7 @@ while [ $# -gt 0 ]; do
             timeout="$2"
             shift 2;;
         -b|--baseline)
+            baseline="$2"
             plot_args+=( --baseline "$2" )
             shift 2;;
         -m|--metric)
@@ -78,6 +82,8 @@ echo "[!] Reporting $csv"
 outdir="$run_dir/compare-report"
 python3 "$rootdir/harnesses/pycobench/src/pyco_plot.py" --timeout "$timeout" --solved sat,unsat \
     --families "$run_dir/families.csv" --output-dir "$outdir" "${plot_args[@]}" "$csv"
-for table in answers summary-runtime summary-by-family-runtime pairwise-runtime; do
+python3 "$rootdir/scripts/report_changes.py" --timeout "$timeout" --families "$run_dir/families.csv" \
+    --output-dir "$outdir" ${baseline:+--baseline "$baseline"} "$csv"
+for table in answers summary-runtime summary-by-family-runtime pairwise-runtime changes-by-family-runtime; do
     [ ! -f "$outdir/$table.md" ] || { echo; cat "$outdir/$table.md"; }
 done
