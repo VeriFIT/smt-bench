@@ -1,5 +1,7 @@
 unbuffer ./run_bench.sh all ecma2020 flat_checker relia_hard_policies quacky 2>&1 | tee --append run.log
 unbuffer ./run_bench.sh -t z3-noodler-model all ecma2020 flat_checker relia_hard_policies quacky 2>&1 | tee --append run.log
+unbuffer ./run_bench.sh -t z3-noodler-ecma ecma2020_mixed_bmp 2>&1 | tee --append run.log
+unbuffer ./run_bench.sh -t z3-noodler-model-ecma ecma2020_mixed_bmp 2>&1 | tee --append run.log
 unbuffer ./run_bench.sh -t check-model sygus_qgen denghang automatark stringfuzz hornstr norn slog slent omark kepler woorpje webapp kaluza transducer_plus leetcode str_small_rw pcp rna negated_predicates pyex full_str_int matching flat_checker relia_hard_policies quacky 2>&1 | tee --append run.log
 unbuffer ./run_bench.sh strict_bj 2>&1 | tee --append run.log
 unbuffer ./run_bench.sh -t z3-noodler-model strict_bj 2>&1 | tee --append run.log
