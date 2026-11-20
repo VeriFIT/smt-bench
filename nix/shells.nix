@@ -37,6 +37,7 @@
           cmake
           git
           gh # Resolves 'pr/<N>' revisions.
+          mimalloc # Linked into the builds of Z3-Noodler and Mata that find it.
 
           just
           nixd
