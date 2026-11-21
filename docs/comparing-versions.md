@@ -39,6 +39,9 @@ just compare --fetch-from ../z3-noodler --benchmarks regex --sample 20 --timeout
 just compare --fetch-from ../z3-noodler --fetch-mata-from ../mata \
     --mata new=my-mata-branch --mata new-seed=my-mata-branch --params new-seed=smt.random_seed=7 \
     devel my-branch=new my-branch=new-seed
+# re-measure only the instances some build gained or lost against the baseline in an earlier run
+awk -F';' 'NR > 1 { print $1 }' results/old/compare-report/changes.csv | sort -u > changed.txt
+just compare --fetch-from ../z3-noodler --benchmarks all --instances changed.txt devel=before my-branch=after
 ```
 
 ## Options
@@ -47,6 +50,7 @@ just compare --fetch-from ../z3-noodler --fetch-mata-from ../mata \
 |---|---|---|
 | `-b, --benchmarks NAME` | benchmark or set of [running.md](running.md#benchmarks); repeatable | `quick` |
 | `-n, --sample N` | only N evenly spread instances of each benchmark (reproducible) | all |
+| `-I, --instances FILE` | only the formulae listed in FILE, one per line as in `bench/<name>.input`; each must belong to a chosen benchmark | all |
 | `-d, --test-run` | only the first instance of each benchmark | off |
 | `-F, --fetch-from REPO` | fetch branches and tags of a clone (path or URL); repeatable | none |
 | `-m, --mata LABEL=REV` | build LABEL against this Mata revision instead of the pinned one | pinned |

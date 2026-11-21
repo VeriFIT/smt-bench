@@ -53,6 +53,10 @@ usage() { {
         echo "  -b|--benchmarks <name>      benchmark (bench/<name>.input) or set of run_bench.sh to run;"
         echo "                              repeatable [default=quick]"
         echo "  -n|--sample <int>           run only <int> evenly spread instances of every benchmark"
+        echo "  -I|--instances <file>       run only the formulae listed in <file>, one 'bench/'-relative path"
+        echo "                              per line as in bench/<name>.input (e.g. the slow or lost instances"
+        echo "                              of an earlier run); every listed formula must belong to one of the"
+        echo "                              chosen benchmarks, which gives it its family"
         echo "  -F|--fetch-from <repo>      fetch the branches and tags of <repo> (a path or URL), so that"
         echo "                              its unpublished revisions can be compared; repeatable"
         echo "  -m|--mata <label>=<rev>     build <label> against revision <rev> of Mata (tag, branch, commit)"
@@ -81,6 +85,7 @@ usage() { {
 
 benchmark_names=()
 sample=""
+instances_file=""
 fetch_from=()
 fetch_mata_from=()
 mata_opts=()
@@ -109,6 +114,9 @@ while [ $# -gt 0 ]; do
             exec "$rootdir/scripts/build_version.sh" --list-tools;;
         -b|--benchmarks)
             benchmark_names+=( "$2" )
+            shift 2;;
+        -I|--instances)
+            instances_file="$2"
             shift 2;;
         -n|--sample)
             sample="$2"
@@ -172,14 +180,66 @@ done
 [ -z "$sample" ] || [[ "$sample" =~ ^[1-9][0-9]*$ ]] || die "--sample needs a positive integer, got '$sample'"
 # Fails before the builds when the memory limit could not be in force.
 [ "$cgroup" = false ] || "$rootdir/bin/run-memory-limited.sh" "$memout" true || die "cannot limit the memory of a run in a cgroup"
-# Fetched repositories are resolved relative to where the script was called from.
+# Fetched repositories and the instance list are resolved relative to where the script was called from.
 for i in "${!fetch_from[@]}"; do
     [ ! -e "${fetch_from[$i]}" ] || fetch_from[$i]=$(realpath "${fetch_from[$i]}")
 done
 for i in "${!fetch_mata_from[@]}"; do
     [ ! -e "${fetch_mata_from[$i]}" ] || fetch_mata_from[$i]=$(realpath "${fetch_mata_from[$i]}")
 done
+[ -z "$instances_file" ] || [ ! -e "$instances_file" ] || instances_file=$(realpath "$instances_file")
 cd "$rootdir"
+
+# === Selection of the instances ===
+
+# Done before the builds, so that a wrong benchmark or instance list fails at once.
+source bench/benchmark_sets.sh
+[ ${#benchmark_names[@]} -gt 0 ] || benchmark_names=( quick )
+benchmarks=()
+for name in "${benchmark_names[@]}"; do
+    mapfile -t -O "${#benchmarks[@]}" benchmarks < <(benchmark_set_members "$name")
+done
+for benchmark in "${benchmarks[@]}"; do
+    [ -f "bench/$benchmark.input" ] || die "no such benchmark: bench/$benchmark.input"
+done
+if [ -n "$instances_file" ]; then
+    [ -f "$instances_file" ] || die "no such instance list: $instances_file"
+    [ "$testrun" = false ] && [ -z "$sample" ] || die "--instances cannot be combined with --sample or --test-run"
+fi
+
+# Every instance once, in the order of the benchmarks; the family of every
+# instance is kept for the per-benchmark breakdown of the answers.
+selection=$(mktemp)
+trap 'rm -f "$selection" "$selection.tmp"' EXIT
+for benchmark in "${benchmarks[@]}"; do
+    total=$(grep -c . "bench/$benchmark.input" || true)
+    if [ "$testrun" = true ]; then
+        count=1
+    elif [ -n "$sample" ] && [ "$sample" -lt "$total" ]; then
+        count=$sample
+    else
+        count=$total
+    fi
+    # Evenly spread over the list, which keeps the sample reproducible.
+    grep . "bench/$benchmark.input" |
+        awk -v n="$count" -v total="$total" -v family="$benchmark" \
+            'int((NR - 1) * n / total) != int(NR * n / total) { print $0 ";" family }'
+done | awk -F';' 'BEGIN { print "name;family" } !seen[$1]++' > "$selection"
+if [ -n "$instances_file" ]; then
+    # Keeps the listed formulae, in the order of the list; a formula of no chosen benchmark is an error.
+    awk -F';' 'NR == FNR { if (FNR > 1) family[$1] = $2; next }
+        FNR == 1 { print "name;family" }
+        NF && !seen[$1]++ {
+            if (!($1 in family)) { print "error: " $1 " is in none of the chosen benchmarks" > "/dev/stderr"; failed = 1; exit }
+            print $1 ";" family[$1]
+        }
+        END { exit failed }' "$selection" "$instances_file" > "$selection.tmp" ||
+        die "an instance of $instances_file is in none of: ${benchmarks[*]}"
+    mv "$selection.tmp" "$selection"
+    [ "$(wc -l < "$selection")" -gt 1 ] || die "$instances_file lists no instance"
+fi
+: "${output_dir:=$(IFS=+; echo "${benchmark_names[*]}")-$(date +%Y-%m-%d-%H-%M-%S)}"
+[ ! -e "results/$output_dir" ] || die "results/$output_dir already exists"
 
 # === Builds ===
 
@@ -335,39 +395,13 @@ done
 
 # === Instances ===
 
-source bench/benchmark_sets.sh
-[ ${#benchmark_names[@]} -gt 0 ] || benchmark_names=( quick )
-benchmarks=()
-for name in "${benchmark_names[@]}"; do
-    mapfile -t -O "${#benchmarks[@]}" benchmarks < <(benchmark_set_members "$name")
-done
-for benchmark in "${benchmarks[@]}"; do
-    [ -f "bench/$benchmark.input" ] || die "no such benchmark: bench/$benchmark.input"
-done
-
-: "${output_dir:=$(IFS=+; echo "${benchmark_names[*]}")-$(date +%Y-%m-%d-%H-%M-%S)}"
 run_dir="results/$output_dir"
+# Checked again: another run may have created it during the builds.
 [ ! -e "$run_dir" ] || die "$run_dir already exists"
 mkdir -p "$run_dir"
-
-# Every instance once, in the order of the benchmarks; the family of every
-# instance is kept for the per-benchmark breakdown of the answers.
-instances="$run_dir/instances.input"
+mv "$selection" "$run_dir/families.csv"
 families="$run_dir/families.csv"
-for benchmark in "${benchmarks[@]}"; do
-    total=$(grep -c . "bench/$benchmark.input" || true)
-    if [ "$testrun" = true ]; then
-        count=1
-    elif [ -n "$sample" ] && [ "$sample" -lt "$total" ]; then
-        count=$sample
-    else
-        count=$total
-    fi
-    # Evenly spread over the list, which keeps the sample reproducible.
-    grep . "bench/$benchmark.input" |
-        awk -v n="$count" -v total="$total" -v family="$benchmark" \
-            'int((NR - 1) * n / total) != int(NR * n / total) { print $0 ";" family }'
-done | awk -F';' 'BEGIN { print "name;family" } !seen[$1]++' > "$families"
+instances="$run_dir/instances.input"
 tail -n +2 "$families" | cut -d';' -f1 > "$instances"
 echo "[!] $(wc -l < "$instances") instances of: ${benchmarks[*]}"
 
