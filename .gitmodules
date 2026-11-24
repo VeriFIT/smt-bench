@@ -7,3 +7,6 @@
 [submodule "formulae/ecma2020-smt-bench"]
 	path = formulae/ecma2020-smt-bench
 	url = https://github.com/Kumismar/ecma2020-smt-bench.git
+[submodule "formulae/trauc_benchmarks"]
+	path = formulae/trauc_benchmarks
+	url = https://github.com/VeriFIT/trauc_benchmarks.git
