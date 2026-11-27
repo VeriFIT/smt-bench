@@ -3,8 +3,15 @@
 **/__pycache__/
 bin/*/build/
 bench/stats/
-formulae/QF_S/
-formulae/QF_SLIA/
-formulae/QF_SNIA/
+# Downloaded by download_smt_benchmarks.sh; no trailing slash, so a symlink to them (in a workspace) is ignored too.
+/formulae/QF_S
+/formulae/QF_SLIA
+/formulae/QF_SNIA
 .idea
 /bench/*.tasks
+# scripts/build_version.sh and scripts/compare_versions.sh
+/build/
+/results/
+# Nix
+.direnv/
+/result*

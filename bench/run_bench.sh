@@ -28,27 +28,12 @@ show_help() {
     echo "  -s N    Timeout for each process in seconds (default=120)"
     echo "  --cpu-affinity c0,c1,c2 Pin processes to specific CPU cores (default=all)."
     echo "  --bind-to-cpu  Bind each worker thread to a specific CPU."
+    echo "  --cgroup  Enforce the memory limit on the memory each run uses, in a systemd scope"
+    echo "            per run (see ../bin/run-memory-limited.sh), instead of on the address"
+    echo "            space of each process."
 }
 
-REGEX=("sygus_qgen" "denghang" "automatark" "stringfuzz" "redos" "matching" "hornstr")
-EQUATIONS=("norn" "slog" "slent" "omark" "kepler" "woorpje" "webapp" "kaluza")
-PREDICATES=("transducer_plus" "leetcode" "str_small_rw" "pcp" "rna" "negated_predicates" "pyex" "full_str_int")
-
-QUICK=("sygus_qgen" "denghang" "transducer_plus" "norn" "slog" "slent" "omark" "leetcode" "pcp" "rna" "matching" "hornstr" "negated_predicates")
-SLOW=("automatark" "str_small_rw" "stringfuzz" "kepler" "woorpje" "webapp" "redos" "kaluza" "pyex" "full_str_int")
-
-INT_CONV_BENCHS=("str_small_rw" "stringfuzz" "full_str_int")
-NOT_INT_CONV_BENCHS=("sygus_qgen" "norn" "slog" "slent" "omark" "denghang" "leetcode" "automatark" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "pyex" "redos" "pcp" "matching" "hornstr" "negated_predicates")
-
-REPLACE_ALL_BENCHS=("webapp" "transducer_plus" "pcp" "rna")
-
-QF_S=("sygus_qgen" "automatark" "matching" "hornstr" "slog" "omark" "woorpje" "pcp" "rna" "negated_predicates")
-QF_SLIA=("denghang" "stringfuzz" "redos" "norn" "slent" "transducer_plus" "kepler" "woorpje" "webapp" "kaluza" "leetcode" "str_small_rw" "pyex" "full_str_int")
-QF_SNIA=("kaluza")
-
-ALL=("${REGEX[@]}")
-ALL+=("${EQUATIONS[@]}")
-ALL+=("${PREDICATES[@]}")
+source "$(dirname "$0")/benchmark_sets.sh"
 
 tool="z3-noodler"
 j_value="8"
@@ -56,6 +41,7 @@ m_value="8"
 s_value="120"
 cpu_affinity=""
 cpu_bind_arg=""
+cgroup=false
 while getopts "ht:j:m:s:-:" option; do
     case $option in
         h)
@@ -85,6 +71,9 @@ while getopts "ht:j:m:s:-:" option; do
                 bind-to-cpu)
                     cpu_bind_arg="--bind-to-cpu"
                     ;;
+                cgroup)
+                    cgroup=true
+                    ;;
                 *)
                     echo "Invalid option: --$OPTARG"
                     show_help
@@ -106,6 +95,26 @@ if [ -n "$cpu_affinity" ]; then
     cpu_affinity_arg="--cpu-affinity ${cpu_array[*]}"
 fi
 
+config=smt.yaml
+memout_arg="--memout $m_value"
+if [ "$cgroup" = true ]; then
+    ../bin/run-memory-limited.sh "$m_value" true || exit 1
+    # Every engine runs under run-memory-limited.sh, and pycobench sets no address-space limit of its own.
+    config=$(mktemp --suffix=.yaml)
+    trap 'rm -f "$config"' EXIT
+    python3 -c '
+import sys, yaml
+limit, path = sys.argv[1:]
+with open(path) as f:
+    config = yaml.safe_load(f)
+for name, engine in config.items():
+    if name != "defaults":
+        engine["cmd"] = "../bin/run-memory-limited.sh " + limit + " " + engine["cmd"]
+yaml.safe_dump(config, sys.stdout)
+' "$m_value" smt.yaml > "$config" || exit 1
+    memout_arg=""
+fi
+
 # Shift the option index so that $1 refers to the first positional argument
 shift $((OPTIND - 1))
 
@@ -118,33 +127,7 @@ fi
 
 for BENCH_NAME in "$@"
 do
-    if [[ "$BENCH_NAME" == "all" ]]; then
-        benchmarks+=("${ALL[@]}")
-    elif [[ "$BENCH_NAME" == "quick" ]]; then
-        benchmarks+=("${QUICK[@]}")
-    elif [[ "$BENCH_NAME" == "slow" ]]; then
-        benchmarks+=("${SLOW[@]}")
-    elif [[ "$BENCH_NAME" == "int-conv" ]]; then
-        benchmarks+=("${INT_CONV_BENCHS[@]}")
-    elif [[ "$BENCH_NAME" == "not-int-conv" ]]; then
-        benchmarks+=("${NOT_INT_CONV_BENCHS[@]}")
-    elif [[ "$BENCH_NAME" == "replace-all" ]]; then
-        benchmarks+=("${REPLACE_ALL_BENCHS[@]}")
-    elif [[ "$BENCH_NAME" == "regex" ]]; then
-        benchmarks+=("${REGEX[@]}")
-    elif [[ "$BENCH_NAME" == "equations" ]]; then
-        benchmarks+=("${EQUATIONS[@]}")
-    elif [[ "$BENCH_NAME" == "predicates" ]]; then
-        benchmarks+=("${PREDICATES[@]}")
-    elif [[ "$BENCH_NAME" == "qf_s" ]]; then
-        benchmarks+=("${QF_S[@]}")
-    elif [[ "$BENCH_NAME" == "qf_slia" ]]; then
-        benchmarks+=("${QF_SLIA[@]}")
-    elif [[ "$BENCH_NAME" == "qf_snia" ]]; then
-        benchmarks+=("${QF_SNIA[@]}")
-    else
-        benchmarks+=("$BENCH_NAME")
-    fi
+    mapfile -t -O "${#benchmarks[@]}" benchmarks < <(benchmark_set_members "$BENCH_NAME")
 done
 
 tasks_files=()
@@ -154,7 +137,7 @@ for benchmark in "${benchmarks[@]}"; do
     echo "Running benchmark $benchmark"
     FILE_PREFIX="$benchmark-to$s_value-$tool-$CUR_DATE"
     TASKS_FILE="$FILE_PREFIX.tasks"
-    cat "$benchmark.input" | ./pycobench.py -c smt.yaml -j $j_value -t $s_value --memout $m_value -m "$tool" -o "$TASKS_FILE" $cpu_affinity_arg $cpu_bind_arg
+    cat "$benchmark.input" | ../harnesses/pycobench/src/pycobench.py -c "$config" -j $j_value -t $s_value $memout_arg -m "$tool" -o "$TASKS_FILE" $cpu_affinity_arg $cpu_bind_arg
     tasks_files+=("$TASKS_FILE")
     echo "$TASKS_FILE" >> tasks_names.txt
 done
